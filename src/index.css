@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Hind+Siliguri:wght@300;400;500&family=Inter:wght@100..900&family=WindSong&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.app-title {
+    background: linear-gradient( rgb(34, 147, 252) 0%, rgb(155,81,224) 90%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@layer base {
+
+    html, body {
+        @apply font-[62.5%] box-border m-0 p-0 font-sans bg-slate-300
+    }
+
+    button, a {
+        @apply cursor-pointer
+    }
+}
+
+@layer components {
+    .button {
+        @apply text-center font-bold tracking-widest focus:outline-none border-2  rounded-lg uppercase;
+    }
+}
+
+@layer utilities {
+    /*========= BUTTONS =========*/
+    .btn-book-online {
+        @apply button text-indigo-50 bg-custom-gradient-btn  border-indigo-50 z-[50]
+            
+    }
+    .btn-book-online-transparent {
+        @apply button text-indigo-900 bg-indigo-50 bg-opacity-45 border-2  border-indigo-50 z-[50]
+            
+    }
+
+    .transparent-btn {
+        @apply button text-indigo-400 bg-transparent  
+            border-indigo-400 z-[50]
+    }
+
+    /* =========== MENU BTN =========== */
+    .line {
+        @apply w-[3.5rem] h-[.1rem] bg-indigo-900 transition-all duration-300
+    }
+
+    .line-1, .line-3 {
+        @apply w-[2.2rem] transition-all duration-300
+    }
+
+    .menu-icon:hover .line {
+        width: 3.5rem;
+    }
+
+    .line-1.active {
+        @apply transform rotate-[-405deg] -translate-x-[5px] translate-y-[6px] w-[2.5rem];
+    }
+
+    .line-2.active {
+        @apply opacity-0;
+    }
+
+    .line-3.active {
+        @apply transform rotate-[405deg] -translate-x-[5px] -translate-y-[6px] w-[2.5rem];
+    }
+
+    /* =========== TEXT =========== */
+     .text-small-dark {
+        @apply text-xl font-[600] uppercase text-indigo-900
+    }
+
+    .text-xsmall-dark {
+        @apply text-lg font-[600] text-indigo-900
+    }
+    .text-xsmall-dark-mayus {
+        @apply text-lg font-[600] text-indigo-900 uppercase
+    }
+    .text-xxsmall-dark-mayus {
+        @apply font-[600] text-indigo-900 uppercase
+    }
+
+}
