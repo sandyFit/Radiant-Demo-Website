@@ -21,8 +21,8 @@ const MenuHero = ({ isMenuOpen }) => {
                 {['index', 'about', 'services', 'staff', 'reviews', 'faq', 'contact']
                     .map((item, index) => (
                         <li key={index}                            
-                            className='text-zinc-50 text-[4rem] leading-[50px] font-anybody font-[500] uppercase
-                            hover:text-opacity-65'
+                            className='text-indigo-900 text-[4rem] leading-[50px] font-anybody font-[500] 
+                                uppercase hover:text-opacity-65'
                         >
                             <ScrollLink to={item} smooth={true} duration={500}>
                                 {item.charAt(0).toUpperCase() + item.slice(1).replace('-', ' ')}
@@ -39,7 +39,7 @@ const MenuHero = ({ isMenuOpen }) => {
                     </p>
                 </div>
 
-                <div className='flex flex-col justify-between items-center gap-8 mt-10 absolute right-[4rem] bottom-16'
+                <div className='flex flex-col justify-between gap-8 mt-10 '
                     style={{zIndex: 1000}}>
                     <FaInstagram 
                         style={{ fontSize: '2rem', color: '#d4d4d8', cursor: 'pointer', transition: 'opacity 0.1s' }}
@@ -51,7 +51,10 @@ const MenuHero = ({ isMenuOpen }) => {
                         onMouseOut={(e) => e.target.style.opacity = 1}
                     />
                     <BsTwitterX 
-                        style={{ fontSize: '1.8rem', color: '#d4d4d8', cursor: 'pointer', transition: 'opacity 0.1s', marginTop: '4px' }}
+                        style={{
+                            fontSize: '1.8rem', color: '#d4d4d8', cursor: 'pointer', transition: 'opacity 0.1s',
+                            marginBottom: '5px'
+                        }}
                         onMouseOver={(e) => e.target.style.opacity = 0.75}
                         onMouseOut={(e) => e.target.style.opacity = 1}
                     />       

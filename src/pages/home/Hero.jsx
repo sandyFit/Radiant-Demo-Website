@@ -38,12 +38,14 @@ const Hero = () => {
 
     return (
         <section id='index'
-            className='w-full min-h-screen'>
+            className='w-full min-h-screen '>
             <div className="w-full grid grid-cols-1 xl:grid-cols-2 place-content-center place-items-center 
                 sm:px-2 xl:px-10 2xl:px-24 3xl:px-32 ml-0 2xl:ml-2 3xl:ml-0">
-                <article className="xl:col-start-1 grid w-[83%] xl:w-[90%] 2xl:w-full mt-8 xl:mt-40 mb-0 2xl:mb- gap-6">
+                <article className="xl:col-start-1 grid w-[83%] xl:w-[90%] 2xl:w-full mt-8 xl:mt-40 mb-0 
+                    2xl:mb- gap-6">
                     <h1 className='text-indigo-900 text-[2.2rem] sm:text-[2.5rem] md:text-[2.8rem] 
-                    base:text-[3.3rem] lg:text-[4rem] xl:text-[3.2rem] 2xl:text-[4rem] font-[900] w-full leading-[1em] '>
+                    base:text-[3.3rem] lg:text-[4rem] xl:text-[3.2rem] 2xl:text-[4rem] font-[900] w-full
+                        leading-[1em] '>
                         <span>Reveal
                             <span className='app-title' style={{ margin: '0 1rem' }}>
                                 Your Brightest

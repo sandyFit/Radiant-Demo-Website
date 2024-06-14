@@ -5,17 +5,146 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* ========= GRADIENT TEXT ========= */
 .app-title {
-    background: linear-gradient( rgb(34, 147, 252) 0%, rgb(155,81,224) 90%);
+    background: linear-gradient( rgb(4, 127, 243) 0%, rgb(137, 43, 225) 90%);   
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    
 }
+
+.app-title:hover {
+    background: linear-gradient( rgb(34, 147, 252) 0%, rgb(155,81,224) 90%);
+     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 4px;
+    padding-bottom: 1px;
+}
+
+/* GLASS EFFECT */
+.glass {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.glass-light {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-blue {
+    background: rgba(67, 56, 202, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(99, 102, 241, 0.01);
+}
+
+
+/* ========== MENU ANIMATION TO OPEN ========== */
+@keyframes open-menu {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes close-menu {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.menu-open {
+    opacity: 1;
+    transform: translate3d(0vw, 0, 0);
+    transition: opacity 0.5s ease, transform 0.8s cubic-bezier(0, .52, 0, 1);
+}
+
+.menu-closed {
+    opacity: 0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: opacity 0.5s ease, transform 0.8s ease-in-out;
+}
+
+
+.menu-img {
+    background-image: url(/public/images/room.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ========== MENU HERO ANIMATION TO OPEN ========== */
+@keyframes open-menu-right {
+    from {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes close-menu-right {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+  from {right: -200%; right:200%;}
+  to {right: 0; right: 0;}
+}
+
+.menu-closed-right {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: close-menu-right 2s cubic-bezier(0.24, 1, 0.36, 1) forwards;
+}
+
+.menu-open-right {
+    opacity: 1;
+    transform: translateX(0);
+    animation: open-menu-right 2s cubic-bezier(0.24, 1, 0.36, 1) forwards;
+}
+
+.menu-img-hero {
+    background-image: url(/public/images/room-right.jpg);
+    background-size: cover;
+    background-position: center;
+    width: calc(100vw - 4rem); /* Adjust width to fit within viewport */
+    max-width: 36vw; /* Set a maximum width for the menu */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
 
 @layer base {
 
     html, body {
-        @apply font-[62.5%] box-border m-0 p-0 font-sans bg-slate-300
+        @apply font-[62.5%] box-border m-0 p-0 font-sans bg-slate-300 overflow-x-hidden
     }
 
     button, a {
@@ -32,20 +161,20 @@
 @layer utilities {
     /*========= BUTTONS =========*/
     .btn-book-online {
-        @apply button text-indigo-50 bg-custom-gradient-btn  border-indigo-50 z-[50]
+        @apply button text-indigo-50 bg-custom-gradient-btn  border-indigo-50 z-[2]
             
     }
     .btn-book-online-transparent {
-        @apply button text-indigo-900 bg-indigo-50 bg-opacity-45 border-2  border-indigo-50 z-[50]
+        @apply button text-indigo-900 bg-indigo-50 bg-opacity-45 border-2  border-indigo-50 z-[2]
             
     }
 
     .transparent-btn {
         @apply button text-indigo-400 bg-transparent  
-            border-indigo-400 z-[50]
+            border-indigo-400 z-[2]
     }
 
-    /* =========== MENU BTN =========== */
+    /* =========== NAVBAR MENU BTN =========== */
     .line {
         @apply w-[3.5rem] h-[.1rem] bg-indigo-900 transition-all duration-300
     }
@@ -68,6 +197,24 @@
 
     .line-3.active {
         @apply transform rotate-[405deg] -translate-x-[5px] -translate-y-[6px] w-[2.5rem];
+    }
+
+    /* =========== FLOATING MENU BTN =========== */
+
+    .lines {
+        @apply w-[2.2rem] h-[.12rem] bg-indigo-900 transition-all duration-300;
+    }
+
+    .sup-line.active {
+        @apply transform rotate-[-405deg]  translate-y-[9px] ;
+    }
+
+    .medium-line.active {
+        @apply opacity-0;
+    }
+
+    .inf-line.active {
+        @apply transform rotate-[405deg] -translate-y-[9px] ;
     }
 
     /* =========== TEXT =========== */
