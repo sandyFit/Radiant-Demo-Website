@@ -16,6 +16,7 @@ const Navbar = () => {
             flex items-center'>
             <article className="flex items-center justify-between mx-12 w-full h-full relative">
                 <Logo />
+                
                 <svg height="70" width="10" xmlns="http://www.w3.org/2000/svg"
                     className='hidden lg:block absolute left-80 top-1/2 
                     transform -translate-y-1/2'>
@@ -44,6 +45,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </button>
+               
                 <svg height="70" width="10" xmlns="http://www.w3.org/2000/svg" className='hidden lg:block absolute right-44 
                     top-1/2 transform -translate-y-1/2'>
                     <line x1="5" y1="0" x2="5" y2="70" stroke="#fafafa" strokeWidth="2"/>

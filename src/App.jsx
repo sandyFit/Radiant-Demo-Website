@@ -13,13 +13,8 @@ const App = () => {
 
     return (
         <div className=''>
-            <Navbar className=''/>
-            <div className="container relative" >
-                <Home />
-            </div>
-            {/* <div className="" style={{position: 'sticky', bottom: 0, zIndex: 0}} >
-                <Footer />
-            </div> */}
+            <Navbar />
+            <Home/>
         </div>
     )
 }
