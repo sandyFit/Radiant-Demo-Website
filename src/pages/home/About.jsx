@@ -12,12 +12,13 @@ const About = () => {
         setShowFloatingBtn(scrollPosition > scrollThreshold);
     };
 
-    const handleMouseDown = (e) => {
-        e.preventDefault();
-        toggleMenu();
-        console.log('clicked');
-        e.stopPropagation();
+    const handleClick = (e) => {
+        e.preventDefault();      // Prevents the default action of the click event
+        toggleMenu();            // Toggles the visibility state of the menu
+        console.log('clicked');  // Logs to the console for debugging
+        e.stopPropagation();     // Prevents the click event from propagating to parent elements
     };
+
 
     const toggleMenu = () => {
         setVisible(!visible);
@@ -32,7 +33,7 @@ const About = () => {
         <section className='flex flex-col w-full h-screen mb-[10vw] pt-[3rem] rounded-t-[50px]'>
             <div className="relative">
                 {/* FLOATING MENU BUTTON */}
-                <button onMouseDown={handleMouseDown}
+                <button onClick={handleClick}
                     className={`fixed w-20 h-20 top-8 left-10 group inline-flex items-center 
                         justify-center overflow-hidden rounded-full glass-light
                         z-[1000] ${showFloatingBtn ? '' : 'invisible'}`}>

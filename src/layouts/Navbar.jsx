@@ -49,10 +49,8 @@ const Navbar = () => {
                     <line x1="5" y1="0" x2="5" y2="70" stroke="#fafafa" strokeWidth="2"/>
                 </svg>
 
-                <div className="absolute -top-0 -right-12 ">
-                    {visible && (
-                        <MenuHero isMenuOpen={visible}/>
-                    )}
+                <div className="absolute -top-0 -right-12 ">                   
+                    <MenuHero isMenuOpen={visible}/>                   
                 </div>
 
             </article>
