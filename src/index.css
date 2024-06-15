@@ -50,27 +50,7 @@
 
 
 /* ========== MENU ANIMATION TO OPEN ========== */
-@keyframes open-menu {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
-@keyframes close-menu {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
 
 .menu-open {
     opacity: 1;
@@ -86,59 +66,34 @@
 
 
 .menu-img {
-    background-image: url(/public/images/room.jpeg);
+    background-image: url(/images/room.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 /* ========== MENU HERO ANIMATION TO OPEN ========== */
-@keyframes open-menu-right {
-    from {
-        transform: translateX(100%);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes close-menu-right {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(100%);
-        opacity: 1;
-    }
-}
-
-@keyframes slidein {
-  from {right: -200%; right:200%;}
-  to {right: 0; right: 0;}
+.menu-open-right {
+    opacity: 1;
+    transform: translate3d(0vw, 0, 0);
+    transition: opacity 0.5s ease, transform 0.8s cubic-bezier(0, .52, 0, 1);
 }
 
 .menu-closed-right {
     opacity: 0;
-    transform: translateX(100%);
-    animation: close-menu-right 2s cubic-bezier(0.24, 1, 0.36, 1) forwards;
-}
-
-.menu-open-right {
-    opacity: 1;
-    transform: translateX(0);
-    animation: open-menu-right 2s cubic-bezier(0.24, 1, 0.36, 1) forwards;
+    transform: translate3d(100vw, 0, 0);
+    transition: opacity 0.5s ease, transform 0.8s ease-in-out;
 }
 
 .menu-img-hero {
-    background-image: url(/public/images/room-right.jpg);
+    background-image: url(/images/room-right.jpg);
     background-size: cover;
     background-position: center;
     width: calc(100vw - 4rem); /* Adjust width to fit within viewport */
-    max-width: 36vw; /* Set a maximum width for the menu */
+    max-width: 32vw; /* Set a maximum width for the menu */
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
+
+
 
 
 @layer base {
@@ -154,7 +109,7 @@
 
 @layer components {
     .button {
-        @apply text-center font-bold tracking-widest focus:outline-none border-2  rounded-lg uppercase;
+        @apply font-anybody text-center font-bold tracking-widest focus:outline-none border-2  rounded-lg uppercase;
     }
 }
 
@@ -218,18 +173,14 @@
     }
 
     /* =========== TEXT =========== */
-     .text-small-dark {
-        @apply text-xl font-[600] uppercase text-indigo-900
+
+    .text-min-dark {
+        @apply text-[1rem] text-indigo-900 font-[600]
     }
 
-    .text-xsmall-dark {
-        @apply text-lg font-[600] text-indigo-900
+    .text-mayus-dark {
+        @apply font-anybody text-lg lg:text-xl xl:text-2xl font-[700] 2xl:font-[800] text-indigo-900 uppercase
     }
-    .text-xsmall-dark-mayus {
-        @apply text-lg font-[600] text-indigo-900 uppercase
-    }
-    .text-xxsmall-dark-mayus {
-        @apply font-[600] text-indigo-900 uppercase
-    }
+     
 
 }
