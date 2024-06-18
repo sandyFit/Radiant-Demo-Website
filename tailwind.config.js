@@ -34,8 +34,7 @@ export default {
       },
 
       screens: {
-        'xs': '320px',
-        'sm': '380px',
+        'sm': '320px',
         'md': '420px',
         'base': '500px',
         'lg': '650px',
@@ -55,8 +54,7 @@ export default {
       
       backgroundImage: {
         'custom-gradient-btn': 'linear-gradient(135deg, rgba(6,147,227,1) 0%, rgb(155,81,224) 100%)',
-        'menu-img-hero': 'url(images/room-right.jpg)',
-        'menu-img-btn': 'url(/public/images/room.jpeg)'
+
       }
     
       

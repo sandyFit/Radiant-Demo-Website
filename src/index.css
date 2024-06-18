@@ -25,20 +25,22 @@
 
 /* GLASS EFFECT */
 .glass {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 2px solid rgba(255, 255, 255, 0.3);
-}
-.glass-light {
-    background: rgba(255, 255, 255, 0.35);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, backdrop-filter 0.5s ease;
 }
 
+.glass-light {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, backdrop-filter 0.5s ease;
+}
 .glass-blue {
     background: rgba(67, 56, 202, 0.7);
     border-radius: 16px;
@@ -64,6 +66,17 @@
     transition: opacity 0.5s ease, transform 0.8s ease-in-out;
 }
 
+.submenu-open {
+    opacity: 1;
+    transform: translate3d(0vw, 0, 0);
+    transition: opacity 2.5s step-start, transform 1.8s cubic-bezier(0, .52, 0, 1);
+}
+
+.submenu-closed {
+    opacity: 0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: opacity 3s ease, transform 0.8s ease-in-out;
+}
 
 .menu-img {
     background-image: url(/images/room.jpeg);
@@ -72,10 +85,11 @@
 }
 
 /* ========== MENU HERO ANIMATION TO OPEN ========== */
+
 .menu-open-right {
     opacity: 1;
     transform: translate3d(0vw, 0, 0);
-    transition: opacity 0.5s ease, transform 0.8s cubic-bezier(0, .52, 0, 1);
+    transition: opacity 0.5s ease, transform 1.8s cubic-bezier(0, .52, 0, 1);
 }
 
 .menu-closed-right {
@@ -84,14 +98,46 @@
     transition: opacity 0.5s ease, transform 0.8s ease-in-out;
 }
 
+.right-submenu-open {
+    opacity: 1;
+    transform: translate3d(0vw, 0, 0);
+    transition: opacity 2.5s ease-in-out, transform 1.8s cubic-bezier(0, .52, 0, 1);
+}
+
+.right-submenu-closed {
+    opacity: 0;
+    transform: translate3d(100vw, 0, 0);
+    transition: opacity 3s ease, transform 0.8s ease-in-out;
+}
 .menu-img-hero {
     background-image: url(/images/room-right.jpg);
     background-size: cover;
     background-position: center;
-    width: calc(100vw - 4rem); /* Adjust width to fit within viewport */
-    max-width: 32vw; /* Set a maximum width for the menu */
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    width: 32vw; 
+    box-sizing: border-box; 
 }
+
+
+
+@media (max-width: 620px) {
+    .menu-img-hero {
+        width: 91.5vw;
+    }   
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+.sticky-element {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 3rem;
+
+} 
+
 
 
 
@@ -99,7 +145,7 @@
 @layer base {
 
     html, body {
-        @apply font-[62.5%] box-border m-0 p-0 font-sans bg-slate-300 overflow-x-hidden
+        @apply w-full h-full font-[62.5%] box-border m-0 p-0 font-sans bg-slate-300 
     }
 
     button, a {
@@ -131,16 +177,22 @@
 
     /* =========== NAVBAR MENU BTN =========== */
     .line {
-        @apply w-[3.5rem] h-[.1rem] bg-indigo-900 transition-all duration-300
+        @apply w-[2.2rem] lg:w-[3.5rem] h-[.1rem] bg-indigo-900 transition-all duration-300
     }
 
     .line-1, .line-3 {
-        @apply w-[2.2rem] transition-all duration-300
+        @apply w-[1.5rem] lg:w-[2.2rem] transition-all duration-300
     }
 
-    .menu-icon:hover .line {
+    /* .menu-icon:hover .line {
         width: 3.5rem;
     }
+
+    @media screen and (max-width: 320px) {
+        .menu-icon:hover .line {
+        width: 1.5rem;
+    }
+    } */
 
     .line-1.active {
         @apply transform rotate-[-405deg] -translate-x-[5px] translate-y-[6px] w-[2.5rem];
@@ -157,11 +209,11 @@
     /* =========== FLOATING MENU BTN =========== */
 
     .lines {
-        @apply w-[2.2rem] h-[.12rem] bg-indigo-900 transition-all duration-300;
+        @apply w-6 lg:w-[2.2rem] h-[.12rem] bg-indigo-900 transition-all duration-300;
     }
 
     .sup-line.active {
-        @apply transform rotate-[-405deg]  translate-y-[9px] ;
+        @apply transform rotate-[-405deg] translate-y-[6px] lg:translate-y-[9px] ;
     }
 
     .medium-line.active {
@@ -169,7 +221,7 @@
     }
 
     .inf-line.active {
-        @apply transform rotate-[405deg] -translate-y-[9px] ;
+        @apply transform rotate-[405deg] -translate-y-[6px] lg:-translate-y-[9px] ;
     }
 
     /* =========== TEXT =========== */
@@ -179,8 +231,28 @@
     }
 
     .text-mayus-dark {
-        @apply font-anybody text-lg lg:text-xl xl:text-2xl font-[700] 2xl:font-[800] text-indigo-900 uppercase
+        @apply text-[1rem] text-indigo-900 font-[600] uppercase
+    }
+
+    .text-mayus-dark {
+        @apply font-anybody text-sm md:text-base lg:text-xl xl:text-2xl font-[700] 2xl:font-[800] text-indigo-900 uppercase
+    }
+
+    .text-p1 {
+        @apply text-[1rem] md:text-[1.12rem] base:text-[1.2rem] lg:text-[1.4rem] text-indigo-900 font-[500]
+    }
+
+    .title-h2 {
+        @apply font-sans text-indigo-900 text-2xl md:text-4xl xl:text-5xl font-bold
+    }
+
+    .title-h1 {
+        @apply text-indigo-900 text-[2.2rem] md:text-[2.8rem] base:text-[3.3rem] lg:text-[4rem] 
+            xl:text-[3.2rem] 2xl:text-[4rem] font-[900] leading-[1em] 
     }
      
+    .title-links {
+        @apply  text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] leading-[16px] md:leading-[18px] lg:leading-[30px] font-anybody font-[700] uppercase
+    }
 
 }

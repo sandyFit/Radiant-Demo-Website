@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 import Logo from '../components/ui/Logo';
 import MenuHero from '../components/cards/MenuHero';
 
@@ -12,9 +11,9 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='glass w-[90.5%] bg-opacity-85 h-[88px] absolute top-8 left-[4.6vw] rounded-2xl 
-            flex items-center z-[10]'>
-            <article className="flex items-center justify-between mx-12 w-full h-full relative">
+        <nav className='w-[90.5%] h-[66px] lg:h-[88px] glass absolute top-8 left-[4.6vw] rounded-[10px] 
+            flex items-center border-[3px] border-zinc-50 z-[20]'>
+            <article className="flex items-center justify-between mx-5 lg:mx-12 w-full h-full relative">
                 <Logo />
                 
                 <svg height="70" width="10" xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +48,7 @@ const Navbar = () => {
                     <line x1="5" y1="0" x2="5" y2="70" stroke="#fafafa" strokeWidth="2"/>
                 </svg>
 
-                <div className="absolute -top-0 -right-12 ">                   
+                <div className="absolute -top-0 -right-6 lg:-right-12 ">                   
                     <MenuHero isMenuOpen={visible}/>                   
                 </div>
 

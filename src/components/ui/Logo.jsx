@@ -5,7 +5,6 @@ const Logo = () => {
     return (
         <div className='flex space-x-2'>
              <Link to="/" className="flex flex-row items-center space-x-2">
-                {/* <img src="./logo.png" alt="Radiant's logo" className='h-16' /> */}
                 <div className='flex flex-col'>
                     <span className="text-[1.13rem] md:text-xl lg:text-2xl xl:text-[1.5rem] 2xl:text-[2rem]
                     font-bai uppercase font-bold text-indigo-900 tracking-[.3em]
@@ -13,10 +12,10 @@ const Logo = () => {
                         Radiant
                     </span>
                     {/* <hr className='border-1 border-azure w-[95%]' /> */}
-                    <div className="w-full flex justify-center items-center gap-[.5rem] lg:gap-2">
+                    <div className="w-full flex justify-center items-center">
                         <hr className='hidden xl:block border-[1px] xl:border-[1.5px] border-indigo-900 w-[24.9%] 
                             xl:w-[13.84%] 2xl:w-[28%]'/>
-                        <span className='w-full text-[0.68rem] md:text-[0.8rem] base:text-[.92rem] lg:text-[1.1rem] 
+                        <span className='w-full text-[0.71rem] md:text-[0.8rem] base:text-[.92rem] lg:text-[1.1rem] 
                             xl:text-[.80rem] 2xl:text-[1rem] text-right 
                             pr-4 font-[600] uppercase tracking-[.12rem] text-indigo-800'>Dental Studio</span>
                     </div>
