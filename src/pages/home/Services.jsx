@@ -48,17 +48,18 @@ const Services = () => {
     }, []);
 
     return (
-        <section className='w-full rounded-b-[30px]'>
-            <div className="w-full flex justify-end items-center text-mayus-dark mb-9 relative gap-6">
+        <section className='w-full rounded-b-[30px] pt-2 lg:pt-[8rem]'>
+            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">
+                <span className="mr-10 lg:ml-32">(02) Services</span>
                 <span
-                    className="absolute left-[56rem] top-1/2 transform -translate-y-1/2 h-[0.1rem] bg-indigo-800"
+                    className="hidden lg:block absolute left-80 transform -translate-y-1/2 h-[0.08rem] 
+                        bg-indigo-800"
                     ref={lineRef}
-                    style={{ width: '0%' }} // Initial width set to 0%
-                ></span>
-                <span className="mr-32 relative">02 — Services</span>
+                    style={{ width: '0%' }}
+                ></span>             
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-6 lg:mt-16">
                 <div className="flex flex-col items-center gap-8 relative">
                     <h2
                         className='text-center title-h2

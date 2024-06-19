@@ -111,14 +111,14 @@ const About = () => {
         <section id='about'
             className='flex flex-col w-full h-full pt-20 lg:pt-[8rem] rounded-t-[50px]'>
             
-            <div className="w-full flex justify-end items-center text-mayus-dark mb-4 lg:mb-9 relative gap-6">
+            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">
+                <span className="mr-10 lg:ml-32">(01) About</span>
                 <span
-                    className="hidden lg:block absolute left-[56rem] transform -translate-y-1/2 h-[0.08rem] 
+                    className="hidden lg:block absolute left-72 transform -translate-y-1/2 h-[0.08rem] 
                         bg-indigo-800"
                     ref={lineRef}
                     style={{ width: '0%' }}
-                ></span>
-                <span className="mr-10 lg:mr-32">(01) About</span>
+                ></span>             
             </div>
             
             <div className="relative">
