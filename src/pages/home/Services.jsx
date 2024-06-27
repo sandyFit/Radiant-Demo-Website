@@ -48,9 +48,9 @@ const Services = () => {
     }, []);
 
     return (
-        <section className='w-full rounded-b-[30px] pt-2 lg:pt-[8rem]'>
-            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">
-                <span className="mr-10 lg:ml-32">(02) Services</span>
+        <section className='w-full rounded-b-[30px] pt-16 lg:pt-[8rem]'>
+            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 px-6 md:px-8 base:px-12 lg:px-32 relative gap-6">
+                <span className="">(02) Services</span>
                 <span
                     className="hidden lg:block absolute left-80 transform -translate-y-1/2 h-[0.08rem] 
                         bg-indigo-800"
@@ -59,21 +59,20 @@ const Services = () => {
                 ></span>             
             </div>
 
-            <div className="flex justify-center mt-6 lg:mt-16">
+            <div className="flex justify-center mt-6 lg:mt-16 ">
                 <div className="flex flex-col items-center gap-8 relative">
                     <h2
-                        className='text-center title-h2
-                        w-2/3 md:w-2/4 lg:w-3/5 pt-2 tracking-wider'
+                        className='text-left xl:text-center title-h2 w-[85%] xl:w-[50%]
+                         pt-2 tracking-wider'
                         data-aos="fade-up"
                     >
                         Expert
-                        <span className='text-indigo-200 mx-4'>Dental Care</span>
+                        <span className='app-title mx-4'>Dental Care</span>
                         for Beauty and Well-being
                     </h2>                    
 
                     <p
-                        className='text-lg md:text-xl 2xl:text-[1.4rem] text-indigo-900 font-[600] mt-2 w-3/4 
-                        2xl:w-[70%] z-20'
+                        className='text-p1 mt-[-.6rem] w-[85%] 2xl:w-[70%] z-20'
                         data-aos="fade-up"
                     >
                         Experience top-quality dental care that enhances the beauty and longevity of your smile.

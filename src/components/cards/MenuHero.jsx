@@ -26,7 +26,8 @@ const MenuHero = ({ isMenuOpen }) => {
 
     return (
         <article
-            className={`flex flex-col rounded-2xl pr-6 md:pr-24 base:pr-40 lg:pr-48 pl-6 menu-img-hero py-12 lg:py-8 z-[30] shadow-2xl 
+            className={`flex flex-col rounded-2xl pr-6 md:pr-24 base:pr-40 lg:pr-48 pl-6 menu-img-hero py-12 
+                lg:py-8 z-[30] shadow-2xl 
                 ${isMenuOpen ? 'menu-open-right' : 'menu-closed-right'}`}
         >
             <ul
@@ -38,8 +39,7 @@ const MenuHero = ({ isMenuOpen }) => {
                 {['index', 'about', 'services', 'staff', 'reviews', 'faq', 'contact']
                     .map((item, index) => (
                         <li key={index}
-                            className='app-title title-links
-                            hover:text-opacity-65'>
+                            className='app-title title-links hover:text-opacity-65'>
                             <ScrollLink to={item} smooth={true} duration={500}>
                                 {item}
                             </ScrollLink>

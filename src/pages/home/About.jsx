@@ -109,12 +109,12 @@ const About = () => {
 
     return (
         <section id='about'
-            className='flex flex-col w-full h-full pt-20 lg:pt-[8rem] rounded-t-[50px]'>
+            className='flex flex-col w-full h-full pt-20 lg:pt-[8rem] rounded-t-[50px] px-6 md:px-8 base:px-12 lg:px-32'>
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">
-                <span className="mr-10 lg:ml-32">(01) About</span>
+                <span className="">(01) About</span>
                 <span
-                    className="hidden lg:block absolute left-72 transform -translate-y-1/2 h-[0.08rem] 
+                    className="hidden lg:block absolute left-44 transform -translate-y-1/2 h-[0.08rem] 
                         bg-indigo-800"
                     ref={lineRef}
                     style={{ width: '0%' }}
@@ -124,8 +124,8 @@ const About = () => {
             <div className="relative">
                 {/* FLOATING MENU BUTTON */}
                 <button onClick={handleClick}
-                    className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-8 left-10 group inline-flex items-center 
-                        justify-center overflow-hidden rounded-full glass z-[1000] 
+                    className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-8 xl:left-10 group inline-flex items-center 
+                        justify-center overflow-hidden rounded-full glass-strong z-[1000] 
                         ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="group relative flex items-center gap-2">
                         <div className="flex flex-col items-end cursor-pointer gap-1 lg:gap-[7px]">
@@ -138,7 +138,7 @@ const About = () => {
                 
                 {/* MENUCURTAIN COMPONENT */}
                 {showFloatingBtn && (
-                    <div className={`z-30 fixed top-4 left-6`}>
+                    <div className={`z-30 fixed top-2 left-3.5 lg:top-4 lg:left-6`}>
                         <MenuCurtain isMenuOpen={visible} />
                     </div>
                 )}
@@ -146,7 +146,7 @@ const About = () => {
                 {/* FLOATING BUTTON TO GO TOP */}
                 <button onClick={scrollToTop}
                     className={`hidden lg:inline-flex fixed p-5 right-10 bottom-20 group items-center 
-                        justify-center overflow-hidden rounded-full glass 
+                        justify-center overflow-hidden rounded-full glass-strong 
                         z-[1000] ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="transition duration-300 group-hover:rotate-[360deg] text-indigo-900">
                         <HiArrowUp style={{ fontSize: '2.2rem' }} />
@@ -154,8 +154,8 @@ const About = () => {
                 </button>
             </div>
 
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 place-content-center lg:place-items-between py-2 lg:py-[5rem]
-                px-6 md:px-8 base:px-12 lg:px-32 relative">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-2 place-content-center lg:place-items-between 
+                py-2 lg:py-[5rem]  relative">
                 <article className="col-span-1 lg:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
                     base:w-[25rem] lg:w-[35vw] rounded-[20px] bg-indigo-600 overflow-hidden">
                     {/* ABOUT IMAGE */}
