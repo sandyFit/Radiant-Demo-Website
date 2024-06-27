@@ -56,16 +56,16 @@ const servicesCardData = [
         categories: [
             {
                 name: "Invisalign",
-                description: "Invisalign is an orthodontic treatment that is used to align misaligned teeth. \n\nIt consists of see-through braces known as aligners that allow your teeth to be moved discretely without anyone knowing. Each case has a series of aligners that slowly move your teeth into position. \n\nThe aligners need to be changed every 1-2 weeks, and they can be changed directly by you."                                
+                description: "Invisalign is an orthodontic treatment that consists of see-through braces known as aligners that allow your teeth to be moved discretely. Each case has a series of aligners that slowly move your teeth into position."                                
             },
             
             {
                 name: "Ceramic Braces",
-                description: "Ceramic braces — sometimes called clear braces — work the same way as metal braces. \n\nThe key difference is that the brackets, wires and ligatures are tooth-colored, so they blend in with your smile. Ceramic braces are still visible, but they're less noticeable. "
+                description: "Ceramic or clear braces work the same way as metal braces. \n\nThe wires and ligatures are tooth-colored, so they blend in with your smile. Ceramic braces are still visible, but they're less noticeable",
             },
             {
                 name: "Night Guards",
-                description: "Wearing a night guard while you sleep protects your dental health and enhances your sleep quality. \n\nNight guards work by placing a barrier between your upper and lower teeth."
+                description: "Wearing a night guard while you sleep protects your dental health and enhances your sleep quality by placing a barrier between your upper and lower teeth."
             },
         ]
     },
@@ -77,15 +77,15 @@ const servicesCardData = [
         categories: [
             {
                 name: "Teeth Whitening",
-                description: "Teeth whitening removes years of dingy stains from your teeth. Coffee, tea, wine, tobacco, and chocolate can dull tooth enamel. \n\nSimple and safe, most patients don't realize how discolored their teeth are until they see a new smile emerge."
+                description: "Teeth whitening removes years of stains from your teeth. Coffee, tea, wine, tobacco, and chocolate can dull tooth enamel. \n\nSimple and safe, most patients don't realize how discolored their teeth are until they see a new smile emerge."
             },
             {
                 name: "Veneers",
-                description: "Veneers are thin pieces of porcelain that are tooth shaped and attach to the front surface of your teeth. \n\nThey are commonly used for anterior teeth to enhance the shape, size and colour of them."
+                description: "Veneers are thin pieces of porcelain that are tooth shaped and attach to the front surface of your teeth. \n\nThey are used for anterior teeth to enhance the shape, size and colour of them."
             },
             { 
                 name: "Smile Makeovers",
-                description: "Smile makeovers often consist of several treatment modalities, including but not limited to, tooth whitening, orthodontics, white fillings and veneers. \n\nThis is a very tailored plan and will be different for every patient."
+                description: "Smile makeovers often consist of several treatment modalities, including but not limited to, tooth whitening, orthodontics, white fillings and veneers. "
             }
         ]
     }
