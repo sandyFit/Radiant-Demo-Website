@@ -90,8 +90,8 @@ const Hero = () => {
 
                 <article className='xl:col-start-2 row-start-1 xl:row-start-auto mt-36 xl:mt-44 3xl:mt-36
                     grid place-self-center ml-0 3xl:ml-[2.5rem]'>
-                    <div className="sm:w-[17rem] sm:h-[17rem]  md:w-[22rem] md:h-[22rem] base:w-[25rem] 
-                        base:h-[25rem] lg:w-[78vw] lg:h-[78vw] xl:w-[40vw] xl:h-[40vw] 2xl:w-[38vw] 3xl:w-[40vw]
+                    <div className="w-[85vw] h-[85vw]  md:w-[22rem] md:h-[22rem] base:w-[25rem] base:h-[25rem] 
+                        lg-sm:w-[30rem] lg-sm:h-[30rem] lg-md:w-[32rem] lg-md:h-[32rem] lg:w-[78vw] lg:h-[78vw] xl:w-[40vw] xl:h-[40vw] 2xl:w-[38vw] 3xl:w-[40vw]
                         rounded-3xl  bg-violet-600">
                         <img ref={imgRef}
                         src="/people/black-girl.jpg"

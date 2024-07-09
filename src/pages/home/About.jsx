@@ -109,12 +109,13 @@ const About = () => {
 
     return (
         <section id='about'
-            className='flex flex-col w-full h-full pt-20 lg:pt-[8rem] rounded-t-[50px] px-6 md:px-8 base:px-12 lg:px-32'>
+            className='flex flex-col w-full h-full pt-20 xl:pt-0 3xl:pt-[8rem] rounded-t-[50px] 
+                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32'>
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">
                 <span className="">(01) About</span>
                 <span
-                    className="hidden lg:block absolute left-44 transform -translate-y-1/2 h-[0.08rem] 
+                    className="hidden xl:block absolute left-44 transform -translate-y-1/2 h-[0.08rem] 
                         bg-indigo-800"
                     ref={lineRef}
                     style={{ width: '0%' }}
@@ -138,7 +139,7 @@ const About = () => {
                 
                 {/* MENUCURTAIN COMPONENT */}
                 {showFloatingBtn && (
-                    <div className={`z-30 fixed top-2 left-3.5 lg:top-4 lg:left-6`}>
+                    <div className={`z-30 fixed top-2 left-6 base:left-8 lg:top-4 lg:left-6`}>
                         <MenuCurtain isMenuOpen={visible} />
                     </div>
                 )}
@@ -154,10 +155,11 @@ const About = () => {
                 </button>
             </div>
 
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 place-content-center lg:place-items-between 
-                py-2 lg:py-[5rem]  relative">
-                <article className="col-span-1 lg:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
-                    base:w-[25rem] lg:w-[35vw] rounded-[20px] bg-indigo-600 overflow-hidden">
+            <div className="w-full grid grid-cols-1 xl:grid-cols-2 place-content-center xl:place-items-between 
+                py-2 lg:py-8 2xl:py-[5rem]  relative">
+                <article className="col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
+                    base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl:w-[24rem]
+                    rounded-[20px] bg-indigo-600 overflow-hidden">
                     {/* ABOUT IMAGE */}
                     <img ref={imgRef}
                         src="/images/dental-studio.jpg"
@@ -165,16 +167,16 @@ const About = () => {
                         className='w-full h-full object-cover rounded-[20px]' />
                 </article>
 
-                <article className='col-span-1 lg:col-start-2 row-start-2 lg:row-start-1 mt-6 md:mt-10 lg:mt-0 + 
+                <article className='col-span-1 xl:col-start-2 row-start-2 xl:row-start-1 mt-6 md:mt-10 lg:mt-8
                     relative'>
                     {/* ABOUT COPY */}
                     <div className="grid grid-cols-1">
                         <h2 className='text-left title-h2 col-span-1'>
                             Expert 
-                            <span className='app-title' style={{ margin: ' 0 1rem' }}>
+                            <span className='app-title ml-2'>
                                 Care,<br />
                             </span>
-                            <span className='text-indigo-900 mr-4'>
+                            <span className='text-indigo-900 mr-2'>
                                 Exceptional 
                             </span>
                             <span className='app-title' >

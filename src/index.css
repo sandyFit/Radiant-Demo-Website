@@ -122,7 +122,6 @@
     background-image: url(/images/room-right.jpg);
     background-size: cover;
     background-position: center;
-    width: 32vw; 
     box-sizing: border-box; 
 }
 
@@ -149,7 +148,7 @@ body {
 .sticky-element-mobile {
     position: -webkit-sticky; 
     position: sticky;
-    top: 1.5rem;
+    top: 1.6rem;
 
 } 
 
@@ -250,24 +249,56 @@ body {
     }
 
     .text-mayus-dark {
-        @apply font-anybody text-sm md:text-base lg:text-xl xl:text-2xl font-[700] 2xl:font-[800] text-indigo-900 uppercase
+        @apply font-anybody font-[700] 2xl:font-[800] text-indigo-900 uppercase
+        text-sm 
+        md:text-base 
+        lg:text-xl 
+        xl:text-[1.2rem]
     }
 
     .text-p1 {
-        @apply text-[1rem] md:text-[1.12rem] base:text-[1.2rem] lg:text-[1.4rem] text-indigo-900 font-[500]
+        @apply text-indigo-900 font-[500]
+            text-[1rem] 
+            md:text-[1.12rem] 
+            base:text-[1.2rem] 
+            lg:text-[1.4rem] 
+            xl:text-[1.1rem]
     }
     
     .title-h1 {
-        @apply text-indigo-900 text-[2.2rem] md:text-[2.8rem] base:text-[3.3rem] lg:text-[4rem] 
-        xl:text-[3.2rem] 2xl:text-[4.8rem] font-[900] leading-[1em] 
+        @apply text-indigo-900 font-[900]
+            text-[2.2rem] 
+            md:text-[2.8rem] 
+            base:text-[3.3rem] 
+            lg-sm:text-[4.1rem] 
+            lg:text-[4rem] 
+            xl:text-[3rem] 
+            2xl:text-[4.8rem]  
+            leading-[.9em]
     }
     .title-h2 {
-        @apply font-sans text-indigo-900 text-[1.8rem] md:text-4xl xl:text-6xl leading-[35px] 
-                xl:leading-[70px] font-bold
+        @apply font-sans text-indigo-900 font-bold
+            text-[1.8rem] 
+            md:text-4xl 
+            lg-sm:text-[3.2rem]
+            xl:text-[2.5rem]
+            3xl:text-6xl 
+            leading-[1em] 
+            lg-sm:leading-[1.1em]
+            
+            
     }
     .title-h3 {
-        @apply font-sans text-indigo-900 text-[1.3rem] md:text-4xl xl:text-6xl leading-[35px] 
-                xl:leading-[70px] font-bold
+        @apply font-sans text-indigo-900 font-bold
+            text-[1.3rem]            
+            md:text-[1.5rem] 
+            base:text-[1.8rem]
+            lg-sm:text-[2rem]
+            lg:text-[2.2rem]
+            xl:text-[2.8rem]
+            3xl:text-6xl 
+            leading-[35px] 
+            xl:leading-[70px] 
     }
      
     .title-links {

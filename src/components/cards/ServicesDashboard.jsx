@@ -4,11 +4,11 @@ import ServiceCard from '../cards/ServicesCard';
 import MobileServicesCard from './MobileServicesCard';
 
 const ServicesDashboard = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 950);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 1100);
+            setIsMobile(window.innerWidth <= 950);
         };
 
         window.addEventListener('resize', handleResize);
@@ -21,7 +21,7 @@ const ServicesDashboard = () => {
     }
 
     return (
-        <div className='flex flex-col items-center relative'>
+        <div className='flex flex-col justify-center items-center w-full relative'>
             {isMobile ? (
                 servicesCardData.map((service, index) => (
                     <MobileServicesCard key={index} service={service} index={index} />

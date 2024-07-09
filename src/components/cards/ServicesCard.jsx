@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ServiceCard = ({ service, index }) => (
-    <div className='w-[70vw] h-[35vw] flex mb-40 sticky-element'>
+    <div className='w-[80vw] h-[40vw] 3xl:w-[70vw] 3xl:h-[35vw] flex mb-[80rem] 2xl:mb-40 sticky-element'>
         <div className="flex flex-col gap-6 sticky-element">
             <div className="flex justify-center items-center w-full py-3 glass-strong rounded-2xl">
                 <div className='w-full flex justify-between items-center px-6'>
@@ -20,7 +20,7 @@ const ServiceCard = ({ service, index }) => (
             <div className="flex justify-center items-center gap-6">
                 <article className="relative w-[30%] h-full bg-indigo-300 rounded-[20px] overflow-hidden">
                     <img src={service.imgSrc} alt={service.title} className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-[rgba(59,76,123,0.1)] "></div>
+                    {/* <div className="absolute inset-0 bg-[rgba(59,76,123,0.1)] "></div> */}
                 </article>
 
                 <article className='w-[70%] h-full glass-blue text-indigo-200 font-[400] rounded-[20px] p-12'>

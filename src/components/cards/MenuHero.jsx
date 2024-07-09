@@ -26,7 +26,9 @@ const MenuHero = ({ isMenuOpen }) => {
 
     return (
         <article
-            className={`flex flex-col rounded-2xl pr-6 md:pr-24 base:pr-40 lg:pr-48 pl-6 menu-img-hero py-12 
+            className={`flex flex-col rounded-2xl pr-6 md:pr-24 base:pr-40 lg-sm:pr-40 lg-md:pr-44 lg:pr-48 lg-xl:pr-52
+                pl-6 menu-img-hero 
+                py-12 w-full lg-sm:w-[75vw] lg-xl:w-[70vw] xl-sm:w-[60vw] xl:w-[54vw]
                 lg:py-8 z-[30] shadow-2xl 
                 ${isMenuOpen ? 'menu-open-right' : 'menu-closed-right'}`}
         >
