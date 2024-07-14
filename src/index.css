@@ -263,6 +263,7 @@ body {
             base:text-[1.2rem] 
             lg:text-[1.4rem] 
             xl:text-[1.1rem]
+            2xl:text-[1.26rem]
     }
     
     .title-h1 {
@@ -296,13 +297,29 @@ body {
             lg-sm:text-[2rem]
             lg:text-[2.2rem]
             xl:text-[2.8rem]
-            3xl:text-6xl 
+            2xl:text-6xl 
             leading-[35px] 
             xl:leading-[70px] 
     }
      
     .title-links {
         @apply  text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] leading-[16px] md:leading-[18px] lg:leading-[30px] font-anybody font-[700] uppercase
+    }
+
+    .big-title {
+        @apply text-[8rem] font-[800] text-indigo-900 leading-[150px]
+    }
+
+    .bigger-title {
+        @apply text-[11rem] font-[800] text-indigo-900 leading-[150px]
+    }
+
+    .work__photo-item {
+        @apply absolute w-full h-full cursor-pointer rounded-[20px] overflow-hidden
+    }
+
+    .work__photo-item img {
+        @apply block w-full h-full object-cover 
     }
 
 }

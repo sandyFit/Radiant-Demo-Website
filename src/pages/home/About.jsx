@@ -109,13 +109,13 @@ const About = () => {
 
     return (
         <section id='about'
-            className='flex flex-col w-full h-full pt-20 xl:pt-0 3xl:pt-[8rem] rounded-t-[50px] 
-                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32'>
+            className='flex flex-col w-full h-full pt-6 3xl-sm:pt-[8rem]
+                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32 '>
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">
                 <span className="">(01) About</span>
                 <span
-                    className="hidden xl:block absolute left-44 transform -translate-y-1/2 h-[0.08rem] 
+                    className="hidden xl:block absolute left-36 transform -translate-y-1/2 h-[.1rem] 
                         bg-indigo-800"
                     ref={lineRef}
                     style={{ width: '0%' }}
@@ -125,7 +125,8 @@ const About = () => {
             <div className="relative">
                 {/* FLOATING MENU BUTTON */}
                 <button onClick={handleClick}
-                    className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-8 xl:left-10 group inline-flex items-center 
+                    className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-8 xl:left-10 group inline-flex 
+                        items-center 
                         justify-center overflow-hidden rounded-full glass-strong z-[1000] 
                         ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="group relative flex items-center gap-2">
@@ -156,10 +157,11 @@ const About = () => {
             </div>
 
             <div className="w-full grid grid-cols-1 xl:grid-cols-2 place-content-center xl:place-items-between 
-                py-2 lg:py-8 2xl:py-[5rem]  relative">
+                py-6 lg:py-12   relative">
                 <article className="col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
-                    base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl:w-[24rem]
-                    rounded-[20px] bg-indigo-600 overflow-hidden">
+                    base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl:w-[24rem] 
+                    3xl:w-[32rem]
+                    rounded-[20px] bg-indigo-500 overflow-hidden">
                     {/* ABOUT IMAGE */}
                     <img ref={imgRef}
                         src="/images/dental-studio.jpg"
@@ -200,6 +202,7 @@ const About = () => {
                     </div>
                 </article>
             </div>
+            
         </section>
     );
 };

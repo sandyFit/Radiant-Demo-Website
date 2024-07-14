@@ -67,7 +67,7 @@ const Team = () => {
             lineRef.current,
             { width: '0%' },
             {
-                width: '20%', // Change this value to your desired width
+                width: '20%', 
                 duration: 1.5,
                 ease: 'power2.out',
                 scrollTrigger: {
@@ -84,14 +84,17 @@ const Team = () => {
     }, []);
 
     return (
-        <section className="w-full h-auto flex flex-col justify-center pb-2 xl:pb-12 z-10 relative">
-           <div className="w-full flex justify-end items-center text-med-dark mb-9 relative gap-6">
+        <section className="w-full h-auto flex flex-col justify-center pt-6 3xl-sm:pt-[8rem] pb-2 xl:pb-12 
+            z-10 relative">
+            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
+                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32">
+                <span className="">(03) Team</span>
                 <span
-                    className="absolute left-[58rem] top-1/2 transform -translate-y-1/2 h-[0.1rem] bg-indigo-800"
+                    className="hidden xl:block absolute left-64 transform -translate-y-1/2 h-[0.08rem] 
+                        bg-indigo-800"
                     ref={lineRef}
-                    style={{ width: '0%' }} // Initial width set to 0%
-                ></span>
-                <span className="mr-32 relative">03 — Team</span>
+                    style={{ width: '0%' }}
+                ></span>             
             </div>
 
             <h2 data-aos='fade-up'
@@ -105,13 +108,13 @@ const Team = () => {
                         {bioData.map((member, index) => (
                             <div key={index} className={`bio-${index} w-full h-[100vh] flex flex-col justify-center`}>
                                 <div className="ml-16 relative w-full z-20">
-                                    <h3 className="text-left text-indigo-900 text-2xl md:text-4xl xl:text-5xl font-bold 
-                                    w-2/3 md:w-2/4 lg:w-[80%] pt-2 tracking-wider">
+                                    <h3 className="text-left text-indigo-900 text-2xl md:text-4xl xl:text-5xl 
+                                        font-bold w-2/3 md:w-2/4 lg:w-[80%] pt-2 tracking-wider">
                                         {member.firstName}
                                         <span className="app-title ml-4">{member.lastName}</span>
                                     </h3>
-                                    <p className="text-lg md:text-xl 2xl:text-xl text-indigo-900 mt-8 w-3/4 font-[500] 
-                                        2xl:w-[80%]">
+                                    <p className="text-lg md:text-xl 2xl:text-xl text-indigo-900 mt-8 w-3/4 
+                                        font-[500] 2xl:w-[80%]">
                                         {renderDescription(member.description)}
                                     </p>
                                 </div>
