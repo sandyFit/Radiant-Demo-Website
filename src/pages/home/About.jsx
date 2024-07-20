@@ -66,33 +66,11 @@ const About = () => {
         });
     }, []);
 
-    const lineRef = useRef(null);
-
-    useEffect(() => {
-        gsap.fromTo(
-            lineRef.current,
-            { opacity: 0.5 },
-            {
-                
-                opacity: 1,
-                duration: 1.5,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: lineRef.current,
-                    start: 'top 90%',
-                    toggleActions: 'play none none none',
-                },
-            }
-        );
-
-        return () => {
-            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-        };
-    }, []);
+    
 
     return (
         <section id='about'
-            className='flex flex-col w-full h-full pt-6 3xl-sm:pt-[8rem]
+            className='flex flex-col w-full h-full pt-6 3xl-sm:pt-[8rem] bg-slate-300
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32 '>
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               

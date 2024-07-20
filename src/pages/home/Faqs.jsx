@@ -59,31 +59,8 @@ const Faqs = () => {
     }, []);
 
 
-    const lineRef = useRef(null);
-
-    useEffect(() => {
-        gsap.fromTo(
-            lineRef.current,
-            { width: '0%' },
-            {
-                width: '20%', // Change this value to your desired width
-                duration: 1.5,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: lineRef.current,
-                    start: 'top 80%',
-                    toggleActions: 'play none none none',
-                },
-            }
-        );
-
-        return () => {
-            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-        };
-    }, []);
-
     return (
-        <section className='relative h-auto pt-40  pb-36'>   
+        <section className='relative h-auto pt-40 bg-slate-300  pb-36'>   
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32">              

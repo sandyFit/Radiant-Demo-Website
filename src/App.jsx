@@ -5,6 +5,7 @@ import AOS from 'aos';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from './layouts/Navbar';
+import Footer from './layouts/Footer';
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -35,9 +36,15 @@ const App = () => {
     
 
     return (
-        <div className=''>
-            <Navbar />
-            <Home/>
+         <div className='bg-slate-300'>
+            <Navbar className='z-20'/>
+            <div className="container relative" style={{ zIndex: 10}}>
+                <Home />
+            </div>
+            <div className="" style={{position: 'sticky', bottom: 0, zIndex: 1}} >
+                <Footer />
+            </div>
+
         </div>
     )
 }

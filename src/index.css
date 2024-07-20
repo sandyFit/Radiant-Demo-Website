@@ -275,6 +275,10 @@ body {
         @apply text-[1rem] text-indigo-900 font-[600]
     }
 
+    .text-min-white {
+        @apply text-[1rem] text-indigo-300 font-[400]
+    }
+
     .text-mayus-dark {
         @apply text-[1rem] text-indigo-900 font-[600] uppercase
     }
@@ -330,7 +334,12 @@ body {
             xl:text-[2.8rem]
             2xl:text-6xl 
             leading-[35px] 
-            xl:leading-[70px] 
+            xl:leading-[70px]   
+    }
+
+    .title-h4 {
+        @apply font-anybody text-zinc-50 font-[500] uppercase
+            text-[1.5rem]
     }
      
     .title-links {

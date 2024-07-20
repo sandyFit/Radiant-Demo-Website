@@ -10,7 +10,7 @@ const MotionText = ({ icon, part1, part2 }) => {
     );
 
     return (
-        <div className="text-slider-container font-anybody text-5xl font-[500] pb-20"
+        <div className="text-slider-container font-anybody text-5xl font-[500] pb-16"
             style={{ overflow: 'hidden' }}>
             <h2 className='text-center text-indigo-900 motion-text font-regular'>
                 <div style={{ display: 'flex', whiteSpace: 'nowrap' }}>

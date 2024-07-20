@@ -10,7 +10,7 @@ import ContactTransition from './ContactTransition';
 
 const Home = () => {
     return (
-        <div>
+        <div className='w-full'>
             <main id='index'>
                 <Hero />
             </main>
@@ -41,4 +41,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;

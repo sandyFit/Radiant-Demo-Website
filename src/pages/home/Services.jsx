@@ -26,7 +26,8 @@ const Services = () => {
     
 
     return (
-        <section className='w-full rounded-b-[30px] pt-16 3xl-sm:pt-[8rem]'>
+        <section id='services'
+            className='w-full rounded-b-[30px] pt-16 3xl-sm:pt-[8rem] bg-slate-300'>
             <div className="w-full flex justify-start items-center text-mayus-dark mb-20 
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32 relative gap-6">
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
