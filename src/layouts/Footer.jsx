@@ -1,12 +1,8 @@
 import WorkingHrsTable from '../components/forms/WorkingHrsTable';
 import NewsletterInput from '../components/forms/NewsletterInput';
 import ContactCard from '../components/cards/ContactCard';
-// import MobileFooter from './MobileFooter';
-
-
 
 const Footer = () => {
-
 
     return (
         <section className='w-full h-[36rem] bg-indigo-900 overflow-hidden'>
@@ -43,7 +39,18 @@ const Footer = () => {
                 <div className='absolute inset-0 top-[32rem] w-full h-16 bg-indigo-950 flex items-center justify-end
                     text-center pr-[3rem] 2xl:pr-[7.8em] gap-[5rem] 2xl:gap-[5.5em]'>
                     <p className="text-min-white ">
-                        ©2024 Design & Development by Trish Ramos. 
+                        ©2024 Design & Development by
+                        <a href="https://trishramos.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className='ml-1 font-[700] app-title-light relative after:absolute after:bottom-0 
+                            after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 
+                            after:bg-indigo-300 after:transition-transform after:duration-300 
+                            after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
+                            hover:after:scale-x-100 hover:after:text-indigo-300'
+                        >
+                            Trish Ramos. 
+                        </a>
                     </p>
                     <div className="flex justify-evenly text-min-white
                         list-none w-[21%]  ">

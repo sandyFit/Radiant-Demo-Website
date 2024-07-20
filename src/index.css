@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 /* ========= GRADIENT TEXT ========= */
 .app-title {
     background: linear-gradient( rgb(4, 127, 243) 0%, rgb(137, 43, 225) 90%);   
@@ -22,6 +24,22 @@
     padding-top: 4px;
     padding-bottom: 1px;
 }
+
+.app-title-light {
+    background: linear-gradient( rgb(34, 147, 252) 0%, rgb(155,81,224) 90%);
+     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 4px;
+    padding-bottom: 1px;
+}
+.app-title-light:hover {
+    background: #93c5fd;
+     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 4px;
+    padding-bottom: 1px;
+}
+
 
 /*========== MOTION TEXT ANIMATION ==========*/
 

@@ -63,7 +63,7 @@ const Faqs = () => {
         <section className='relative h-auto pt-40 bg-slate-300  pb-36'>   
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
-                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32">              
+                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">              
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                     <span 
                         className='inline-flex'
@@ -97,12 +97,12 @@ const Faqs = () => {
                     </h2> */}
                 </div>
 
-                <div className="flex w-full justify-between px-32 pt-16">
-                    <div className="flex w-[35vw] h-[35vw] rounded-3xl bg-indigo-600">
+                <div className="flex w-full justify-between px-40 pt-16">
+                    <div className="flex w-[35vw] h-[35vw] rounded-3xl bg-indigo-600 ">
                         <img ref={imgRef}
                             src="/people/asian-girl.jpg"
                             alt=""
-                            className='w-full h-full object-cover rounded-3xl'
+                            className='w-full h-full object-cover bg-center rounded-3xl'
                         />
                     </div>
 

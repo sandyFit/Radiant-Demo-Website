@@ -6,6 +6,7 @@ import Team from './Team';
 import Reviews from './Reviews';
 import Faqs from './Faqs';
 import ContactTransition from './ContactTransition';
+import Test from './Test';
 
 
 const Home = () => {
@@ -34,9 +35,7 @@ const Home = () => {
             <main id='t1'>
                 <ContactTransition/>
             </main>
-            
-               
-                
+                            
         </div>
     )
 }

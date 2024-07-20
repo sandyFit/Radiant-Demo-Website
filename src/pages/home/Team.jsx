@@ -45,7 +45,7 @@ const Team = () => {
             className="w-full h-auto flex flex-col justify-center pt-6 3xl-sm:pt-[8rem] pb-2 xl:pb-12 bg-slate-300
             z-10 relative">
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
-                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32">
+                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">
                
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                     <span 
@@ -62,8 +62,8 @@ const Team = () => {
                 <span className='app-title ml-8'>Team</span>
             </h2>
             <div className="work flex">
-                <div className="relative w-[56%] z-10">
-                    <div className="m-auto w-[84%]">
+                <div className="relative w-[54%] z-10">
+                    <div className="m-auto w-[75%]">
                         {bioData.map((member, index) => (
                             <div key={index} className={`bio-${index} w-full h-[100vh] flex flex-col justify-center`}>
                                 <div className="ml-16 relative w-full z-20">
@@ -82,7 +82,7 @@ const Team = () => {
                     </div>
                 </div>
 
-                <div className="w-[40%] h-auto">
+                <div className="w-[36%] h-auto">
                     <div className="flex flex-col justify-center sticky w-full h-screen top-0">
                         <div className="w-[35vw] h-[35vw] relative">
                             {bioData.map((member, index) => (

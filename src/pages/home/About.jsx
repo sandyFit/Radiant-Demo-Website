@@ -71,7 +71,7 @@ const About = () => {
     return (
         <section id='about'
             className='flex flex-col w-full h-full pt-6 3xl-sm:pt-[8rem] bg-slate-300
-                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32 '>
+                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40 '>
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                 <span 
