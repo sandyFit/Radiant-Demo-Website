@@ -1,0 +1,59 @@
+import React, { useState, useEffect, useRef } from 'react'
+import MotionText from '../../components/ui/MotionText';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import TextShimmerEffect from '../../components/featured/TextShimmerEffect';
+
+const ContactTransition = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const lineRef = useRef(null);
+
+    useEffect(() => {
+        gsap.fromTo(
+            lineRef.current,
+            { width: '0%' },
+            {
+                width: '20%', // Change this value to your desired width
+                duration: 1.5,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: lineRef.current,
+                    start: 'top 80%',
+                    toggleActions: 'play none none none',
+                },
+            }
+        );
+
+        return () => {
+            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+        };
+    }, []);
+
+    return (
+        <section className='w-full '>
+
+             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
+                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32">              
+                <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
+                    <span 
+                        className='inline-flex mb-16'
+                    >
+                        <TextShimmerEffect text={`Didn't find your answer?`}/>
+                    </span>                         
+                </div>               
+            </div>
+
+            <MotionText
+                icon={'∎'}
+                part1={"Feel Free to"}
+                part2={'Reach Out'}
+            />
+
+            
+        </section>
+    )
+}
+
+export default ContactTransition;

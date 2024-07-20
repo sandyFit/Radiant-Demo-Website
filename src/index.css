@@ -23,6 +23,37 @@
     padding-bottom: 1px;
 }
 
+/*========== MOTION TEXT ANIMATION ==========*/
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.motion-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slideLeft 40s linear infinite;
+}
+
+@keyframes rotateIcon {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.rotating-icon {
+  animation: rotateIcon 3s linear infinite;
+}
+
+
 /* GLASS EFFECT */
 .glass {
     background: rgba(255, 255, 255, 0.4);

@@ -3,6 +3,7 @@ import services from '../../data/services';
 import ServicesDashboard from '../../components/cards/ServicesDashboard';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import TextShimmerEffect from '../../components/featured/TextShimmerEffect';
 
 const Services = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,42 +23,19 @@ const Services = () => {
         }
     };
 
-    gsap.registerPlugin(ScrollTrigger);
-
-    const lineRef = useRef(null);
-
-    useEffect(() => {
-        gsap.fromTo(
-            lineRef.current,
-            { width: '0%' },
-            {
-                width: '20%', // Change this value to your desired width
-                duration: 1.5,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: lineRef.current,
-                    start: 'top 80%',
-                    toggleActions: 'play none none none',
-                },
-            }
-        );
-
-        return () => {
-            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-        };
-    }, []);
+    
 
     return (
         <section className='w-full rounded-b-[30px] pt-16 3xl-sm:pt-[8rem]'>
-            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 
+            <div className="w-full flex justify-start items-center text-mayus-dark mb-20 
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32 relative gap-6">
-                <span className="">(02) Services</span>
-                <span
-                    className="hidden xl:block absolute left-56 2xl:left-72 transform -translate-y-1/2 h-[0.08rem] 
-                        bg-indigo-800"
-                    ref={lineRef}
-                    style={{ width: '0%' }}
-                ></span>             
+                <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
+                <span 
+                    className='inline-flex'
+                >
+                    <TextShimmerEffect text={`(02) Services`}/>
+                </span>                         
+            </div>            
             </div>
 
             <div className="flex justify-center mt-6 3xl:mt-16 ">

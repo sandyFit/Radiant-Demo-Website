@@ -5,6 +5,7 @@ import { HiArrowUp } from 'react-icons/hi2';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
+import TextShimmerEffect from '../../components/featured/TextShimmerEffect';
 
 
 const About = () => {
@@ -38,26 +39,7 @@ const About = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const lenisRef = useRef(null);
-
-    useEffect(() => {
-        // LENIS SMOOTH SCROLL
-        const lenis = new Lenis({
-            duration: 2
-        });
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-
-        // Integration lenis on GSAP ScrollTrigger
-        lenis.on('scroll', ScrollTrigger.update);
-
-        gsap.ticker.add((time) => {
-            lenis.raf(time * 1000);
-        });
-    }, []);
+    
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -89,14 +71,15 @@ const About = () => {
     useEffect(() => {
         gsap.fromTo(
             lineRef.current,
-            { width: '0%' },
+            { opacity: 0.5 },
             {
-                width: '20%',
+                
+                opacity: 1,
                 duration: 1.5,
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: lineRef.current,
-                    start: 'top 80%',
+                    start: 'top 90%',
                     toggleActions: 'play none none none',
                 },
             }
@@ -112,14 +95,12 @@ const About = () => {
             className='flex flex-col w-full h-full pt-6 3xl-sm:pt-[8rem]
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32 '>
             
-            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">
-                <span className="">(01) About</span>
-                <span
-                    className="hidden xl:block absolute left-36 transform -translate-y-1/2 h-[.1rem] 
-                        bg-indigo-800"
-                    ref={lineRef}
-                    style={{ width: '0%' }}
-                ></span>             
+            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
+                <span 
+                    className='inline-flex'
+                >
+                    <TextShimmerEffect text={`(01) About Us`}/>
+                </span>                         
             </div>
             
             <div className="relative">
@@ -173,18 +154,20 @@ const About = () => {
                     relative'>
                     {/* ABOUT COPY */}
                     <div className="grid grid-cols-1">
-                        <h2 className='text-left title-h2 col-span-1'>
-                            Expert 
-                            <span className='app-title ml-2'>
-                                Care,<br />
+                        <h2 className='text-left title-h2 col-span-1 whitespace-nowrap'>
+                            Expert
+                            <span className='app-title ml-2 text-left title-h2 col-span-1 whitespace-nowra'>
+                               Care,<br />
                             </span>
-                            <span className='text-indigo-900 mr-2'>
-                                Exceptional 
+                            
+                            <span className='text-indigo-900 mr-2 whitespace-nowrap'>
+                                Exceptional
                             </span>
-                            <span className='app-title' >
+                            <span className='app-title whitespace-nowrap' >
                                 Results
                             </span>
                         </h2>
+                        
 
                         <p className='text-p1 mt-6 lg:mt-8 col-span-1'>
                             We are a passionate team of dental clinicians committed to providing care for patients of all ages —
