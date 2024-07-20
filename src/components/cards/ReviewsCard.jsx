@@ -62,7 +62,7 @@ const ReviewsCard = ({ name, srcImg, review }) => {
                     </div>
 
 
-                    <div className='flex w-[23.4rem] h-20 glass-light justify-center items-center rounded-xl'>
+                    <div className='flex w-[23.4rem] h-20 glass-strong justify-center items-center rounded-xl'>
                         <span className='flex text-indigo-500'>
                             {[...Array(5)].map((_, index) => (
                                 <HiStar key={index} style={{ fontSize: '3.6rem' }} />

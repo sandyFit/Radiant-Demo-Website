@@ -26,9 +26,9 @@ const Services = () => {
     
 
     return (
-        <section id='services'
-            className='w-full pt-16 3xl-sm:pt-[8rem] bg-slate-300'>
-            <div className="w-full flex justify-start items-center text-mayus-dark mb-20 
+        <section
+            className='w-full pt-6 3xl-sm:pt-[8rem] bg-slate-300'>
+            <div className="w-full flex justify-start items-center text-mayus-dark mb-20 2xl:mb-2 
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40 relative gap-6">
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                 <span 
@@ -39,7 +39,7 @@ const Services = () => {
             </div>            
             </div>
 
-            <div className="flex justify-center mt-6 3xl:mt-16 ">
+            <div className="flex justify-center mt-6 3xl:mt-6 ">
                 <div className="flex flex-col items-center gap-8 relative">
                     <h2
                         className='text-left xl:text-center title-h2 w-[80%] xl:w-[65%] 3xl:w-[50%]
@@ -52,7 +52,7 @@ const Services = () => {
                     </h2>                    
 
                     <p
-                        className='text-p1 mt-[-.6rem] w-[80%] 2xl:w-[70%] z-20'
+                        className='text-p1 mt-[-.6rem] w-[80%] 2xl:w-[70%]'
                         data-aos="fade-up"
                     >
                         Experience top-quality dental care that enhances the beauty and longevity of your smile.

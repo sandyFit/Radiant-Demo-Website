@@ -6,42 +6,14 @@ import { ScrollTrigger } from 'gsap/all';
 import Button from '../../components/buttons/Button';
 
 const Test = () => {
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate('book');
-    }
-
-    const imgRef = useRef(null);
-
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const img = imgRef.current;
-
-        gsap.fromTo(img, {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-            opacity: 0,
-        }, {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            opacity: 1,
-            duration: 3,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: img,
-                start: "top 80%",
-                end: "bottom 80%",
-                once: true, // Animation will run only once
-            },
-        });
-    }, []);
-
-
+    
     return (
-        <section id='index'
-            className='w-full min-h-screen '>
+        <article
+            className='bg-sky-400 h-[38.70rem] w-[30rem] flex flex-col items-center space-y-4 
+            relative' style={{zIndex:20}}>
+            <button className='title-h4'>hey</button>
             
-            
-        </section>
+        </article>
     )
 }
 

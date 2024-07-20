@@ -60,7 +60,8 @@ const Faqs = () => {
 
 
     return (
-        <section className='relative h-auto pt-40 bg-slate-300  pb-36'>   
+        <section 
+            className='relative h-auto pt-40 bg-slate-300  pb-36'>   
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">              
@@ -86,9 +87,8 @@ const Faqs = () => {
                     </h2>
 
                      <p
-                        className='text-center text-lg md:text-xl 2xl:text-[1.4rem] text-indigo-900 font-[600] mt-10 w-3/4 
-                        2xl:w-[70%] z-20'
-                    >
+                        className='text-center text-lg md:text-xl 2xl:text-[1.4rem] text-indigo-900 font-[600]
+                            mt-10 w-3/4 2xl:w-[70%] '>
                         Find answers to commonly asked questions about dental care below.
                     </p>
                     {/* <h2 ref={highHueRef}

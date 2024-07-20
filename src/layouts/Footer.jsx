@@ -1,8 +1,10 @@
+import React, { useState } from 'react';
 import WorkingHrsTable from '../components/forms/WorkingHrsTable';
 import NewsletterInput from '../components/forms/NewsletterInput';
 import ContactCard from '../components/cards/ContactCard';
 
 const Footer = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <section className='w-full h-[36rem] bg-indigo-900 overflow-hidden'>
@@ -13,7 +15,7 @@ const Footer = () => {
 
                 <div className='flex justify-evenly space-x-6 text-indigo-900 pl-32'>
                     <div >
-                        <ContactCard/>
+                        <ContactCard isMenuOpen={isMenuOpen} />
                     </div>
           
                     <div className="flex flex-col w-full pr-16">
@@ -26,7 +28,7 @@ const Footer = () => {
                             </div>
 
                             <div className='w-1/2 flex flex-col items-center mt-[5rem]'>
-                                <h4 className='title-h4 text-center mb-8'>
+                                <h4 className='title-h4 text-center mb-6'>
                                 NEWSLETTER SIGN UP
                                 </h4>
                                 <NewsletterInput/>
@@ -67,14 +69,9 @@ const Footer = () => {
                 </div>
 
             </article>
-
-            {/* Mobile */}
-            {/* <article className="2xl:hidden flex flex-col justify-center items-center">
-                <MobileFooter/>
-            </article> */}
       
         </section>
-    )
+    );
 }
 
 export default Footer;

@@ -42,16 +42,17 @@ const Team = () => {
 
     return (
         <section
-            className="w-full h-auto flex flex-col justify-center pt-6 3xl-sm:pt-[8rem] pb-2 xl:pb-12 bg-slate-300
-            z-10 relative">
+            className="w-full h-auto flex flex-col justify-center pt-6 3xl-sm:pt-[8rem] pb-2 xl:pb-12 
+            bg-slate-300 z-10 relative">
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">
                
-                <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
+                <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
+                    gap-6">               
                     <span 
                         className='inline-flex'
                     >
-                        <TextShimmerEffect text={`(03) Team`}/>
+                        <TextShimmerEffect text={`(03) Staff`}/>
                     </span>                         
                 </div>               
             </div>
@@ -65,7 +66,8 @@ const Team = () => {
                 <div className="relative w-[54%] z-10">
                     <div className="m-auto w-[75%]">
                         {bioData.map((member, index) => (
-                            <div key={index} className={`bio-${index} w-full h-[100vh] flex flex-col justify-center`}>
+                            <div key={index} className={`bio-${index} w-full h-[100vh] flex flex-col 
+                                justify-center`}>
                                 <div className="ml-16 relative w-full z-20">
                                     <h3 className="text-left text-indigo-900 text-2xl md:text-4xl xl:text-5xl 
                                         font-bold w-2/3 md:w-2/4 lg:w-[80%] pt-2 tracking-wider">

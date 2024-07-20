@@ -10,7 +10,8 @@ const Reviews = () => {
 
     
     return (
-        <section className='flex flex-col justify-center pt-6 relative bg-slate-300'>
+        <section
+            className='flex flex-col justify-center pt-16 relative bg-slate-300'>
 
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">
@@ -34,8 +35,7 @@ const Reviews = () => {
                     Matters
                 </h2>
 
-                <p className='text-p1 mt-2 w-3/4 
-                        2xl:w-[70%] z-20'
+                <p className='text-p1 mt-2 w-3/4 2xl:w-[70%] '
                         data-aos="fade-up"
                     >
                     Radiant Dental Studio always appreciates feedback from our valued patients, helping us keep improving. <br/>

@@ -4,7 +4,6 @@ import MenuCurtain from '../../components/cards/MenuCurtain';
 import { HiArrowUp } from 'react-icons/hi2';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Lenis from 'lenis';
 import TextShimmerEffect from '../../components/featured/TextShimmerEffect';
 
 
@@ -69,7 +68,7 @@ const About = () => {
     
 
     return (
-        <section id='about'
+        <section 
             className='flex flex-col w-full h-full pt-6 3xl-sm:pt-[8rem] bg-slate-300
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40 '>
             
@@ -85,8 +84,7 @@ const About = () => {
                 {/* FLOATING MENU BUTTON */}
                 <button onClick={handleClick}
                     className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-8 xl:left-10 group inline-flex 
-                        items-center 
-                        justify-center overflow-hidden rounded-full glass-strong z-[1000] 
+                        items-center justify-center overflow-hidden rounded-full glass-strong z-30 
                         ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="group relative flex items-center gap-2">
                         <div className="flex flex-col items-end cursor-pointer gap-1 lg:gap-[7px]">
@@ -99,7 +97,7 @@ const About = () => {
                 
                 {/* MENUCURTAIN COMPONENT */}
                 {showFloatingBtn && (
-                    <div className={`z-30 fixed top-2 left-6 base:left-8 lg:top-4 lg:left-6`}>
+                    <div className={`fixed top-2 left-6 base:left-8 lg:top-4 lg:left-6 z-20`}>
                         <MenuCurtain isMenuOpen={visible} />
                     </div>
                 )}

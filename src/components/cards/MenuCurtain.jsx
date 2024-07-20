@@ -27,11 +27,14 @@ const MenuCurtain = ({ isMenuOpen }) => {
 
     return (
         <article className={`flex flex-col justify-center rounded-2xl pl-6 md:pl-24 base:pl-40 xl:pl-48 pr-6 
-            menu-img py-8 z-30 shadow-2xl w-[92%] xl:w-full
-            ${isMenuOpen ? 'menu-open' : 'menu-closed'}`}>
+            menu-img py-[3.1rem] z-30 shadow-2xl w-[92%] xl:w-full
+            ${isMenuOpen ? 'menu-open' : 'menu-closed'}`}
+            style={{ zIndex: isMenuOpen ? 100 : 0 }}
+        >
             {/* Menu items */}
            <ul
-                className={`flex flex-col pl-12 pr-8 py-10 items-end gap-3.5 rounded-2xl transition-all duration-2000
+                className={`flex flex-col pl-10 pr-8 py-12 items-end gap-3.5 rounded-2xl transition-all 
+                    duration-2000
                 ${submenuVisible ? 'submenu-open' : 'submenu-closed'}
                 ${submenuTransitionEnded ? 'glass' : 'glass-light'}`}
                 onTransitionEnd={handleSubmenuTransitionEnd}
@@ -40,44 +43,41 @@ const MenuCurtain = ({ isMenuOpen }) => {
                     .map((item, index) => (
                         <li key={index}
                             className='app-title title-links hover:text-opacity-65'>
-                            <ScrollLink to={item} smooth={true} duration={500}>
+                            <ScrollLink to={item}
+                                smooth={true}
+                                duration={500}
+                                offset={120}
+                            >
                                 {item}
                             </ScrollLink>
                         </li>
                     ))}
-               <div className="flex flex-col justify-end items-end mt-20 ">
+               <div className="flex flex-col justify-end items-end mt-10 ">
                     <p className='text-min-dark '>+1 666 333 69 69</p>
                     <p className='text-min-dark '>info@radiantdental.com</p>
                     
                     <NoBGBtn text={'Book Online'} />
                 </div>
                     
-                <div className='flex justify-between items-center mt-6 gap-[1.4rem]'
-                    style={{ zIndex: 1000 }}>    
+                {/* <div className='flex justify-between items-center mt-4 gap-[1.4rem]'>    
                     <a href="https://instagram.com">
                         <FaInstagram
-                            style={{ fontSize: '1.5rem', color: '#312e81', cursor: 'pointer', transition: 'opacity 0.1s' }}
-                            onMouseOver={(e) => e.target.style.color = '#4f46e5'}
-                            onMouseOut={(e) => e.target.style.color = '#312e81'}
+                            
                         />
                     </a>
 
                     <a href="https://twitter.com">
                         <BsTwitterX
-                            style={{ fontSize: '1.25rem', color: '#312e81', cursor: 'pointer', transition: 'opacity 0.1s', marginTop: '1px' }}
-                            onMouseOver={(e) => e.target.style.color = '#4f46e5'}
-                            onMouseOut={(e) => e.target.style.color = '#312e81'}
+                            
                         />
                     </a>
 
                     <a href="https://linkedin.com">
                         <AiFillLinkedin
-                            style={{ fontSize: '1.5rem', color: '#312e81', cursor: 'pointer', transition: 'opacity 0.1s' }}
-                            onMouseOver={(e) => e.target.style.color = '#4f46e5'}
-                            onMouseOut={(e) => e.target.style.color = '#312e81'}
+                            
                         />
                     </a>
-                </div>
+                </div> */}
                
             </ul>
         </article>

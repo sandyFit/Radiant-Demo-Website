@@ -2,7 +2,7 @@ import React from 'react'
 
 const Button = ({text}) => {
     return (
-        <button className=" group relative overflow-hidden rounded-[8px] uppercase">
+        <button className=" group relative overflow-hidden rounded-[8px] uppercase pt-1">
             <span className="relative inline-flex overflow-hidden">
                 <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[142%] 
                     group-hover:skew-y-[15deg]">

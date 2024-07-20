@@ -16,22 +16,7 @@ const App = () => {
         AOS.init({
             duration: 2000, // values from 0 to 3000, with step 50ms
         });
-
-        // Animate the footer reveal on scroll
-        gsap.fromTo(".footer", 
-            { y: '100%', autoAlpha: 0 },
-            {
-                y: 0,
-                autoAlpha: 1,
-                scrollTrigger: {
-                    trigger: ".footer",
-                    start: "top bottom", // when the top of the footer is at the bottom of the viewport
-                    end: "bottom bottom", // when the bottom of the footer is at the bottom of the viewport
-                    scrub: true, // smooth scrubbing
-                }
-            }
-        );
-
+        
     }, []);
     
 
@@ -41,7 +26,7 @@ const App = () => {
             <div className="relative" style={{ zIndex: 10}}>
                 <Home />
             </div>
-            <div className="footer" style={{position: 'sticky', bottom: 0, zIndex: 1}} >
+            <div  style={{position: 'sticky', bottom: 0, zIndex: 1}} >
                 <Footer />
             </div>
 

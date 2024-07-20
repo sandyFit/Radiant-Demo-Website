@@ -23,16 +23,16 @@ const Home = () => {
             <main id='services'>
                 <Services/>
             </main>
-            <main id='team'>
+            <main id='staff'>
                 <Team/>
             </main>
             <main id='reviews'>
                 <Reviews/>
             </main>
-            <main id='faqs'>
+            <main id='faq'>
                 <Faqs/>
             </main>
-            <main id='t1'>
+            <main id='contact'>
                 <ContactTransition/>
             </main>
                             
