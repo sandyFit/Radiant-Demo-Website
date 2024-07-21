@@ -1,9 +1,8 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import services from '../../data/services';
 import ServicesDashboard from '../../components/cards/ServicesDashboard';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
 import TextShimmerEffect from '../../components/featured/TextShimmerEffect';
+import AOS from 'aos';
 
 const Services = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,7 +22,9 @@ const Services = () => {
         }
     };
 
-    
+    useEffect(() => {
+        AOS.refresh();
+    }, [selectedService]);
 
     return (
         <section

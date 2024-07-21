@@ -41,7 +41,7 @@ const Team = () => {
    
 
     return (
-        <section
+        <section id='staff'
             className="w-full h-auto flex flex-col justify-center pt-6 3xl-sm:pt-[8rem] pb-2 xl:pb-12 
             bg-slate-300 z-10 relative">
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6

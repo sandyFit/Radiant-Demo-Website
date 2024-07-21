@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import servicesCardData from '../../data/servicesCardData';
-import ServiceCard from '../cards/ServicesCard';
 import MobileServicesCard from './MobileServicesCard';
+import CardService from './CardService';
+import AOS from 'aos';
 
 const ServicesDashboard = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 950);
@@ -14,6 +15,10 @@ const ServicesDashboard = () => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    useEffect(() => {
+        AOS.refresh();
+    }, [servicesCardData]);
 
     if (!servicesCardData || !Array.isArray(servicesCardData)) {
         console.error("servicesCardData is undefined or not an array");
@@ -28,7 +33,7 @@ const ServicesDashboard = () => {
                 ))
             ) : (
                 servicesCardData.map((service, index) => (
-                    <ServiceCard key={index} service={service} index={index} />
+                    <CardService key={index} service={service} index={index} />
                 ))
             )}
         </div>

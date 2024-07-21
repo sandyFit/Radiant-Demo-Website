@@ -289,6 +289,10 @@ body {
 
     /* =========== TEXT =========== */
 
+    .text-links {
+        @apply text-[1.1rem] font-[600] text-indigo-900
+    }
+
     .text-min-dark {
         @apply text-[1rem] text-indigo-900 font-[600]
     }

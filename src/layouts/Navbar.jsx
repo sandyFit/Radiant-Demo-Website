@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='w-[90.5%] h-[66px] lg:h-[88px] glass-strong absolute top-8 left-[4.6vw] rounded-[10px] 
+        <nav className='w-[90.5%] h-[66px] lg:h-[88px] glass absolute top-8 left-[4.6vw] rounded-[10px] 
             flex items-center border-[3px] border-zinc-50 z-[20]'>
             <article className="flex items-center justify-between mx-5 lg:mx-12 w-full h-full relative">
                 <Logo />
@@ -30,12 +30,12 @@ const Navbar = () => {
                     className="flex z-[1000]">
                     <div className="group relative flex text-mayus-dark items-center gap-2">
                         <span className="relative inline-flex overflow-hidden">
-                            <div className="hidden lg:block translate-y-0 skew-y-0 transition duration-500 
-                            group-hover:-translate-y-[110%] group-hover:skew-y-12">
+                            <div className="hidden lg:block translate-y-0 transition duration-500 
+                            group-hover:-translate-y-[85%] ">
                                 {visible ? 'close' : 'menu'}
                             </div>
-                            <div className="absolute translate-y-[110%] skew-y-12 
-                            transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            <div className="absolute translate-y-[85%] transition duration-500 
+                                group-hover:translate-y-0 ">
                                 {visible ? 'close' : 'open'}
                             </div>
                         </span>
@@ -52,7 +52,7 @@ const Navbar = () => {
                     <line x1="5" y1="0" x2="5" y2="70" stroke="#fafafa" strokeWidth="2"/>
                 </svg>
 
-                <div className="absolute top-28 -right-6 lg:-right-12 ">                   
+                <div className="absolute top-[6.4rem] -right-6 lg:-right-12 ">                   
                     <GlassMenuRight isMenuOpen={visible} onClose={handleMenuClose}/>                   
                 </div>
 

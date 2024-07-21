@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import WorkingHrsTable from '../components/forms/WorkingHrsTable';
 import NewsletterInput from '../components/forms/NewsletterInput';
 import ContactCard from '../components/cards/ContactCard';
+import Links from '../components/buttons/Links';
 
 const Footer = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,11 +46,11 @@ const Footer = () => {
                         <a href="https://trishramos.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className='ml-1 font-[700] app-title-light relative after:absolute after:bottom-0 
+                            className='ml-1 font-[500] text-indigo-500 relative after:absolute after:bottom-0 
                             after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 
-                            after:bg-indigo-300 after:transition-transform after:duration-300 
+                            after:bg-indigo-500 after:transition-transform after:duration-300 
                             after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
-                            hover:after:scale-x-100 hover:after:text-indigo-300'
+                            hover:after:scale-x-100 '
                         >
                             Trish Ramos. 
                         </a>
@@ -57,12 +58,20 @@ const Footer = () => {
                     <div className="flex justify-evenly text-min-white
                         list-none w-[21%]  ">
                         <a href='#'
-                            style={{color: '#a5b4fc', textDecoration: 'none'}}>
+                            className='ml-1 font-[400] text-indigo-300 relative after:absolute after:bottom-0 
+                            after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 
+                            after:bg-indigo-300 after:transition-transform after:duration-300 
+                            after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
+                            hover:after:scale-x-100 '>
                             Terms of Use
                         </a>
                             |
-                        <a href='#' 
-                            style={{color: '#a5b4fc', textDecoration: 'none'}}>
+                        <a href='#'
+                            className='ml-1 font-[400] text-indigo-300 relative after:absolute after:bottom-0 
+                            after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 
+                            after:bg-indigo-300 after:transition-transform after:duration-300 
+                            after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
+                            hover:after:scale-x-100 '>
                             Privacy Policy
                         </a>                          
                     </div>

@@ -14,7 +14,7 @@ const GlassMenuRight = ({ isMenuOpen, onClose }) => {
     };
 
     return (
-        <article className={`w-[16rem] h-[28rem] rounded-[20px] glass-strong shadow-2xl
+        <article className={`w-[16rem] h-[28rem] rounded-[10px] glass-strong shadow-2xl
             ${isMenuOpen ? 'menu-open-right' : 'menu-closed-right'}`}
             style={{ zIndex: isMenuOpen ? 100 : 0 }}
         >

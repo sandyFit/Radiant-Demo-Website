@@ -19,7 +19,7 @@ const ContactCard = ({ isMenuOpen }) => {
             <div className="flex flex-col justify-start text-indigo-900">
                 <div className='flex gap-2 text-[1.5rem] mx-4 mt-6'>
                     <ImLocation2 />
-                    <p className='w-48 ml-2 text-[1.1rem] font-medium'>
+                    <p className='w-48 ml-2 text-links'>
                         Radiant Dental Studio
                         123 Main Street
                         Anytown, NJ 07001
@@ -28,13 +28,17 @@ const ContactCard = ({ isMenuOpen }) => {
 
                 <div className='flex gap-2 text-[1.3rem] mx-4 mt-6'>
                     <FaPhoneAlt />
-                    <p className='ml-2 text-[1.1rem] font-medium'>+1 666 333 69 69</p>
+                    <p className='ml-2 text-links'>+1 666 333 69 69</p>
                 </div>
 
                 <div className='flex gap-2 text-[1.4rem] mb-11 mx-4 mt-6'>
                     <BsEnvelopeAtFill />
                     <a href='mailto:info@radiantdental.com'
-                        className='ml-2 text-[1.1rem] font-medium'
+                        className='ml-2 text-links relative after:absolute after:bottom-0 
+                            after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 
+                            after:bg-indigo-900 after:transition-transform after:duration-300 
+                            after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
+                            hover:after:scale-x-100 '
                         style={{ zIndex: 20, pointerEvents: 'auto' }}
                     >
                         info@radiantdental.com

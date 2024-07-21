@@ -70,6 +70,10 @@ export default {
       backgroundImage: {
         'custom-gradient-btn': 'linear-gradient(135deg, rgba(6,147,227,1) 0%, rgb(155,81,224) 100%)',
         'custom-gradient-bg-cards': 'linear-gradient(135deg, rgba(6,147,227,1) 0%, rgb(155,81,224) 100%);'
+      },
+
+      gridTemplateColumns: {
+        'card-service': '80px 1fr calc(var(--w-image) * var(--calculate))'
       }
     
       

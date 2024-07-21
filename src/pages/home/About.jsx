@@ -94,7 +94,7 @@ const About = () => {
                 
                 {/* GLASSMENU COMPONENT */}
                 {showFloatingBtn && (
-                    <div className={`fixed top-10 left-6 base:left-8 lg:top-32 lg:left-12 z-20`}>
+                    <div className={`fixed top-10 left-6 base:left-8 lg:top-32 lg:left-10 z-20`}>
                         <GlassMenu isMenuOpen={visible} onClose={handleMenuClose} />
                     </div>
                 )}

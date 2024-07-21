@@ -14,7 +14,7 @@ const GlassMenu = ({ isMenuOpen, onClose }) => {
     };
 
     return (
-        <article className={`w-[16rem] h-[28rem] rounded-[20px] glass shadow-2xl
+        <article className={`w-[16rem] h-[28rem] rounded-[10px] glass shadow-2xl
             ${isMenuOpen ? 'menu-open' : 'menu-closed'}`}
             style={{ zIndex: isMenuOpen ? 100 : 0 }}
         >
