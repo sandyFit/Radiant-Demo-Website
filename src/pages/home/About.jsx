@@ -1,11 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import MenuCurtain from '../../components/cards/MenuCurtain';
 import { HiArrowUp } from 'react-icons/hi2';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TextShimmerEffect from '../../components/featured/TextShimmerEffect';
-
+import GlassMenu from '../../components/cards/GlassMenu';
 
 const About = () => {
     const [showFloatingBtn, setShowFloatingBtn] = useState(false);
@@ -22,23 +21,23 @@ const About = () => {
     }
 
     const handleClick = (e) => {
-        e.preventDefault();      // Prevents the default action of the click event
-        toggleMenu();            // Toggles the visibility state of the menu
-        console.log('clicked');  // Logs to the console for debugging
-        e.stopPropagation();     // Prevents the click event from propagating to parent elements
+        e.preventDefault();
+        toggleMenu();
+        e.stopPropagation();
     };
-
 
     const toggleMenu = () => {
         setVisible(!visible);
+    };
+
+    const handleMenuClose = () => {
+        setVisible(false);
     };
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -64,8 +63,6 @@ const About = () => {
             },
         });
     }, []);
-
-    
 
     return (
         <section 
@@ -95,10 +92,10 @@ const About = () => {
                     </div>
                 </button>
                 
-                {/* MENUCURTAIN COMPONENT */}
+                {/* GLASSMENU COMPONENT */}
                 {showFloatingBtn && (
-                    <div className={`fixed top-2 left-6 base:left-8 lg:top-4 lg:left-6 z-20`}>
-                        <MenuCurtain isMenuOpen={visible} />
+                    <div className={`fixed top-10 left-6 base:left-8 lg:top-32 lg:left-12 z-20`}>
+                        <GlassMenu isMenuOpen={visible} onClose={handleMenuClose} />
                     </div>
                 )}
 
@@ -114,7 +111,7 @@ const About = () => {
             </div>
 
             <div className="w-full grid grid-cols-1 xl:grid-cols-2 place-content-center xl:place-items-between 
-                py-6 lg:py-12   relative">
+                py-6 lg:py-12 relative">
                 <article className="col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
                     base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl:w-[24rem] 
                     3xl:w-[32rem]

@@ -47,21 +47,30 @@ const ContactCard = ({ isMenuOpen }) => {
             </h5>
 
             <div className='flex justify-between space-x-20' >
-                <a href="https://instagram.com" style={{ zIndex: 2000, pointerEvents: 'auto' }}>
+                <a href="https://instagram.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ zIndex: 2000, pointerEvents: 'auto' }}>
                     <FaInstagram
                         style={{ fontSize: '2rem', color: 'inherit', cursor: 'pointer', transition: 'opacity 0.3s' }}
                         onMouseOver={(e) => e.target.style.opacity = 0.75}
                         onMouseOut={(e) => e.target.style.opacity = 1}
                     />
                 </a>
-                <a href="https://linkedin.com" style={{ zIndex: 2000, pointerEvents: 'auto' }}>
+                <a href="https://linkedin.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"                   
+                    style={{ zIndex: 2000, pointerEvents: 'auto' }}>
                     <AiFillLinkedin
                         style={{ fontSize: '2rem', color: 'inherit', cursor: 'pointer', transition: 'opacity 0.3s' }}
                         onMouseOver={(e) => e.target.style.opacity = 0.75}
                         onMouseOut={(e) => e.target.style.opacity = 1}
                     />
                 </a>
-                <a href="https://twitter.com" style={{ zIndex: 20, pointerEvents: 'auto' }}>
+                <a href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ zIndex: 20, pointerEvents: 'auto' }}>
                     <BsTwitterX
                         style={{ fontSize: '1.7rem', color: 'inherit', cursor: 'pointer', transition: 'opacity 0.3s', marginTop: '4px' }}
                         onMouseOver={(e) => e.target.style.opacity = 0.75}

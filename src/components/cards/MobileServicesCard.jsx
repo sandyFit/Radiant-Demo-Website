@@ -3,7 +3,7 @@ import React from 'react'
 const MobileServicesCard = ({service, index}) => {
     return (
         
-        <div className='w-[86vw] md:w-[76%] base:w-[80%] h-[80rem] base:h-[90%] flex mb-[41rem] sticky top-12 '>
+        <div className='w-[86vw] md:w-[76%] base:w-[80%] h-[80rem] base:h-[90%] flex mb-[41rem] sticky-element'>
             <div className="w-full flex flex-col gap-6 ">
                 <div className="flex justify-center items-center w-full py-3  glass-strong rounded-2xl">
                     <div className='w-full flex justify-between items-center'>
