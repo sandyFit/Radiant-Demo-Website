@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Logo from '../components/ui/Logo';
-import MenuHero from '../components/cards/MenuHero';
+import GlassMenuRight from '../components/cards/GlassMenuRight';
 
 const Navbar = () => {
 
@@ -8,6 +8,10 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setVisible(!visible);
+    }
+
+    const handleMenuClose = () => {
+        setVisible(false);
     }
 
     return (
@@ -48,8 +52,8 @@ const Navbar = () => {
                     <line x1="5" y1="0" x2="5" y2="70" stroke="#fafafa" strokeWidth="2"/>
                 </svg>
 
-                <div className="absolute -top-0 -right-6 lg:-right-12 ">                   
-                    <MenuHero isMenuOpen={visible}/>                   
+                <div className="absolute top-28 -right-6 lg:-right-12 ">                   
+                    <GlassMenuRight isMenuOpen={visible} onClose={handleMenuClose}/>                   
                 </div>
 
             </article>

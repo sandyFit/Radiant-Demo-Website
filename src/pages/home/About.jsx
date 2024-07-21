@@ -81,7 +81,7 @@ const About = () => {
                 {/* FLOATING MENU BUTTON */}
                 <button onClick={handleClick}
                     className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-8 xl:left-10 group inline-flex 
-                        items-center justify-center overflow-hidden rounded-full glass-strong z-30 
+                        items-center justify-center overflow-hidden rounded-full glass z-30 
                         ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="group relative flex items-center gap-2">
                         <div className="flex flex-col items-end cursor-pointer gap-1 lg:gap-[7px]">
@@ -102,8 +102,8 @@ const About = () => {
                 {/* FLOATING BUTTON TO GO TOP */}
                 <button onClick={scrollToTop}
                     className={`hidden lg:inline-flex fixed p-5 right-10 bottom-20 group items-center 
-                        justify-center overflow-hidden rounded-full glass-strong 
-                        z-[1000] ${showFloatingBtn ? '' : 'invisible'}`}>
+                        justify-center overflow-hidden rounded-full glass z-[1000] 
+                        ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="transition duration-300 group-hover:rotate-[360deg] text-indigo-900">
                         <HiArrowUp style={{ fontSize: '2.2rem' }} />
                     </div>

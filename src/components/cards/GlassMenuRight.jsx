@@ -14,12 +14,12 @@ const GlassMenuRight = ({ isMenuOpen, onClose }) => {
     };
 
     return (
-        <article className={`w-[20rem] h-[28rem] rounded-[20px] glass-strong shadow-2xl
-            ${isMenuOpen ? 'menu-open' : 'menu-closed'}`}
+        <article className={`w-[16rem] h-[28rem] rounded-[20px] glass-strong shadow-2xl
+            ${isMenuOpen ? 'menu-open-right' : 'menu-closed-right'}`}
             style={{ zIndex: isMenuOpen ? 100 : 0 }}
         >
             <ul
-                className={`flex flex-col pl-10 pr-8 py-8 items-start gap-3.5 rounded-2xl transition-all 
+                className={`flex flex-col pl-10 pr-8 py-8 items-end gap-3.5 rounded-2xl transition-all 
                     duration-2000`}
             >
                 {['index', 'about', 'services', 'staff', 'reviews', 'faq', 'contact']

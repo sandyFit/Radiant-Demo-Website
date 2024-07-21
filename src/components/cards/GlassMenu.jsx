@@ -14,12 +14,12 @@ const GlassMenu = ({ isMenuOpen, onClose }) => {
     };
 
     return (
-        <article className={`w-[20rem] h-[28rem] rounded-[20px] glass-strong shadow-2xl
+        <article className={`w-[16rem] h-[28rem] rounded-[20px] glass shadow-2xl
             ${isMenuOpen ? 'menu-open' : 'menu-closed'}`}
             style={{ zIndex: isMenuOpen ? 100 : 0 }}
         >
             <ul
-                className={`flex flex-col pl-10 pr-8 py-8 items-end gap-3.5 rounded-2xl transition-all 
+                className={`flex flex-col pl-10 pr-8 py-8 items-start gap-3.5 rounded-2xl transition-all 
                     duration-2000`}
             >
                 {['index', 'about', 'services', 'staff', 'reviews', 'faq', 'contact']
@@ -40,7 +40,7 @@ const GlassMenu = ({ isMenuOpen, onClose }) => {
                             </ScrollLink>
                         </li>
                     ))}
-                <div className="flex flex-col justify-end items-end mt-10 ">
+                <div className="flex flex-col justify-end items-start mt-10 ">
                     <p className='text-min-dark '>+1 666 333 69 69</p>
                     <p className='text-min-dark '>info@radiantdental.com</p>
                     
