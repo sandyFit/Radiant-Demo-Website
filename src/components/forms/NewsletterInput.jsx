@@ -40,13 +40,12 @@ const NewsletterInput = () => {
                     onChange={e => setEmail(e.target.value)}
                 />
                 <div className="mt-6 transparent-btn w-[10rem] py-2 hover:text-indigo-200">
-                    <Button text={'submit'}/>
+                    <Button text={'subscribe'}/>
                 </div>
             </form>
             <p className='text-min-white '>
-                Occasionally we send newsletters containing practice news. If you'd like to receive this
-                information, sign up to our email above. We take your privacy seriously and ensure that your
-                information will not be passed on to anyone.
+                Stay updated with our Dental Studio Newsletter! Get the latest on services, treatments,
+                and practice news. Your privacy is important to us; your data is safe. Join us today! 
             </p>
         </div>
     );

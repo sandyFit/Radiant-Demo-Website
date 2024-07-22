@@ -8,14 +8,14 @@ const staffData = [
     {
         id: 3,
         imgSrc: "/dentists/dentist-2.jpg",
-        name: "Joseph Gale",
+        name: "Joseph Thompson",
         title: "Dental Hygienist"
     },
     {
         id: 4,
         imgSrc: "/dentists/dentist-4.jpg",
         name: "Gabrielle Dawson",
-        title: "Dental Assistant"
+        title: "Clinical Manager"
     },
     {
         id: 5,

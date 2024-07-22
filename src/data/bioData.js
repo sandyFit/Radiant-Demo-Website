@@ -2,9 +2,9 @@ const bioData = [
     {
         firstName: 'Nice to',
         lastName: 'Meet You!',
-        description: `For over 20 years, we've had the privilege of serving a diverse range of patients at different stages of life. We take pride in genuinely caring for each of them as individuals.  \nThis is reflected in our team's dedication to training and self-development, emphasizing the significance of consistently updating our skills. 
+        description: `For over 20 years, we've had the privilege of serving a diverse range of patients at different stages of life. We take pride in genuinely caring for each of them as individuals.  \n\nOur goal is to stablish lifelong connections with our patients. This is reflected in our warm and friendly team dedicated to provide the best experience. 
                       \nAs new dental techniques and products continue to emerge, our commitment remains steadfast in ensuring that we can offer the best available options. 
-                      \nWe look forward to the opportunity to serve you. \nDr. Roberts\nFounder`,
+                      We look forward to the opportunity to serve you. \nDr. Roberts`,
         imageSrc: '/dentists/dentist-0.jpeg',
         altText: 'the team'
     },
@@ -19,7 +19,7 @@ const bioData = [
     },
     {
         firstName: 'Joseph',
-        lastName: 'Gale',
+        lastName: 'Thompson',
         description: `Joseph undertook the combined roles of Dental Therapist and Hygienist at Hudson Valley Community College in 2010, and has been a welcomed asset to our practice since 2016.
                       \nHis training means he can carry out some of the work of a dentist, including providing treatments to children and treating patients suffering from gum disease. He has been certified in the use of nitrous oxide and local anesthesia.
                       \nJoseph aims to provide the highest standard of dental care and keeps his knowledge up to date by attending dental courses and lectures.`,
@@ -36,7 +36,7 @@ const bioData = [
         altText: 'Gabrielle'
     },
     {
-        firstName: 'Karim',
+        firstName: 'Dr. Karim',
         lastName: 'Asouza',
         description: `Dr. Asouza graduated Magna Cum Laude from the University of South Alabama in Mobile, Alabama, with a Bachelor of Science in biology.
                       \nDr. Asouza eventually made his way north and graduated from the Rutgers School of Dental Medicine in Newark, New Jersey.

@@ -43,25 +43,27 @@ const Services = () => {
             <div className="flex justify-center mt-6 3xl:mt-6 ">
                 <div className="flex flex-col items-center gap-8 relative">
                     <h2
-                        className='text-left xl:text-center title-h2 w-[80%] xl:w-[65%] 3xl:w-[50%]
+                        className='text-left xl:text-center title-h2 w-[80%] xl:w-[60%]
                          pt-2 tracking-wider'
                         data-aos="fade-up"
                     >
-                        Expert
-                        <span className='app-title mx-4'>Dental Care</span>
-                        for Beauty and Well-being
+                        World-Class
+                        <span className='app-title mx-4'>Services</span>
+                        with the 
+                        <span className='app-title mx-4'>Highest</span>
+                        Standards
                     </h2>                    
 
                     <p
                         className='text-p1 mt-[-.6rem] w-[80%] 2xl:w-[70%]'
                         data-aos="fade-up"
                     >
-                        Experience top-quality dental care that enhances the beauty and longevity of your smile.
-                        Our expert team prioritizes both aesthetics and well-being, ensuring comprehensive services
+                        Providing high-quality dental care in a comfortable and relaxed environment is one of our top priorities.
+                        Our expert team prioritizes both aesthetics and well-being, ensuring top-quality services
                         that make you look and feel your best.
                     </p>
 
-                    <div className="flex justify-center relative mt-6">
+                    <div className="flex justify-center relative mt-6" data-aos='zoom-in-up'>
                         <ServicesDashboard />
                     </div>                   
                 </div>

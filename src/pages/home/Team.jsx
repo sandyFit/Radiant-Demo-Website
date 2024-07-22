@@ -69,13 +69,12 @@ const Team = () => {
                             <div key={index} className={`bio-${index} w-full h-[100vh] flex flex-col 
                                 justify-center`}>
                                 <div className="ml-16 relative w-full z-20">
-                                    <h3 className="text-left text-indigo-900 text-2xl md:text-4xl xl:text-5xl 
-                                        font-bold w-2/3 md:w-2/4 lg:w-[80%] pt-2 tracking-wider">
+                                    <h3 className="text-left text-indigo-900 title-medium w-2/3 md:w-2/4 
+                                        lg:w-[80%] pt-2">
                                         {member.firstName}
                                         <span className="app-title ml-4">{member.lastName}</span>
                                     </h3>
-                                    <p className="text-lg md:text-xl 2xl:text-xl text-indigo-900 mt-8 w-3/4 
-                                        font-[500] 2xl:w-[80%]">
+                                    <p className="text-p1 mt-8 w-3/4 2xl:w-[80%]">
                                         {renderDescription(member.description)}
                                     </p>
                                 </div>

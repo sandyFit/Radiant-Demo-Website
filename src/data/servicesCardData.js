@@ -14,10 +14,10 @@ const servicesCardData = [
                 name: "Dental Emergencies",
                 description: "Emergency appointments are available every day, and we try to see you as quickly as possible."
             },
-            {
-                name: "Gum Disease",
-                description: "If we notice any signs of gum disease we will alert you to this and provide you with advice on how to address it."
-            },
+            // {
+            //     name: "Gum Disease",
+            //     description: "If we notice any signs of gum disease we will alert you to this and provide you with advice on how to address it."
+            // },
             {
                 name: "Fillings",
                 description: "Dental fillings are usually required when a tooth breaks or suffers from tooth decay. "

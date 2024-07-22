@@ -40,8 +40,8 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
             const timeline = gsap.timeline({
                 scrollTrigger: {
                     trigger: starsRef.current,
-                    start: "top 90%",
-                    end: "bottom 10%",
+                    start: "top 100%",
+                    end: "bottom bottom",
                     toggleActions: "play none none none",  // Only play the animation once when the trigger enters the viewport
                     once: true,  // Ensures the trigger will not contribute to any ScrollTrigger related callbacks after it's triggered once
                 }
@@ -55,7 +55,6 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                     opacity: 1,
                     scale: 1,
                     duration: 0.2,
-                    // delay: index * 0.05,
                     ease: "power2.out",
                 });
             });

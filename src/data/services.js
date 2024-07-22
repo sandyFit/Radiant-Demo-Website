@@ -12,10 +12,10 @@ const services =[
                 name: "Dental Emergencies",
                 description: "Emergency appointments are available every day, and we try to be flexible so that we can see you as quickly as possible. \nIf you are in pain, do not hesitate to contact us."
             },
-            {
-                name: "Gum Desease",
-                description: "We pay close attention to your gums at your examination. \n\nIf we notice any signs of gum disease we will alert you to this and provide you with advice on how to address it."
-            },
+            // {
+            //     name: "Gum Desease",
+            //     description: "We pay close attention to your gums at your examination. \n\nIf we notice any signs of gum disease we will alert you to this and provide you with advice on how to address it."
+            // },
             {
                 name: "Fillings",
                 description: "Dental fillings are usually required when a tooth breaks or suffers from tooth decay. \nAll of our dentists are trained to provide anatomically correct shaped fillings that match the colour of your existing teeth."

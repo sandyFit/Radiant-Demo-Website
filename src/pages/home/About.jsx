@@ -80,7 +80,7 @@ const About = () => {
             <div className="relative">
                 {/* FLOATING MENU BUTTON */}
                 <button onClick={handleClick}
-                    className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-8 xl:left-10 group inline-flex 
+                    className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-11 xl:left-10 group inline-flex 
                         items-center justify-center overflow-hidden rounded-full glass z-30 
                         ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="group relative flex items-center gap-2">
@@ -94,7 +94,7 @@ const About = () => {
                 
                 {/* GLASSMENU COMPONENT */}
                 {showFloatingBtn && (
-                    <div className={`fixed top-10 left-6 base:left-8 lg:top-32 lg:left-10 z-20`}>
+                    <div className={`fixed top-10 left-6 base:left-8 lg:top-36 lg:left-10 z-20`}>
                         <GlassMenu isMenuOpen={visible} onClose={handleMenuClose} />
                     </div>
                 )}

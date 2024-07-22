@@ -6,31 +6,31 @@ const WorkingHrsTable = () => {
   return (
     <article className='flex flex-col justify-center items-center' style={{zIndex:20}}>      
       <table className='text-min-white flex  justify-center'
-        style={{ borderCollapse: 'separate', borderSpacing: '0 .6rem' }}>
+        style={{ borderCollapse: 'separate', borderSpacing: '1rem .6rem' }}>
         <tbody>
           <tr>
-            <td>Monday</td>
+            <td className='font-[700]'>MON</td>
             <td>09:00 am – 18:00 pm</td>
           </tr>
           <tr>
-            <td>Tuesday</td>
+            <td className='font-[700]'>TUES</td>
             <td>09:00 am – 18:00 pm</td>
           </tr>
           <tr>
-            <td>Wednesday &nbsp;</td>
+            <td className='font-[700]'>WED &nbsp;</td>
+            <td>09:00 am – 17:00 pm</td>
+          </tr>
+          <tr>
+            <td className='font-[700]'>THUR</td>
             <td>09:00 am – 18:00 pm</td>
           </tr>
           <tr>
-            <td>Thursday</td>
-            <td>09:00 am – 18:00 pm</td>
+            <td className='font-[700]'>FRI</td>
+            <td>09:00 am – 17:00 pm</td>
           </tr>
           <tr>
-            <td>Friday</td>
-            <td>09:00 am – 18:00 pm</td>
-          </tr>
-          <tr>
-            <td>Saturday</td>
-            <td>10:00 am - 15:00 pm</td>
+            <td className='font-[700]'>SAT</td>
+            <td>By Appointment</td>
           </tr>
         </tbody>
       </table>
