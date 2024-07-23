@@ -294,7 +294,7 @@ body {
     }
 
     .text-min-dark {
-        @apply text-[1rem] text-indigo-900 font-[600]
+        @apply text-[.78rem] text-indigo-900 font-[400]
     }
 
     .text-min-white {
@@ -313,14 +313,36 @@ body {
         xl:text-[1.2rem]
     }
 
+    .text-questions {
+        @apply text-indigo-900 font-[400] hover:text-indigo-100
+            text-[.78rem] 
+            
+            2xl:text-[1rem]
+    }
+
+    .text-motion {
+        @apply font-anybody font-[500]
+        text-[2rem]
+        2xl:text-5xl 
+    }
+
     .text-p1 {
-        @apply text-indigo-900 font-[500]
-            text-[1rem] 
+        @apply text-indigo-900 font-[500] 
             md:text-[1.12rem] 
             base:text-[1.2rem] 
             lg:text-[1.4rem] 
             xl:text-[1.1rem]
             2xl:text-[1.26rem]
+    }
+
+    .text-p2 {
+        @apply text-indigo-200 font-[400]
+            text-[.78rem] 
+            md:text-[1rem] 
+            base:text-[1rem] 
+            lg:text-[1rem] 
+            xl:text-[1rem]
+            2xl:text-[1.08rem]
     }
     
     .title-h1 {
@@ -364,6 +386,12 @@ body {
             text-[1.5rem]
     }
 
+    .title-h5 {
+        @apply font-anybody text-zinc-50 font-[500] uppercase
+            text-[1.2rem]
+            xl:text-[1.8rem]
+    }
+
     .title-medium {
         @apply font-bold tracking-wider 
         text-2xl 
@@ -380,6 +408,13 @@ body {
      
     .title-links {
         @apply  text-[1.2rem] md:text-[2rem] lg:text-[2rem] leading-[16px] md:leading-[18px] lg:leading-[20px] font-anybody font-[700] uppercase
+    }
+
+    .title-questions {
+        @apply text-indigo-900 font-[500] hover:text-indigo-100
+            text-[.9rem] 
+            text-[1rem]
+            2xl:text-[1.26rem]
     }
 
     .big-title {

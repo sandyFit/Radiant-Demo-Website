@@ -32,14 +32,12 @@ const ContactTransition = () => {
     }, []);
 
     return (
-        <section className='w-full bg-slate-300'>
-
-             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
+        <section className='w-full bg-slate-500'>
+             <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative 
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32">              
-                <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative ">               
+                <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative ">               
                     <span 
-                        className='inline-flex mb-16'
-                    >
+                        className='inline-flex mb-16'>
                         <TextShimmerEffect text={`Didn't find your answer?`}/>
                     </span>                         
                 </div>               

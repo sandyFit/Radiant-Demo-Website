@@ -63,9 +63,10 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
 
     return (
         <section className='flex justify-center items-center w-full relative'>
-            <div className="flex justify-center items-center gap-6">
-                <article className="grid grid-cols-1 gap-6">
-                    <div className='w-[20.8rem] h-[20.8rem] rounded-xl bg-indigo-600 shadow-lg overflow-hidden'>
+            <div className="flex flex-col xl:flex-row justify-center items-center gap-2 xl:gap-6">
+                <article className="grid grid-cols-1 gap-2 xl:gap-6">
+                    <div className='w-[85vw] h-[85vw] xl:w-[20.8rem] xl:h-[20.8rem] rounded-xl bg-indigo-600 
+                        shadow-lg overflow-hidden'>
                         <img
                             ref={imgRef}
                             src={srcImg}
@@ -74,22 +75,26 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                         />
                     </div>
 
-                    <div className="flex flex-col w-[20.8rem] h-20 bg-indigo-600 shadow-lg rounded-xl justify-center items-center">
-                        <h4 className='text-indigo-200 text-[1.6rem] font-[500]'>
+                    <div className="flex flex-col w-[85vw] xl:w-[20.8rem] h-10 xl:h-20 bg-indigo-600 shadow-lg 
+                        rounded-xl justify-center items-center">
+                        <h4 className='text-indigo-200 title-h5 '>
                             {name}
                         </h4>
                     </div>
                 </article>
 
                 <article className="grid grid-cols-1 gap-6">
-                    <div className="w-[44rem] h-[20.8rem] bg-indigo-600 hover:bg-indigo-700 rounded-2xl text-indigo-200 px-16 shadow-lg relative">
-                        <span className="text-[12rem] absolute bottom-16 left-16">”</span>
-                        <p className="text-[1.08rem] font-normal mt-[8rem] m-0 p-0">
+                    <div className="w-[85vw] h-[15.4rem] xl:w-[44rem] xl:h-[20.8rem] bg-indigo-600 relative
+                        hover:bg-indigo-700 rounded-2xl text-indigo-200 px:6 xl:px-16 shadow-lg ">
+                        <span className="hidden xl:block text-[5rem] xl:text-[12rem] absolute xl:bottom-16 left-3 xl:left-16">
+                            ”
+                        </span>
+                        <p className="text-p2 mt-6 xl:mt-[8rem] m-0 px-3">
                             {renderDescription(review)}
                         </p>
                     </div>
 
-                    <div className='flex w-[23.4rem] h-20 glass justify-center items-center rounded-xl'>
+                    <div className='hidden xl:flex w-[23.4rem] h-20 glass justify-center items-center rounded-xl'>
                         <span className='flex text-indigo-500' ref={starsRef}>
                             {[...Array(5)].map((_, index) => (
                                 <HiStar key={index} style={{ fontSize: '3.6rem' }} className="star" />

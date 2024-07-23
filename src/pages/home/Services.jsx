@@ -75,7 +75,7 @@ const Services = () => {
                         that make you look and feel your best.
                     </p>
 
-                    <div className="flex justify-center relative mt-6" >
+                    <div className="flex justify-center relative mt-1 xl:mt-6" >
                         <ServicesDashboard />
                     </div>                   
                 </div>

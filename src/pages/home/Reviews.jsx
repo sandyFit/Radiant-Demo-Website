@@ -13,10 +13,10 @@ const Reviews = () => {
         <section
             className='flex flex-col justify-center pt-16 relative bg-slate-300'>
 
-            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
+            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">
                 
-                <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
+                <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative ">               
                     <span 
                         className='inline-flex'
                     >
@@ -26,20 +26,19 @@ const Reviews = () => {
             </div>
 
             <div className="flex flex-col items-center gap-8 relative">
-                <h2 className='text-center text-indigo-900 text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold
-                    w-2/3 md:w-2/4 lg:w-[80%] pt-2 lg:pt-4' data-aos='fade-up'>
+                <h2 className='text-left xl:text-center title-h2 w-[85%] xl:w-[80%] pt-2 lg:pt-4 ' >
                     Your  
-                    <span className='app-title' style={{ margin: ' 0 1rem' }}>
+                    <span className='app-title mx-1.5 xl:mx-4' >
                         Opinion
                     </span>   
                     Matters
                 </h2>
 
-                <p className='text-p1 mt-2 w-3/4 2xl:w-[70%] '
-                        data-aos="fade-up"
+                <p className='text-p1 mt-[-1rem] xl:mt-2 w-[86%] 2xl:w-[70%] '
+                        
                     >
-                    Radiant Dental Studio always appreciates feedback from our valued patients, helping us keep improving. <br/>
-                    We're thrilled to have over 100 reviews with an average rating of 4.6 out of 5 stars. 
+                    Radiant Dental Studio always appreciates feedback from our valued patients, helping us keep improving. 
+                    We're thrilled to have over 100 reviews with an average rating of 4.6 out of 5 stars. <br/>
                     Please read what others are saying about us below. We would love to
                     <span >
                         <a href="#"
@@ -47,7 +46,7 @@ const Reviews = () => {
                             after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 
                             after:bg-indigo-400 after:transition-transform after:duration-300 
                             after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
-                            hover:after:scale-x-100 '>
+                            hover:after:scale-x-100'>
                             collect your feedback.
                         </a> 
                         
@@ -56,7 +55,7 @@ const Reviews = () => {
             </div>
 
             {/* Cards Render Dynamically acording to Responsive Size */}
-            <div className="flex justify-center items-center" data-aos='zoom-in-up'>
+            <div className="flex justify-center items-center" >
                 <ReviewsCarousel
                 reviews={reviews}
                 autoSlide={true}
