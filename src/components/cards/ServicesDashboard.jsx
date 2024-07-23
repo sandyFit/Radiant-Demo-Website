@@ -3,6 +3,7 @@ import servicesCardData from '../../data/servicesCardData';
 import MobileServicesCard from './MobileServicesCard';
 import CardService from './CardService';
 import AOS from 'aos';
+import CardServiceMobile from './CardServiceMobile';
 
 const ServicesDashboard = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 950);
@@ -29,7 +30,7 @@ const ServicesDashboard = () => {
         <div className='flex flex-col justify-center items-center w-full relative'>
             {isMobile ? (
                 servicesCardData.map((service, index) => (
-                    <MobileServicesCard key={index} service={service} index={index} />
+                    <CardServiceMobile key={index} service={service} index={index} />
                 ))
             ) : (
                 servicesCardData.map((service, index) => (

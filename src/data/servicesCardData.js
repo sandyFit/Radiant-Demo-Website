@@ -6,10 +6,10 @@ const servicesCardData = [
         imgSrc: '/services/general.jpeg',
         description: "Treatments that ensure lifelong dental health. ",
         categories: [
-            // {
-            //     name: "Examination",
-            //     description: "We take considerable time getting to know you as a person and tailoring a dental preventative plan around you."
-            // },
+            {
+                name: "Examination",
+                description: "We take considerable time getting to know you as a person and tailoring a dental preventative plan around you."
+            },
             {
                 name: "Dental Emergencies",
                 description: "Emergency appointments are available every day, and we try to see you as quickly as possible."

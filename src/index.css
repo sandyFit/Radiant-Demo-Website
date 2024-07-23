@@ -336,7 +336,7 @@ body {
     }
     .title-h2 {
         @apply font-sans text-indigo-900 font-bold
-            text-[1.8rem] 
+            text-[1.7rem] 
             md:text-4xl 
             lg-sm:text-[3.2rem]
             xl:text-[2.5rem]
@@ -374,7 +374,7 @@ body {
 
     .title-cards {
         @apply font-[700] font-anybody text-indigo-50 uppercase
-            text-[1.5rem]
+            text-[1.1rem]
             3xl:text-[3rem]
     }
      

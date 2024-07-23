@@ -40,9 +40,9 @@ const Footer = () => {
 
                 
                 <div className='absolute inset-0 top-[32rem] w-full h-16 bg-indigo-950 flex items-center justify-end
-                    text-center pr-[3rem] 2xl:pr-[7.8em] gap-[5rem] 2xl:gap-[5.5em]'>
+                    text-center pr-[3rem] 2xl:pr-[7.8em] gap-[5rem] 2xl:gap-[9rem]'>
                     <p className="text-min-white ">
-                        ©2024 Design & Development by
+                        ©2024 Website by
                         <a href="https://trishramos.com"
                             target="_blank"
                             rel="noopener noreferrer"

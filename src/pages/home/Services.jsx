@@ -28,7 +28,7 @@ const Services = () => {
 
     return (
         <section
-            className='w-full pt-6 3xl-sm:pt-[8rem] bg-slate-300'>
+            className='w-full pt-20 3xl-sm:pt-[8rem] bg-slate-300'>
             <div className="w-full flex justify-start items-center text-mayus-dark mb-20 2xl:mb-2 
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40 relative gap-6">
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
@@ -40,10 +40,10 @@ const Services = () => {
             </div>            
             </div>
 
-            <div className="flex justify-center mt-6 3xl:mt-6 ">
-                <div className="flex flex-col items-center gap-8 relative">
+            <div className="flex justify-center mt-[-5rem] 3xl:mt-6 ">
+                <div className="flex flex-col justify-center items-center gap-8 relative">
                     <h2
-                        className='text-left xl:text-center title-h2 w-[80%] xl:w-[60%]
+                        className='hidden xl:block text-center title-h2 w-[80%] xl:w-[60%]
                          pt-2 tracking-wider'
                         data-aos="fade-up"
                     >
@@ -52,18 +52,30 @@ const Services = () => {
                         with the 
                         <span className='app-title mx-4'>Highest</span>
                         Standards
+                    </h2>  
+                    
+                    <h2
+                        className='block xl:hidden text-left title-h2 w-[80%] whitespace-nowrap
+                         pt-2 tracking-wider'
+                        
+                    >
+                        World-Class<br/>
+                        <span className='app-title mr-2 whitespace-nowrap'>Services</span>
+                        with the <br/>
+                        <span className='app-title mr-2'>Highest</span>
+                        Standards
                     </h2>                    
 
                     <p
                         className='text-p1 mt-[-.6rem] w-[80%] 2xl:w-[70%]'
-                        data-aos="fade-up"
+                        
                     >
                         Providing high-quality dental care in a comfortable and relaxed environment is one of our top priorities.
                         Our expert team prioritizes both aesthetics and well-being, ensuring top-quality services
                         that make you look and feel your best.
                     </p>
 
-                    <div className="flex justify-center relative mt-6" data-aos='zoom-in-up'>
+                    <div className="flex justify-center relative mt-6" >
                         <ServicesDashboard />
                     </div>                   
                 </div>
