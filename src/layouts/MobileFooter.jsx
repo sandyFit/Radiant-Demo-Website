@@ -5,7 +5,7 @@ import NewsletterInput from '../components/forms/NewsletterInput'
 
 const MobileFooter = () => {
     return (
-        <article className="flex flex-col justify-center items-center bg-indigo-900 w-full overflow-x-hidden">
+        <article className="flex flex-col justify-center items-center bg-indigo-900 w-full mt-5 overflow-x-hidden">
             <div id='contact'>
                 <ContactCard/>
             </div>

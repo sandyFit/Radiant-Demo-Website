@@ -24,8 +24,8 @@ const ServiceCard = ({ service, index }) => (
                 </article>
 
                 <article className='w-[70%] h-full glass-blue text-indigo-200 font-[400] rounded-[20px] p-12'>
-                    <div className="flex flex-col gap-6">
-                        <p className="text-xl mb-3 font-[600]">
+                    <div className="flex flex-col">
+                        <p className="text-xl font-[600]">
                             {service.description}
                         </p>
                         <ul className="grid grid-cols-1 list-disc gap-2">

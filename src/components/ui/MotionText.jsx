@@ -10,9 +10,9 @@ const MotionText = ({ icon, part1, part2 }) => {
     );
 
     return (
-        <div className="text-motion pb-12"
+        <div className="text-motion pb-12 "
             style={{ overflow: 'hidden' }}>
-            <h2 className='text-center text-indigo-900 motion-text font-regular'>
+            <h2 className='text-center motion-text '>
                 <div style={{ display: 'flex', whiteSpace: 'nowrap' }}>
                     {Array(6).fill(null).map((_, index) => (
                         <React.Fragment key={index}>

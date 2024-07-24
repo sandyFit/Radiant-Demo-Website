@@ -7,7 +7,7 @@ import { FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 const ContactCard = ({ isMenuOpen }) => {
     return (
         <article id='contact'
-            className='bg-sky-400 w-full xl:w-[30rem] h-[30rem] xl:h-[38.70rem] flex flex-col items-center px-4
+            className='bg-sky-400 w-full md:w-[24rem] xl:w-[30rem] h-[30rem] xl:h-[38.70rem] flex flex-col items-center px-4
                 space-y-4 relative'
             style={{ zIndex: 5000, pointerEvents: isMenuOpen ? 'none' : 'auto' }}
         >
@@ -51,7 +51,7 @@ const ContactCard = ({ isMenuOpen }) => {
                 Follow us everywhere
             </h5>
 
-            <div className='flex justify-between gap-12 xl:gap-20' >
+            <div className='flex justify-between gap-12 md:gap-16 xl:gap-20' >
                 <a href="https://instagram.com" 
                     target="_blank"
                     rel="noopener noreferrer"

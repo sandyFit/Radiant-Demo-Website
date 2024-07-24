@@ -3,11 +3,11 @@ import React from 'react'
 const CardServiceMobile = ({ service, index }) => {
    return (
         <section 
-           className={`grid grid-cols-1 w-[86%] h-[98%] md:w-[76%] base:w-[80%] base:h-[90%] mb-8 pb-10
+           className={`grid grid-cols-1 w-[86%] h-[98%] md:w-[85%] base:w-[80%] base:h-[90%] mb-8 pb-10
                 rounded-lg sticky top-12 ${index % 2 === 0 ? 'bg-indigo-600' : 'bg-sky-600'}`}
 
         >
-           <div className="flex  p-4">      
+           <div className="flex pt-12 pl-8">      
                <span className='title-cards mr-2'>{`0${index + 1}.`}</span>
                 <h2 className='title-cards z-30'>
                     {service.title}
@@ -15,11 +15,11 @@ const CardServiceMobile = ({ service, index }) => {
                 
             </div>
             
-            <div className="grid grid-cols-1 gap-3 p-2">
+            <div className="grid grid-cols-1 gap-3 p-2 md:p-5">
                 <article className={` text-indigo-200 font-[400] rounded-[10px] px-6
                     `}>
-                    <div className="flex flex-col gap-3">
-                        <p className="text-[1rem] lg:text-xl mb-3 font-[600]">
+                    <div className="flex flex-col ">
+                        <p className="title-sm mb-3 font-[600]">
                             {service.description}
                         </p>
                         <ul className="grid grid-cols-1 list-disc gap-2">

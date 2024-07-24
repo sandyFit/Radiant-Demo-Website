@@ -7,7 +7,7 @@ const Button = ({text}) => {
                 <div className="translate-y-0  transition duration-500 group-hover:-translate-y-[85%] ">
                     {text}
                 </div>
-                <div className="absolute translate-y-[85%]  transition duration-500 group-hover:translate-y-0 ">
+                <div className="absolute translate-y-[85%] transition duration-500 group-hover:translate-y-0 ">
                     {text}
                 </div>
             </span>

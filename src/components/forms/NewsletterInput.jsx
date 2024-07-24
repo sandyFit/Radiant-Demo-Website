@@ -24,7 +24,7 @@ const NewsletterInput = () => {
     };
 
     return (
-        <div id='contact' className='flex flex-col items-center w-[15rem] xl:w-[16rem] gap-6'>
+        <div id='contact' className='flex flex-col items-center w-[15rem] md:w-[20rem] xl:w-[16rem] gap-6'>
             <form onSubmit={handleSubmit} noValidate className="w-full flex flex-col"> 
                 {/* <label htmlFor="text" className="text-xxsmall-white pb-3">Enter your email</label> */}
                 <input
@@ -33,14 +33,14 @@ const NewsletterInput = () => {
                     className="bg-indigo-100 border-4 border-indigo-400 
                             text-indigo-400 text-sm xl:text-lg rounded-lg focus:outline-none
                             focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400
-                            block w-full p-2 xl:p-2.5"
+                            block w-full p-2 md:p-2.5"
                     placeholder="john.doe@company.com"
                     required
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <div className="mt-6 transparent-btn w-32 xl:w-[10rem] py-1 xl:py-2 hover:text-indigo-200
-                    text-[.8rem] xl:text-[1rem] font-[300]">
+                <div className="mt-6 transparent-btn w-32 md:w-36 xl:w-[10rem] py-1 md:py-[.4rem] xl:py-2 
+                    hover:text-indigo-200 text-[.8rem] xl:text-[1rem] font-[300]">
                     <Button text={'subscribe'}/>
                 </div>
             </form>

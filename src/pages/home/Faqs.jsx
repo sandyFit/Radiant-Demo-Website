@@ -83,7 +83,7 @@ const Faqs = () => {
                         </span>                          
                     </h2>
 
-                    <h2 className='block xl:hidden text-left title-h2 w-[85%] md:w-2/4  pt-2 lg:pt-4 ' >
+                    <h2 className='block xl:hidden text-left title-h2 w-[85%] pt-2 lg:pt-4 ' >
                         Got Questions? <br/>
                         <span className='app-title ml-0' >
                             We have Answers!

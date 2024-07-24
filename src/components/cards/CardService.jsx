@@ -28,15 +28,15 @@ const CardService = ({ service, index }) => {
 
                 <article className={`col-span-6 col-start-6 h-[28rem] text-indigo-200 font-[400] rounded-[20px] p-10
                     ${index % 2 === 0 ? 'bg-indigo-700' : 'bg-sky-600'}`}>
-                    <div className="flex flex-col gap-6">
-                        <p className="text-xl mb-3 font-[600]">
+                    <div className={`flex flex-col ${index === 0 ? 'gap-3' : 'gap-5'}`}>
+                        <p className="title-sm">
                             {service.description}
                         </p>
                         <ul className="grid grid-cols-1 list-disc gap-2">
                             {(service.categories || []).map((category, catIndex) => (
                                 <li key={catIndex}>
                                     <div>
-                                        <h4 className="text-lg font-[600]">
+                                        <h4 className="title-sm">
                                             {category.name}
                                         </h4>
                                         <p className="text-left text-[.9rem]">

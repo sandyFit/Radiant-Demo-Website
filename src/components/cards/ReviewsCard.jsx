@@ -63,8 +63,8 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
 
     return (
         <section className='flex justify-center items-center w-full relative'>
-            <div className="flex flex-col xl:flex-row justify-center items-center gap-2 xl:gap-6">
-                <article className="grid grid-cols-1 gap-2 xl:gap-6">
+            <div className="flex flex-col xl:flex-row justify-center items-center gap-2 md:gap-3 xl:gap-6">
+                <article className="grid grid-cols-1 gap-2 md:gap-3 xl:gap-6">
                     <div className='w-[85vw] h-[85vw] xl:w-[20.8rem] xl:h-[20.8rem] rounded-xl bg-indigo-600 
                         shadow-lg overflow-hidden'>
                         <img
@@ -90,7 +90,7 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                             left-16">
                             ”
                         </span>
-                        <p className="text-p2 mt-6 xl:mt-[7rem] m-0 px-3">
+                        <p className="text-p2 mt-6 xl:mt-[7rem] px-3">
                             {renderDescription(review)}
                         </p>
                     </div>

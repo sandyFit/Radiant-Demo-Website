@@ -55,7 +55,7 @@ const Services = () => {
                     </h2>  
                     
                     <h2
-                        className='block xl:hidden text-left title-h2 w-[80%] whitespace-nowrap
+                        className='block xl:hidden text-left title-h2 w-[80%] md:w-[85%] whitespace-nowrap
                          pt-2 tracking-wider'
                         
                     >
@@ -66,10 +66,7 @@ const Services = () => {
                         Standards
                     </h2>                    
 
-                    <p
-                        className='text-p1 mt-[-.6rem] w-[80%] 2xl:w-[70%]'
-                        
-                    >
+                    <p className='text-p1 mt-[-.6rem] w-[80%] md:w-[85%] 2xl:w-[70%]'>
                         Providing high-quality dental care in a comfortable and relaxed environment is one of our top priorities.
                         Our expert team prioritizes both aesthetics and well-being, ensuring top-quality services
                         that make you look and feel your best.

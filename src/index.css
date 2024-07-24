@@ -202,16 +202,6 @@ body {
 } 
 
 
-@media (min-width: 1280px) {
-  .footer-desktop {
-    position: sticky;
-    bottom: 0;
-    z-index: 1;
-  }
-}
-
-
-
 
 @layer base {
 
@@ -307,12 +297,14 @@ body {
     .text-min-dark {
         @apply  text-indigo-900 font-[400] xl:font-[500]
             text-[.78rem]
+            md:text-[.88rem]
             xl:text-[1rem]
     }
 
     .text-min-white {
         @apply text-indigo-300 font-[400]
             text-[.85rem]
+            md:text-[.9rem]
             xl:text-[1rem]
     }
 
@@ -338,12 +330,13 @@ body {
     .text-motion {
         @apply font-anybody font-[500]
         text-[2rem]
+        md:text-[2.5rem]
         2xl:text-5xl 
     }
 
     .text-p1 {
         @apply text-indigo-900 font-[500] 
-            md:text-[1.12rem] 
+            md:text-[1rem] 
             base:text-[1.2rem] 
             lg:text-[1.4rem] 
             xl:text-[1.1rem]
@@ -353,7 +346,7 @@ body {
     .text-p2 {
         @apply text-indigo-200 font-[400]
             text-[.78rem] 
-            md:text-[1rem] 
+            md:text-[.88rem] 
             base:text-[1rem] 
             lg:text-[1rem] 
             xl:text-[1rem]
@@ -411,14 +404,21 @@ body {
     .title-medium {
         @apply font-bold tracking-wider 
         text-2xl 
-        md:text-4xl 
+        md:text-3xl 
         xl:text-[2.8rem] 
                                         
+    }
+
+    .title-sm {
+        @apply font-[600] tracking-wide
+            text-[1.05rem]
+            xl:text-[1.26rem]
     }
 
     .title-cards {
         @apply font-[700] font-anybody text-indigo-50 uppercase
             text-[1.1rem]
+            md:text-[1.4rem]
             3xl:text-[3rem]
     }
      
@@ -436,6 +436,7 @@ body {
     .title-contact {
         @apply text-indigo-900 uppercase font-[700]
             text-[.9rem]
+            md:text-[.96rem]
             xl:text-[1.1rem]
     }
 

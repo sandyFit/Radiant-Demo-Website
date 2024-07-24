@@ -58,7 +58,7 @@ const Footer = () => {
             </article>
 
             {/* Mobile */}
-            <article className="lg:hidden flex flex-col justify-center items-center relative">
+            <article className="flex lg:hidden w-full overflow-hidden flex-col justify-center items-center relative">
                 <MobileFooter />
             </article>
         </section>
