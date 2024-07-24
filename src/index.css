@@ -290,15 +290,22 @@ body {
     /* =========== TEXT =========== */
 
     .text-links {
-        @apply text-[1.1rem] font-[600] text-indigo-900
+        @apply font-[500] xl:font-[600] text-indigo-900
+            text-[.9rem]
+            xl:text-[1.1rem] 
+
     }
 
     .text-min-dark {
-        @apply text-[.78rem] text-indigo-900 font-[400]
+        @apply  text-indigo-900 font-[400] xl:font-[500]
+            text-[.78rem]
+            xl:text-[1rem]
     }
 
     .text-min-white {
-        @apply text-[1rem] text-indigo-300 font-[400]
+        @apply text-indigo-300 font-[400]
+            text-[.85rem]
+            xl:text-[1rem]
     }
 
     .text-mayus-dark {
@@ -383,7 +390,8 @@ body {
 
     .title-h4 {
         @apply font-anybody text-zinc-50 font-[500] uppercase
-            text-[1.5rem]
+            text-[1.2rem]
+            2xl:text-[1.5rem]
     }
 
     .title-h5 {
@@ -415,6 +423,12 @@ body {
             text-[.9rem] 
             text-[1rem]
             2xl:text-[1.26rem]
+    }
+
+    .title-contact {
+        @apply text-indigo-900 uppercase font-[700]
+            text-[.9rem]
+            xl:text-[1.1rem]
     }
 
     .big-title {

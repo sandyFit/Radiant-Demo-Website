@@ -2,8 +2,8 @@ import React from 'react';
 
 const NoBGBtn = ({text}) => {
     return (
-        <button className="group relative inline-flex items-center text-[1rem]  
-            text-indigo-900 font-[600] hover:text-indigo-600">
+        <button className="group relative inline-flex items-center text-[.8rem] xl:text-[1rem]  
+            text-indigo-900 font-[300] xl:font-[600] hover:text-indigo-600">
             <span>
                 {text}
             </span>

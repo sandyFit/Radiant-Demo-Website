@@ -32,7 +32,7 @@ const ContactTransition = () => {
     }, []);
 
     return (
-        <section className='w-full bg-slate-500'>
+        <section className='w-full bg-slate-300 overflow-x-hidden'>
              <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative 
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-32">              
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative ">               

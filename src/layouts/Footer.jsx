@@ -2,17 +2,18 @@ import React, { useState } from 'react';
 import WorkingHrsTable from '../components/forms/WorkingHrsTable';
 import NewsletterInput from '../components/forms/NewsletterInput';
 import ContactCard from '../components/cards/ContactCard';
-import Links from '../components/buttons/Links';
+import MobileFooter from './MobileFooter';
 
 const Footer = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <section className='w-full h-[36rem] bg-indigo-900 overflow-hidden'>
+        <section id='footer'
+            className='w-full h-auto xl:h-[36rem] bg-indigo-900 overflow-hidden'>
 
             {/* Desktop */}
 
-            <article className='w-full flex flex-col justify-between relative'>
+            <article className='hidden xl:flex w-full flex-col justify-between relative'>
 
                 <div className='flex justify-evenly space-x-6 text-indigo-900 pl-32'>
                     <div >
@@ -39,8 +40,8 @@ const Footer = () => {
                 </div>
 
                 
-                <div className='absolute inset-0 top-[32rem] w-full h-16 bg-indigo-950 flex items-center justify-end
-                    text-center pr-[3rem] 2xl:pr-[7.8em] gap-[5rem] 2xl:gap-[9rem]'>
+                <div className='absolute inset-0 top-[32rem] w-full h-16 bg-indigo-950 flex items-center 
+                    justify-end text-center pr-[3rem] 2xl:pr-[7.8em] gap-[5rem] 2xl:gap-[9rem]'>
                     <p className="text-min-white ">
                         ©2024 Website by
                         <a href="https://trishramos.com"
@@ -76,7 +77,11 @@ const Footer = () => {
                         </a>                          
                     </div>
                 </div>
+            </article>
 
+            {/* Mobile */}
+            <article className="lg:hidden flex flex-col justify-center items-center relative">
+                <MobileFooter/>
             </article>
       
         </section>

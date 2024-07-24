@@ -5,7 +5,7 @@ import Button from '../buttons/Button';
 const WorkingHrsTable = () => {
   return (
     <article className='flex flex-col justify-center items-center' style={{zIndex:20}}>      
-      <table className='text-min-white flex  justify-center'
+      <table className='text-min-white flex justify-center'
         style={{ borderCollapse: 'separate', borderSpacing: '1rem .6rem' }}>
         <tbody>
           <tr>
@@ -39,7 +39,7 @@ const WorkingHrsTable = () => {
         book online
       </button> */}
 
-      <div className="flex btn-book-online mt-10 px-12 py-2 text-[1.4rem]">
+      <div className="flex btn-book-online mt-10 px-12 py-2 text-[1.1rem] xl:text-[1.4rem]">
         <Button text={'book online'}/>
       </div>
     </article>
