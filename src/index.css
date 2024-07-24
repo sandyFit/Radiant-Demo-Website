@@ -337,7 +337,7 @@ body {
     .text-p1 {
         @apply text-indigo-900 font-[500] 
             md:text-[1rem] 
-            base:text-[1.2rem] 
+            base:text-[1.1rem] 
             lg:text-[1.4rem] 
             xl:text-[1.1rem]
             2xl:text-[1.26rem]

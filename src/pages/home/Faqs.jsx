@@ -61,11 +61,11 @@ const Faqs = () => {
 
     return (
         <section 
-            className='relative h-auto pt-24 xl:pt-40 bg-slate-300 pb-24 xl:pb-36'>   
+            className='relative h-auto pt-28 xl:pt-40 bg-slate-300 pb-24 xl:pb-36'>   
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
                 px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">              
-                <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative gap-6">               
+                <div className="w-full flex justify-start items-center text-mayus-dark relative gap-6">               
                     <span 
                         className='inline-flex'>
                         <TextShimmerEffect text={`(05) Faqs`}/>
@@ -83,7 +83,7 @@ const Faqs = () => {
                         </span>                          
                     </h2>
 
-                    <h2 className='block xl:hidden text-left title-h2 w-[85%] pt-2 lg:pt-4 ' >
+                    <h2 className='block xl:hidden text-left title-h2 w-[85%] base:w-[80%] pt-2 lg:pt-4 ' >
                         Got Questions? <br/>
                         <span className='app-title ml-0' >
                             We have Answers!
@@ -91,7 +91,7 @@ const Faqs = () => {
                     </h2>
 
                      <p
-                        className='text-left xl:text-center text-p1 mt-4 xl:mt-10 w-[85%] 2xl:w-[70%] '>
+                        className='text-left xl:text-center text-p1 mt-4 xl:mt-10 w-[85%] base:w-[80%] 2xl:w-[70%] '>
                         Find answers to commonly asked questions about dental care below.
                     </p>
                     {/* <h2 ref={highHueRef}
@@ -102,11 +102,12 @@ const Faqs = () => {
 
                 <div className="flex flex-col xl:flex-row w-full justify-between px-6 md:px-8 base:px-12 lg-sm:px-16 
                     2xl:px-24 3xl:px-40 pt-6 xl:pt-16 gap-4">
-                    <div className="flex w-[85vw] h-[85vw] xl:w-[35vw] xl:h-[35vw] rounded-3xl bg-indigo-600 ">
+                    <div className="flex w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl:w-[35vw] xl:h-[35vw] 
+                        rounded-[10px] xl:rounded-xl bg-indigo-600 ">
                         <img ref={imgRef}
                             src="/people/asian-girl.jpg"
                             alt=""
-                            className='w-full h-full object-cover bg-center rounded-3xl'
+                            className='w-full h-full object-cover bg-center rounded-[10px] xl:rounded-xl'
                         />
                     </div>
 

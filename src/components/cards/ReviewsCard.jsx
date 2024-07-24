@@ -64,19 +64,19 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
     return (
         <section className='flex justify-center items-center w-full relative'>
             <div className="flex flex-col xl:flex-row justify-center items-center gap-2 md:gap-3 xl:gap-6">
-                <article className="grid grid-cols-1 gap-2 md:gap-3 xl:gap-6">
-                    <div className='w-[85vw] h-[85vw] xl:w-[20.8rem] xl:h-[20.8rem] rounded-xl bg-indigo-600 
+                <article className="grid grid-cols-1 place-items-center gap-2 md:gap-3 xl:gap-6">
+                    <div className='w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl:w-[20.8rem] xl:h-[20.8rem] rounded-xl bg-indigo-600 
                         shadow-lg overflow-hidden'>
                         <img
                             ref={imgRef}
                             src={srcImg}
                             alt={`${name} avatar`}
-                            className='w-full h-full object-cover rounded-xl'
+                            className='w-full h-full object-cover rounded-[10px] xl:rounded-xl'
                         />
                     </div>
 
-                    <div className="flex flex-col w-[85vw] xl:w-[20.8rem] h-10 xl:h-20 bg-indigo-600 shadow-lg 
-                        rounded-xl justify-center items-center">
+                    <div className="flex flex-col w-[85vw] base:w-[80vw] xl:w-[20.8rem] h-10 xl:h-20 bg-indigo-600 
+                        shadow-lg rounded-[10px] xl:rounded-xl justify-center items-center">
                         <h4 className='text-indigo-200 title-h5 '>
                             {name}
                         </h4>
@@ -84,8 +84,9 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                 </article>
 
                 <article className="grid grid-cols-1 gap-6">
-                    <div className="w-[85vw] h-[15.4rem] xl:w-[44rem] xl:h-[20.8rem] bg-indigo-600 relative
-                        hover:bg-indigo-700 rounded-2xl text-indigo-200 px:6 xl:px-16 shadow-lg ">
+                    <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] xl:w-[44rem] 
+                        xl:h-[20.8rem] bg-indigo-600 relative
+                        hover:bg-indigo-700 rounded-[10px] xl:rounded-xl text-indigo-200 px-4 xl:px-16 shadow-lg ">
                         <span className="hidden xl:block text-[12rem] absolute bottom-[4rem]
                             left-16">
                             ”
