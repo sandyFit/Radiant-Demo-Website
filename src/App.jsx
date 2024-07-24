@@ -23,10 +23,10 @@ const App = () => {
     return (
          <div className='bg-slate-300'>
             <Navbar className='z-20'/>
-            <div className="relative" style={{ zIndex: 10}}>
+            <div className="relative z-10" >
                 <Home />
             </div>
-            <div  style={{position: 'sticky', bottom: 0, zIndex: 1}} >
+            <div  className='footer-desktop'>
                 <Footer />
             </div>
 

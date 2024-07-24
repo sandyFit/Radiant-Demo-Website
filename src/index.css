@@ -202,6 +202,14 @@ body {
 } 
 
 
+@media (min-width: 1280px) {
+  .footer-desktop {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
 
 
 
