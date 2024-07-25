@@ -15,7 +15,7 @@ const MobileFooter = () => {
 
                 <div className="flex flex-col mt-20">
                     <h4 className='title-h4 text-center'>
-                        WORKING HOURS
+                        BUSINESS HOURS
                     </h4>
                     <WorkingHrsTable/>
                 </div>

@@ -24,7 +24,7 @@ const Footer = () => {
                                 <WorkingHrsTable />
                             </div>
                             <div className='w-1/2 flex flex-col items-center mt-[5rem]'>
-                                <h4 className='title-h4 text-center mb-6'>
+                                <h4 className='title-h4 text-center mb-9'>
                                     NEWSLETTER SIGN UP
                                 </h4>
                                 <NewsletterInput />
