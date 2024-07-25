@@ -6,7 +6,7 @@ const QuestionCard = ({ question, answer, isOpen, onToggle }) => {
     
 
     return (
-        <article className={`border-b-2 border-indigo-50 flex flex-col w-full lg:w-[45rem] 2xl:w-[40vw] 
+        <article className={`border-b-2 border-indigo-50 flex flex-col w-full  2xl:w-[40vw] 
             overflow-hidden relative cursor-pointer before:absolute before:left-0 before:top-0 before:block 
             before:h-full before:w-full before:border-2 before:border-indigo-500 before:rounded-md 
             before:bg-indigo-500 before:transition-transform before:-translate-y-full hover:before:translate-y-0 

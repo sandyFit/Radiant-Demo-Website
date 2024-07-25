@@ -297,6 +297,7 @@ body {
         @apply  text-indigo-900 font-[400] xl:font-[500]
             text-[.78rem]
             md:text-[.88rem]
+            lg:text-[.95rem]
             xl:text-[1rem]
     }
 
@@ -339,7 +340,7 @@ body {
         @apply text-indigo-900 font-[500] 
             md:text-[1rem] 
             base:text-[1.1rem] 
-            lg:text-[1.4rem] 
+            lg:text-[1.1rem] 
             xl:text-[1.1rem]
             2xl:text-[1.26rem]
     }
