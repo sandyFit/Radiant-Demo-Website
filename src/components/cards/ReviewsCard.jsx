@@ -70,7 +70,7 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                         <img
                             ref={imgRef}
                             src={srcImg}
-                            alt={`${name} avatar`}
+                            alt={`Our patient ${name}`}
                             className='w-full h-full object-cover rounded-[10px] xl:rounded-xl'
                         />
                     </div>
@@ -99,7 +99,10 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                     <div className='hidden xl:flex w-[23.4rem] h-20 glass justify-center items-center rounded-xl'>
                         <span className='flex text-indigo-500' ref={starsRef}>
                             {[...Array(5)].map((_, index) => (
-                                <HiStar key={index} style={{ fontSize: '3.6rem' }} className="star" />
+                                <HiStar key={index}
+                                    style={{ fontSize: '3.6rem' }}
+                                    aria-label="Star rating"
+                                    className="star" />
                             ))}
                         </span>
                     </div>

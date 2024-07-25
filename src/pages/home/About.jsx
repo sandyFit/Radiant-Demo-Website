@@ -80,6 +80,8 @@ const About = () => {
             <div className="relative">
                 {/* FLOATING MENU BUTTON */}
                 <button onClick={handleClick}
+                    aria-expanded={visible}
+                    aria-controls="menu"
                     className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-11 xl:left-10 group inline-flex 
                         items-center justify-center overflow-hidden rounded-full glass z-30 
                         ${showFloatingBtn ? '' : 'invisible'}`}>
@@ -119,7 +121,7 @@ const About = () => {
                     {/* ABOUT IMAGE */}
                     <img ref={imgRef}
                         src="/images/dental-studio.jpg"
-                        alt="Dental Studio"
+                        alt="Dr. Roberts providing dental care to a patient in the office."
                         className='w-full h-full object-cover rounded-[20px]' />
                 </article>
 

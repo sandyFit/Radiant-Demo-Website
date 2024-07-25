@@ -10,7 +10,7 @@ const CardService = ({ service, index }) => {
             <div className="flex justify-between">
                 <div className="flex items-center gap-10">
                     <figure className="flex w-16 h-16 rounded-full bg-indigo-50 justify-center items-center">
-                        <img src={service.iconSrc} alt={service.title} className='w-12 h-12' />
+                        <img src={service.iconSrc} alt={`${service.title} icon`} className='w-12 h-12' />
                     </figure>
                     <h2 className='title-cards z-30'>
                         {service.title}
@@ -23,7 +23,7 @@ const CardService = ({ service, index }) => {
                 gap-2 mt-8">
                 <figure className='col-span-4 col-start-1 col-end-5 row-span-5 h-[28rem] relative  
                 bg-indigo-300 rounded-[20px] overflow-hidden  '>
-                    <img src={service.imgSrc} alt={service.title} className="w-full h-full object-cover" />
+                    <img src={service.imgSrc} alt={service.alt} className="w-full h-full object-cover" />
                 </figure>
 
                 <article className={`col-span-6 col-start-6 h-[28rem] text-indigo-200 font-[400] rounded-[20px] p-10

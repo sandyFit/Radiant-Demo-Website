@@ -52,8 +52,8 @@ const Hero = () => {
                     </h1>
 
                     <p className='text-p1 w-[96%] md:w-full 2xl:w-[90%]'>
-                        Let us take care of your teeth. Our dedicated team of professionals is committed to providing you
-                        with first-class dental care.
+                        Let us take care of your teeth. Our dedicated team of professionals is committed to
+                        providing you with first-class dental care.
                     </p>
 
                     <div className="w-full grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-6 place-items-center 
@@ -75,7 +75,7 @@ const Hero = () => {
                                 <div className=''>
                                     <span className='flex font-bold'>
                                         {[...Array(5)].map((_, index) => (
-                                            <HiStar key={index} className='text-[1rem]' />
+                                            <HiStar key={index} className='text-[1rem]' aria-label="start rating"/>
                                         ))}
                                     </span>
                                 </div>
@@ -96,7 +96,7 @@ const Hero = () => {
                         rounded-3xl  bg-indigo-500">
                         <img ref={imgRef}
                         src="/people/black-girl.jpg"
-                        alt="beautiful smiley black girl"
+                        alt="An African-American girl smiling brightly after a dental check-up."
                         className='w-full h-full object-cover rounded-3xl'
                     />
                     </div>

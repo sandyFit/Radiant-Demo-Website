@@ -106,7 +106,7 @@ const Faqs = () => {
                         rounded-[10px] xl:rounded-xl bg-indigo-600 ">
                         <img ref={imgRef}
                             src="/people/asian-girl.jpg"
-                            alt=""
+                            alt="A happy Asian girl displaying her beautiful smile following a dental procedure."
                             className='w-full h-full object-cover bg-center rounded-[10px] xl:rounded-xl'
                         />
                     </div>

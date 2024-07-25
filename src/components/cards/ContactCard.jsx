@@ -19,7 +19,7 @@ const ContactCard = ({ isMenuOpen }) => {
 
             <div className="flex flex-col justify-start text-indigo-900">
                 <div className='flex gap-2 text-[1.1rem] xl:text-[1.5rem] mx-4 mt-6'>
-                    <ImLocation2 />
+                    <ImLocation2 aria-label="Office location" />
                     <p className='w-48 ml-2 text-links'>
                         Radiant Dental Studio
                         123 Main Street
@@ -28,12 +28,12 @@ const ContactCard = ({ isMenuOpen }) => {
                 </div>
 
                 <div className='flex gap-2 text-[1.1rem] xl:text-[1.3rem] mx-4 mt-6'>
-                    <FaPhoneAlt />
+                    <FaPhoneAlt aria-label="Contact phone number"/>
                     <p className='ml-2 text-links'>+1 666 333 69 69</p>
                 </div>
 
                 <div className='flex gap-2 text-[1.1rem] xl:text-[1.4rem] mb-11 mx-4 mt-6'>
-                    <BsEnvelopeAtFill />
+                    <BsEnvelopeAtFill aria-label="Send email"/>
                     <a href='mailto:info@radiantdental.com'
                         className='ml-2 text-links relative after:absolute after:bottom-0 
                             after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 
@@ -55,6 +55,7 @@ const ContactCard = ({ isMenuOpen }) => {
                 <a href="https://instagram.com" 
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Visit our Instagram profile"
                     style={{ zIndex: 2000, pointerEvents: 'auto' }}>
                     <FaInstagram className='text-[1.5rem] xl:text-[2rem] cursor-pointer text-indigo-900 hover:text-indigo-700'
                         style={{ transition: 'opacity 0.3s' }}
@@ -62,7 +63,8 @@ const ContactCard = ({ isMenuOpen }) => {
                 </a>
                 <a href="https://linkedin.com" 
                     target="_blank"
-                    rel="noopener noreferrer"                   
+                    rel="noopener noreferrer"     
+                    aria-label="Check our LinkedIn profile"
                     style={{ zIndex: 2000, pointerEvents: 'auto' }}>
                     <AiFillLinkedin className='text-[1.5rem] xl:text-[2rem] cursor-pointer text-indigo-900 hover:text-indigo-700'
                         style={{ transition: 'opacity 0.3s' }}
@@ -71,6 +73,7 @@ const ContactCard = ({ isMenuOpen }) => {
                 <a href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Check our Twitter profile"
                     style={{ zIndex: 20, pointerEvents: 'auto' }}>
                     <BsTwitterX className='text-[1.3rem] xl:text-[1.8rem] cursor-pointer 
                         text-indigo-900 hover:text-indigo-700 mt-[1px]'

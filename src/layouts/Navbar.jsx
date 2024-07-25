@@ -26,16 +26,19 @@ const Navbar = () => {
                     <line x1="5" y1="0" x2="5" y2="70" stroke="#fafafa" strokeWidth="2"/>
                 </svg>
 
-                <button onClick={toggleMenu}
-                    className="flex z-[1000]">
+                <button
+                    onClick={toggleMenu}
+                    className="flex z-[1000]"
+                    aria-expanded={visible}
+                    aria-controls="menu"
+                    aria-label={visible ? "Close menu" : "Open menu"}
+                    >
                     <div className="group relative flex text-mayus-dark items-center gap-2">
                         <span className="relative inline-flex overflow-hidden">
-                            <div className="hidden lg:block translate-y-0 transition duration-500 
-                            group-hover:-translate-y-[85%] ">
+                            <div className="hidden lg:block translate-y-0 transition duration-500 group-hover:-translate-y-[85%]">
                                 {visible ? 'close' : 'menu'}
                             </div>
-                            <div className="absolute translate-y-[85%] transition duration-500 
-                                group-hover:translate-y-0 ">
+                            <div className="absolute translate-y-[85%] transition duration-500 group-hover:translate-y-0">
                                 {visible ? 'close' : 'open'}
                             </div>
                         </span>
@@ -46,6 +49,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </button>
+
                
                 <svg height="70" width="10" xmlns="http://www.w3.org/2000/svg" className='hidden lg:block absolute right-44 
                     top-1/2 transform -translate-y-1/2'>

@@ -2,6 +2,7 @@ const services =[
     
     {       
         title: "General Dentistry",
+        alt: "A dental check-up in progress with a patient.",
         description: "Treatments to ensure your teeth remain disease-free, functional, and aesthetic throughout your life.",
         categories: [
             {
@@ -32,6 +33,7 @@ const services =[
     },
     {
         title: "Hygiene and Therapy",
+        alt: "Hygiene process being conducted on a patient at the dental studio.",
         description: "Treatments that keep your gums disease free and healthy throughout life.",
         categories: [
             {
@@ -49,6 +51,7 @@ const services =[
     {
         title: "Orthodontics",
         description: "Treatments that enable you have beautifully aligned teeth.",
+        alt: "Close-up of a patient with ceramic braces smiling.",
         categories: [
             {
                 name: "Invisilign",
@@ -69,6 +72,7 @@ const services =[
     {
         title: "Cosmetic Dentistry",
         description: "Treatments that enable you have beautifully aligned teeth.",
+        alt: "Side-by-side photos of teeth before and after a whitening procedure.",
         categories: [
             {
                 name: "Teeth Whitenning",

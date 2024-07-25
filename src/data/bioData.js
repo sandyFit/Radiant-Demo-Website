@@ -6,7 +6,7 @@ const bioData = [
                       \nAs new dental techniques and products continue to emerge, our commitment remains steadfast in ensuring that we can offer the best available options. 
                       We look forward to the opportunity to serve you. \nDr. Roberts`,
         imageSrc: '/dentists/dentist-0.jpeg',
-        altText: 'the team'
+        altText: 'Our team of professionals, standing together.'
     },
     {
         firstName: 'Dr. Nathan',
@@ -15,7 +15,7 @@ const bioData = [
                       \nDr. Roberts's expertise ranges from general exams and preventive care to more complex cosmetic procedures such as dental implants, veneers, and Invisalign®.
                       \nHe works closely with his patients to develop individualized plans that address their goals, health considerations, and budgets.`,
         imageSrc: '/dentists/dentist-1.jpg',
-        altText: 'Dr. Nathan'
+        altText: 'Nathan Roberts, founder and owner of Radiant Dental Studio, smiling in his professional attire.'
     },
     {
         firstName: 'Joseph',
@@ -24,7 +24,7 @@ const bioData = [
                       \nHis training means he can carry out some of the work of a dentist, including providing treatments to children and treating patients suffering from gum disease. He has been certified in the use of nitrous oxide and local anesthesia.
                       \nJoseph aims to provide the highest standard of dental care and keeps his knowledge up to date by attending dental courses and lectures.`,
         imageSrc: '/dentists/dentist-2.jpg',
-        altText: 'Joseph'
+        altText: 'Joseph Thompson, Dental Therapist and Hygienist at Radiant Dental Studio, smiling warmly.'
     },
     {
         firstName: 'Gabrielle',
@@ -33,7 +33,7 @@ const bioData = [
                       \nHer current role is that of front office manager. She enjoys helping and interacting with patients. Our patients and staff enjoy her bubbly, positive personality and radiant smile.
                       \nGabrielle loves to travel, dine out and spend time outdoors. She values quality time with her husband Steve, their children and grandchildren.`,
         imageSrc: '/dentists/dentist-4.jpg',
-        altText: 'Gabrielle'
+        altText: 'Gabrielle Dawson, front office manager at Radiant Dental Studio, with a radiant smile.'
     },
     {
         firstName: 'Dr. Karim',
@@ -42,7 +42,7 @@ const bioData = [
                       \nDr. Asouza eventually made his way north and graduated from the Rutgers School of Dental Medicine in Newark, New Jersey.
                       \nIn his professional career, Dr. Asouza takes pride in providing high-quality, comprehensive dental care. He always takes the necessary time to accurately diagnose and explain treatment options with his patients so they can make their own educated decisions.`,
         imageSrc: '/dentists/dentist-3.png',
-        altText: 'Dr. Asouza'
+        altText: 'Dr. Karim Asouza, providing high-quality dental care at Radiant Dental Studio, smiling confidently.'
     },
     {
         firstName: 'Judy',
@@ -51,16 +51,16 @@ const bioData = [
                       \nShe has been an instrumental part of this practice for over 2 years, and has developed a trusting relationship with our patients while achieving the highest level of oral health.
                       \nJudy has completed training at the Schuster Center for Professional Development in Scottsdale. She attends many continuing education classes and is always striving to gain more knowledge for the benefit of her patients.`,
         imageSrc: '/dentists/dentist-6.jpg',
-        altText: 'Judy'
+        altText: 'Our hygienist Judy, an active member of the American Dental Hygiene Association, smiling warmly in her professional uniform.'
     },
     {
         firstName: 'Daniela',
         lastName: 'Arevalo',
-        description: `Daniela joined our team in 2016. Behind her beautiful smile is a woman who is passionate about getting to know all of our patients and making sure they receive quality service and attention from our front office.
+        description: `Daniela is a CDA —Certified Dental Assistant— she joined our team in 2016. Behind her beautiful smile is a woman who is passionate about getting to know all of our patients and making sure they receive quality service and attention from our front office.
                       \nDaniela was born in Colombia, her parents migrated when she was 3 and has lived in the South Bay most of her life.
                       \nOutside of the office, being involved in the community is very important to Daniela. She's an avid volunteer for various local projects. Daniela is also fluent in Spanish.`,
         imageSrc: '/dentists/dentist-5.jpg',
-        altText: 'Daniela'
+        altText: 'Daniela, a Certified Dental Assistant at Radiant Dental Studio since 2016, with a friendly and welcoming smile.'
     }
 ];
 

@@ -19,7 +19,7 @@ const ServiceCard = ({ service, index }) => (
 
             <div className="flex justify-center items-center gap-6">
                 <article className="relative w-[30%] h-full bg-indigo-300 rounded-[20px] overflow-hidden">
-                    <img src={service.imgSrc} alt={service.title} className="w-full h-full object-cover" />
+                    <img src={service.imgSrc} alt={service.alt} className="w-full h-full object-cover" />
                     {/* <div className="absolute inset-0 bg-[rgba(59,76,123,0.1)] "></div> */}
                 </article>
 

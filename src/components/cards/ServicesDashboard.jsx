@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import servicesCardData from '../../data/servicesCardData';
-import MobileServicesCard from './MobileServicesCard';
 import CardService from './CardService';
 import AOS from 'aos';
 import CardServiceMobile from './CardServiceMobile';
