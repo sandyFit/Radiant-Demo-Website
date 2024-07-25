@@ -25,7 +25,7 @@ const MobileFooter = () => {
             </div>
 
             <div className='w-full flex bg-indigo-950 flex-col justify-center items-center py-3'>
-                 <div className="flex justify-evenly text-min-white list-none w-[76%] md:w-[60%]">
+                 <div className="flex justify-evenly text-min-white list-none w-[76%] md:w-[60%] lg-sm:w-[45%]">
                     <a href='#'
                         className='ml-1 font-[400] relative after:absolute after:bottom-0 
                         after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 

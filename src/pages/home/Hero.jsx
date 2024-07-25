@@ -62,7 +62,7 @@ const Hero = () => {
                             h-12 md:h-[3.6rem] base:h-[3.8rem] lg:h-[4rem] px-8 md:px-10 base:px-6 text-[1rem] 
                             md:text-[1.3rem] base:text-[1.38rem] lg:text-[1.4rem] xl:text-[1.2rem] 2xl:text-[1.5rem]
                             z-[40]">
-                            <Button text={'book online'} />
+                            <Button text={'book online'} aria={'Click to book online'} />
                         </div>
                         <div className="col-span-2 2xl:col-span-3 hidden lg:grid grid-cols-3 place-items-center w-full 
                             2xl:w-[85%] ml-0 lg:ml-[3vw] mr-0 2xl:mr-6">

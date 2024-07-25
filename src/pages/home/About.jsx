@@ -103,11 +103,12 @@ const About = () => {
 
                 {/* FLOATING BUTTON TO GO TOP */}
                 <button onClick={scrollToTop}
+                    aria-label='back to top'
                     className={`hidden lg:inline-flex fixed p-5 right-10 bottom-20 group items-center 
                         justify-center overflow-hidden rounded-full glass z-[1000] 
                         ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="transition duration-300 group-hover:rotate-[360deg] text-indigo-900">
-                        <HiArrowUp style={{ fontSize: '2.2rem' }} />
+                        <HiArrowUp style={{ fontSize: '2.2rem' }} aria-hidden="true" />
                     </div>
                 </button>
             </div>
