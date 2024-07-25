@@ -39,8 +39,8 @@ const WorkingHrsTable = () => {
         book online
       </button> */}
 
-      <div className="flex btn-book-online mt-10 px-12 md:px-[4.8rem] xl:px-12 py-2 text-[1.1rem] 
-        md:text-[1.3rem] xl:text-[1.4rem]">
+      <div className="flex btn-book-online mt-10 px-12 md:px-[4.8rem] lg-sm:px-10 xl:px-12 py-2 text-[1.1rem] 
+        md:text-[1.3rem] lg-sm:text-[1.2rem] xl:text-[1.4rem]">
         <Button text={'book online'} aria={'Click to book online'}/>
       </div>
     </article>

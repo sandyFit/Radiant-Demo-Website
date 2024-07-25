@@ -4,10 +4,10 @@ const TeamMobile = ({ bioData, renderDescription }) => {
     return (
         <article>
             
-            <div className="h-[280rem] md:h-[324rem] w-[86%] md:w-[85%] base:w-[82%] base:h-[90%] ml-6 
-                md:ml-8 base:ml-12">
+            <div className="h-[280rem] md:h-[324rem] w-[86%] md:w-[85%] base:w-[82%] base:h-[90%] lg-sm:w-[80%] ml-6 
+                md:ml-8 base:ml-12 lg-sm:ml-16">
                 <div className="w-full flex flex-col items-center">
-                    <div className="flex flex-col justify-center w-full gap-8">                       
+                    <div className="flex flex-col w-full gap-8">                       
                         {bioData.map((member, index) => (
                             <div key={index} >
                                 <h3 className="text-left text-indigo-900 title-medium pb-2">

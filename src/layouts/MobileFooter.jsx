@@ -5,23 +5,27 @@ import NewsletterInput from '../components/forms/NewsletterInput'
 
 const MobileFooter = () => {
     return (
-        <article className="flex flex-col justify-center items-center bg-indigo-900 w-full mt-5 md:mt-10 overflow-x-hidden">
+        <article className="flex flex-col justify-center items-center bg-indigo-900 w-full mt-5 md:mt-10 
+            overflow-x-hidden">
             <div id='contact'>
                 <ContactCard/>
             </div>
 
-            <div className="flex flex-col mt-20">
-                <h4 className='title-h4 text-center'>
-                    WORKING HOURS
-                </h4>
-                <WorkingHrsTable/>
-            </div>
+            <div className="w-full flex flex-col lg-sm:flex-row justify-between lg-sm:px-16">
 
-            <div className='w-[18rem] flex flex-col items-center my-20 '>
-                <h4 className='title-h4 text-center mb-6'>
-                    NEWSLETTER SIGN UP
-                </h4>
-                <NewsletterInput/>
+                <div className="flex flex-col mt-20">
+                    <h4 className='title-h4 text-center'>
+                        WORKING HOURS
+                    </h4>
+                    <WorkingHrsTable/>
+                </div>
+
+                <div className=' flex flex-col items-center my-20 '>
+                    <h4 className='title-h4 text-center mb-6'>
+                        NEWSLETTER SIGN UP
+                    </h4>
+                    <NewsletterInput/>
+                </div>
             </div>
 
             <div className='w-full flex bg-indigo-950 flex-col justify-center items-center py-3'>
