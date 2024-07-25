@@ -84,7 +84,7 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                 </article>
 
                 <article className="grid grid-cols-1 gap-6">
-                    <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] xl:w-[44rem] 
+                    <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] lg-sm:h-[14rem] xl:w-[44rem] 
                         xl:h-[20.8rem] bg-indigo-600 relative
                         hover:bg-indigo-700 rounded-[10px] xl:rounded-xl text-indigo-200 px-4 xl:px-16 shadow-lg ">
                         <span className="hidden xl:block text-[12rem] absolute bottom-[4rem]

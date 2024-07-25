@@ -23,18 +23,18 @@ const ReviewsCarousel = ({ reviews }) => {
     return (
         <div className='flex justify-center items-center w-full relative'>
             <div className="relative flex justify-center items-center w-full">
-                <div className="absolute xl:right-[14.2rem] -bottom-6 xl:bottom-12 space-x-12 md:space-x-10 
-                    base:space-x-4 xl:space-x-4 z-20 py-0 flex">
-                    <button
-                        className='w-28 md:w-40 base:w-48 xl:w-36 h-10 xl:h-20 bg-indigo-600 
+                <div className="absolute xl:right-[14.2rem] -bottom-6 lg-sm:-bottom-[2.2rem] xl:bottom-12 space-x-12 md:space-x-10 
+                    base:space-x-4 lg-sm:space-x-[4.58rem] xl:space-x-4 z-20 py-0 flex">
+                    <button aria-label='Previous'
+                        className='w-28 md:w-40 base:w-48 lg-sm:w-56 xl:w-36 h-10 lg-sm:h-12 xl:h-20 bg-indigo-600 
                             hover:bg-indigo-700 shadow-lg rounded-[10px] xl:rounded-xl text-indigo-100 
                             text-3xl flex justify-center items-center'
                         onClick={goPrev}
                     >
                         ⋘
                     </button>
-                    <button
-                        className='w-28 md:w-40 base:w-48 xl:w-36 h-10 xl:h-20 bg-indigo-600 hover:bg-indigo-700 
+                    <button aria-label='Next'
+                        className='w-28 md:w-40 base:w-48 lg-sm:w-56 xl:w-36 h-10 lg-sm:h-12 xl:h-20 bg-indigo-600 hover:bg-indigo-700 
                             shadow-lg rounded-[10px] xl:rounded-xl text-indigo-100 text-3xl flex 
                             justify-center items-center'
                         onClick={goNext}

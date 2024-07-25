@@ -35,10 +35,12 @@ const Navbar = () => {
                     >
                     <div className="group relative flex text-mayus-dark items-center gap-2">
                         <span className="relative inline-flex overflow-hidden">
-                            <div className="hidden lg:block translate-y-0 transition duration-500 group-hover:-translate-y-[85%]">
+                            <div className="hidden lg:block translate-y-0 transition duration-500 
+                                group-hover:-translate-y-[85%]">
                                 {visible ? 'close' : 'menu'}
                             </div>
-                            <div className="absolute translate-y-[85%] transition duration-500 group-hover:translate-y-0">
+                            <div className="absolute translate-y-[85%] transition duration-500 
+                                group-hover:translate-y-0">
                                 {visible ? 'close' : 'open'}
                             </div>
                         </span>
