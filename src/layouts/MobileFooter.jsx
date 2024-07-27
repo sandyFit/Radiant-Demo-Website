@@ -11,7 +11,7 @@ const MobileFooter = () => {
                 <ContactCard/>
             </div>
 
-            <div className="w-full flex flex-col lg-sm:flex-row justify-between lg-sm:px-16 lg-xl:px-24">
+            <div className="w-full flex flex-col lg-sm:flex-row justify-between lg-sm:px-16 lg-xl:px-24 xl-md:px-28">
 
                 <div className="flex flex-col mt-20">
                     <h4 className='title-h4 text-center'>
