@@ -67,7 +67,7 @@ const About = () => {
     return (
         <section 
             className='flex flex-col w-full h-full pt-20 3xl-sm:pt-[8rem] bg-slate-300
-                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 2xl:px-24 3xl:px-40 '>
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 3xl:px-40 '>
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                 <span 
@@ -82,7 +82,7 @@ const About = () => {
                 <button onClick={handleClick}
                     aria-expanded={visible}
                     aria-controls="menu"
-                    className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl:top-11 xl:left-10 group inline-flex 
+                    className={`fixed w-12 h-12 lg:w-20 lg:h-20 top-4 xl-lg:top-11 xl-lg:left-10 group inline-flex 
                         items-center justify-center overflow-hidden rounded-full glass z-30 
                         ${showFloatingBtn ? '' : 'invisible'}`}>
                     <div className="group relative flex items-center gap-2">
@@ -113,11 +113,11 @@ const About = () => {
                 </button>
             </div>
 
-            <div className="w-full grid grid-cols-1 xl:grid-cols-2 place-content-center xl:place-items-between 
+            <div className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-content-center xl-lg:place-items-between 
                 py-3 lg:py-12 relative">
-                <article className="col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
-                    base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl:w-[24rem] 
-                    3xl:w-[32rem]
+                <article className="col-span-1 xl-lg:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
+                    base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl:w-[32rem] 
+                    3xl-lg:w-[32rem]
                     rounded-[20px] bg-indigo-500 overflow-hidden">
                     {/* ABOUT IMAGE */}
                     <img ref={imgRef}
@@ -126,7 +126,7 @@ const About = () => {
                         className='w-full h-full object-cover rounded-[20px]' />
                 </article>
 
-                <article className='col-span-1 xl:col-start-2 row-start-2 xl:row-start-1 mt-6 md:mt-10 lg:mt-8
+                <article className='col-span-1 xl-lg:col-start-2 row-start-2 xl-lg:row-start-1 mt-6 md:mt-10 lg:mt-8
                     relative'>
                     {/* ABOUT COPY */}
                     <div className="grid grid-cols-1">

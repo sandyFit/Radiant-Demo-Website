@@ -39,9 +39,10 @@ const Hero = () => {
     return (
         <section id='index'
             className='w-full min-h-screen bg-slate-300'>
-            <div className="w-full grid grid-cols-1 xl:grid-cols-2 place-self-center place-items-center
+            <div className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-self-center place-items-center
                 px-2 base:px-8 xl:px-10 2xl:px-24 3xl:px-40 ">
-                <article className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] xl:w-[90%] 2xl:w-full mt-8 xl:mt-40 gap-6">
+                <article className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] 2xl:w-full mt-8 
+                    xl-lg:mt-40 gap-6">
                     <h1 className='title-h1 w-full'>
                         <span>Reveal
                             <span className='app-title' style={{ margin: '0 1rem' }}>
@@ -88,11 +89,11 @@ const Hero = () => {
                     </div>
                 </article>
 
-                <article className='xl:col-start-2 row-start-1 xl:row-start-auto mt-36 xl:mt-44 3xl:mt-40
+                <article className='xl-lg:col-start-2 row-start-1 xl-lg:row-start-auto mt-36 xl-lg:mt-44 3xl:mt-40
                     grid place-self-center ml-0 3xl:ml-[2.5rem]'>
                     <div className="w-[85vw] h-[85vw]  md:w-[22rem] md:h-[22rem] base:w-[25rem] base:h-[25rem] 
                         lg-sm:w-[30rem] lg-sm:h-[30rem] lg-md:w-[32rem] lg-md:h-[32rem] lg:w-[78vw] lg:h-[78vw] 
-                        xl:w-[40vw] xl:h-[40vw] 2xl:w-[38vw] 3xl:w-[36vw]
+                        xl:w-[78vw] xl:h-[78vw] 2xl:w-[38vw] 2xl:h-[38vw] 
                         rounded-3xl  bg-indigo-500">
                         <img ref={imgRef}
                         src="/people/black-girl.jpg"

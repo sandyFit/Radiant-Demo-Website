@@ -5,7 +5,7 @@ const TeamMobile = ({ bioData, renderDescription }) => {
         <article>
             
             <div className="h-[280rem] md:h-[324rem] w-[86%] md:w-[85%] base:w-[82%] base:h-[90%] lg-sm:w-[80%] 
-                ml-6 md:ml-8 base:ml-12 lg-sm:ml-16 lg-xl:ml-20">
+                ml-6 md:ml-8 base:ml-12 lg-sm:ml-16 lg-xl:ml-20 xl:ml-24">
                 <h2 data-aos='fade-up' className='hidden xl-sm:block big-title text-left'>
                         Meet Our <span className='app-title '>Team</span>
                     </h2>

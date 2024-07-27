@@ -56,7 +56,7 @@ const bioData = [
     {
         firstName: 'Daniela',
         lastName: 'Arevalo',
-        description: `Daniela is a CDA —Certified Dental Assistant— she joined our team in 2016. Behind her beautiful smile is a woman who is passionate about getting to know all of our patients and making sure they receive quality service and attention from our front office.
+        description: `Daniela is a CDA —Certified Dental Assistant. She joined our team in 2016. Behind her beautiful smile is a woman who is passionate about getting to know all of our patients and making sure they receive quality service and attention from our front office.
                       \nDaniela was born in Colombia, her parents migrated when she was 3 and has lived in the South Bay most of her life.
                       \nOutside of the office, being involved in the community is very important to Daniela. She's an avid volunteer for various local projects. Daniela is also fluent in Spanish.`,
         imageSrc: '/dentists/dentist-5.jpg',

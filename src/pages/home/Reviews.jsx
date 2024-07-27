@@ -14,7 +14,7 @@ const Reviews = () => {
             className='flex flex-col justify-center pt-20 relative bg-slate-300'>
 
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
-                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 2xl:px-24 3xl:px-40">
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 3xl:px-40">
                 
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative ">               
                     <span 
@@ -26,7 +26,7 @@ const Reviews = () => {
             </div>
 
             <div className="flex flex-col items-center gap-8 relative">
-                <h2 className='text-left xl:text-center title-h2 w-[85%] base:w-[80%] xl:w-[80%] pt-2 lg:pt-4 ' >
+                <h2 className='text-left xl-lg:text-center title-h2 w-[85%] base:w-[80%] xl:w-[80%] pt-2 lg:pt-4 ' >
                     Your  
                     <span className='app-title mx-1.5 xl:mx-4' >
                         Opinion

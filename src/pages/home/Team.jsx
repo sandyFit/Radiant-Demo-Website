@@ -52,7 +52,7 @@ const Team = () => {
             className="w-full h-auto flex flex-col justify-center pt-20 3xl-sm:pt-[8rem] pb-2 xl:pb-12 
             bg-slate-300 z-10 relative">
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
-                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 2xl:px-24 3xl:px-40">
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-24 3xl:px-40">
                
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
                     gap-6">               
@@ -81,7 +81,7 @@ const Team = () => {
                                         <div className="ml-16 relative w-full z-20">
                                             <h3 className="text-left text-indigo-900 title-medium lg:w-[80%] pt-2">
                                                 {member.firstName}
-                                                <span className="app-title ">{member.lastName}</span>
+                                                <span className="app-title 2xl:ml-4">{member.lastName}</span>
                                             </h3>
                                             <p className="text-p1 mt-8 w-3/4 2xl:w-[80%]">
                                                 {renderDescription(member.description)}

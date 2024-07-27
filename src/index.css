@@ -373,7 +373,7 @@ body {
             text-[1.7rem] 
             md:text-4xl 
             lg-sm:text-[3.1rem]
-            xl:text-[2.5rem]
+            xl:text-[2.8rem]
             3xl:text-6xl 
             leading-[1em] 
             lg-sm:leading-[1.1em]
@@ -411,7 +411,8 @@ body {
         text-2xl 
         md:text-3xl 
         xl-sm:text-[1.7rem]
-        xl:text-[2.8rem] 
+        xl:text-[2rem] 
+        2xl:text-[2.8rem]
                                         
     }
 
