@@ -64,7 +64,7 @@ const Faqs = () => {
             className='relative h-auto pt-28 xl:pt-40 bg-slate-300 pb-24 xl:pb-36'>   
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
-                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">              
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 2xl:px-24 3xl:px-40">              
                 <div className="w-full flex justify-start items-center text-mayus-dark relative gap-6">               
                     <span 
                         className='inline-flex'>
@@ -101,7 +101,7 @@ const Faqs = () => {
                 </div>
 
                 <div className="flex flex-col xl:flex-row w-full justify-between px-6 md:px-8 base:px-12 lg-sm:px-16 
-                    2xl:px-24 3xl:px-40 pt-6 xl:pt-16 gap-4">
+                    lg-xl:px-20 2xl:px-24 3xl:px-40 pt-6 xl:pt-16 gap-4">
                     <div className="flex w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl:w-[35vw] xl:h-[35vw] 
                         rounded-[10px] xl:rounded-xl bg-indigo-600 ">
                         <img ref={imgRef}

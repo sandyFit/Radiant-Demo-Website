@@ -41,7 +41,7 @@ const Hero = () => {
             className='w-full min-h-screen bg-slate-300'>
             <div className="w-full grid grid-cols-1 xl:grid-cols-2 place-self-center place-items-center
                 px-2 base:px-8 xl:px-10 2xl:px-24 3xl:px-40 ">
-                <article className="col-span-1 col-start-1 grid w-[90%] xl:w-[90%] 2xl:w-full mt-8 xl:mt-40 gap-6">
+                <article className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] xl:w-[90%] 2xl:w-full mt-8 xl:mt-40 gap-6">
                     <h1 className='title-h1 w-full'>
                         <span>Reveal
                             <span className='app-title' style={{ margin: '0 1rem' }}>

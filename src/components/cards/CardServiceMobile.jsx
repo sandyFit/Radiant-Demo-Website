@@ -3,7 +3,7 @@ import React from 'react'
 const CardServiceMobile = ({ service, index }) => {
    return (
         <section 
-           className={`grid grid-cols-1 w-[86%] h-[98%] md:w-[85%] base:w-[82%] base:h-[90%] mb-8 pb-10
+           className={`grid grid-cols-1 w-[86%] h-[98%] md:w-[85%] base:w-[82%] base:h-[90%] lg-xl:w-[80%] mb-8 pb-10
                 rounded-lg sticky top-12 ${index % 2 === 0 ? 'bg-indigo-600' : 'bg-sky-600'}`}
 
         >

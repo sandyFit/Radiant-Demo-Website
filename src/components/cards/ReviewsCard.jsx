@@ -65,8 +65,8 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
         <section className='flex justify-center items-center w-full relative'>
             <div className="flex flex-col xl:flex-row justify-center items-center gap-2 md:gap-3 xl:gap-6">
                 <article className="grid grid-cols-1 place-items-center gap-2 md:gap-3 xl:gap-6">
-                    <div className='w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl:w-[20.8rem] xl:h-[20.8rem] rounded-xl bg-indigo-600 
-                        shadow-lg overflow-hidden'>
+                    <div className='w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl:w-[20.8rem] xl:h-[20.8rem] 
+                        rounded-xl bg-indigo-600 shadow-lg overflow-hidden'>
                         <img
                             ref={imgRef}
                             src={srcImg}
@@ -84,8 +84,8 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                 </article>
 
                 <article className="grid grid-cols-1 gap-6">
-                    <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] lg-sm:h-[14rem] xl:w-[44rem] 
-                        xl:h-[20.8rem] bg-indigo-600 relative
+                    <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] lg-sm:h-[14rem] lg-xl:h-[12rem]
+                        xl:w-[44rem] xl:h-[20.8rem] bg-indigo-600 relative
                         hover:bg-indigo-700 rounded-[10px] xl:rounded-xl text-indigo-200 px-4 xl:px-16 shadow-lg ">
                         <span className="hidden xl:block text-[12rem] absolute bottom-[4rem]
                             left-16">

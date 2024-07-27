@@ -14,7 +14,7 @@ const Reviews = () => {
             className='flex flex-col justify-center pt-20 relative bg-slate-300'>
 
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
-                px-6 md:px-8 base:px-12 lg-sm:px-16 2xl:px-24 3xl:px-40">
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 2xl:px-24 3xl:px-40">
                 
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative ">               
                     <span 
