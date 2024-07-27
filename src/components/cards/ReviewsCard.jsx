@@ -63,9 +63,9 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
 
     return (
         <section className='flex justify-center items-center w-full relative'>
-            <div className="flex flex-col xl:flex-row justify-center items-center gap-2 md:gap-3 xl:gap-6">
+            <div className="flex flex-col xl-sm:flex-row justify-center items-center xl-sm:items-start 2xl:items-center gap-2 md:gap-3 xl:gap-6">
                 <article className="grid grid-cols-1 place-items-center gap-2 md:gap-3 xl:gap-6">
-                    <div className='w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl:w-[20.8rem] xl:h-[20.8rem] 
+                    <div className='w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl-sm:w-[20.8rem] xl-sm:h-[20.8rem] 
                         rounded-xl bg-indigo-600 shadow-lg overflow-hidden'>
                         <img
                             ref={imgRef}
@@ -75,17 +75,29 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                         />
                     </div>
 
-                    <div className="flex flex-col w-[85vw] base:w-[80vw] xl:w-[20.8rem] h-10 xl:h-20 bg-indigo-600 
-                        shadow-lg rounded-[10px] xl:rounded-xl justify-center items-center">
+                    <div className="flex flex-col w-[85vw] base:w-[80vw] xl-sm:w-[20.8rem] h-10 xl:h-20 
+                        bg-indigo-600 shadow-lg rounded-[10px] xl:rounded-xl justify-center items-center">
                         <h4 className='text-indigo-200 title-h5 '>
                             {name}
                         </h4>
+                    </div>
+
+                    <div className='hidden xl-sm:flex xl:hidden w-[20.8rem] h-12 glass justify-center items-center 
+                        rounded-xl'>
+                        <span className='flex text-indigo-500' ref={starsRef}>
+                            {[...Array(5)].map((_, index) => (
+                                <HiStar key={index}
+                                    style={{ fontSize: '2.6rem' }}
+                                    aria-label="Star rating"
+                                    className="star" />
+                            ))}
+                        </span>
                     </div>
                 </article>
 
                 <article className="grid grid-cols-1 gap-6">
                     <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] lg-sm:h-[14rem] lg-xl:h-[12rem]
-                        xl:w-[44rem] xl:h-[20.8rem] bg-indigo-600 relative
+                        xl-sm:w-[19rem] xl-sm:h-[24rem] xl:w-[44rem] xl:h-[20.8rem] bg-indigo-600 relative
                         hover:bg-indigo-700 rounded-[10px] xl:rounded-xl text-indigo-200 px-4 xl:px-16 shadow-lg ">
                         <span className="hidden xl:block text-[12rem] absolute bottom-[4rem]
                             left-16">
