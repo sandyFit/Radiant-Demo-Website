@@ -30,7 +30,7 @@ const ReviewsCarousel = ({ reviews }) => {
                     lg-xl:space-x-[5.5rem] xl-sm:space-x-4 xl-md:space-x-8 3xl:space-x-6 z-20 py-0 flex">
                     <button aria-label='Previous'
                         className='w-28 md:w-40 base:w-48 lg-sm:w-56 lg:w-60 lg-xl:w-64 xl-sm:w-36 
-                            2xl:w-[8.88rem]
+                            3xl:w-[8.88rem]
                             h-10 lg-sm:h-12 lg-xl:h-16 xl-sm:h-12 xl:h-20 bg-indigo-600 
                             hover:bg-indigo-700 shadow-lg rounded-[10px] xl:rounded-xl text-indigo-100 
                             text-3xl flex justify-center items-center'
@@ -40,7 +40,7 @@ const ReviewsCarousel = ({ reviews }) => {
                     </button>
                     <button aria-label='Next'
                         className='w-28 md:w-40 base:w-48 lg-sm:w-56 lg:w-60 lg-xl:w-64 xl-sm:w-36 
-                            2xl:w-[8.88rem] h-10 lg-sm:h-12 lg-xl:h-16 xl-sm:h-12 xl:h-20 bg-indigo-600 
+                            3xl:w-[8.88rem] h-10 lg-sm:h-12 lg-xl:h-16 xl-sm:h-12 xl:h-20 bg-indigo-600 
                             hover:bg-indigo-700 shadow-lg rounded-[10px] xl:rounded-xl text-indigo-100 
                             text-3xl flex justify-center items-center'
                         onClick={goNext}

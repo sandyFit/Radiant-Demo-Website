@@ -8,7 +8,7 @@ const Footer = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <section id='footer' className='w-full h-auto xl:h-[36rem] bg-indigo-900 overflow-hidden relative'>
+        <section id='footer' className='w-full h-auto xl:h-[36rem] bg-indigo-900 overflow-hidden '>
             {/* Desktop */}
             <article className='hidden xl:flex w-full flex-col justify-between relative'
                 style={{ position: 'sticky', bottom: 0 }}>
