@@ -1,18 +1,27 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+
 
 const CardService = ({ service, index }) => {
+
+    
+
+    
     return (
         <section 
-            className={`w-[70%] rounded-[20px] px-10 py-6 sticky-element mb-16
+            className={`w-[70%] rounded-[20px] px-10 py-6 sticky top-20 mb-16 
                 ${index % 2 === 0 ? 'bg-indigo-500' : 'bg-sky-400'}`}
-
         >
             <div className="flex justify-between">
                 <div className="flex items-center gap-10">
                     <figure className="flex w-16 h-16 rounded-full bg-indigo-50 justify-center items-center">
-                        <img src={service.iconSrc} alt={`${service.title} icon`} className='w-12 h-12' />
+                        <img 
+                            src={service.iconSrc} alt={`${service.title} icon`} className='w-12 h-12' />
                     </figure>
-                    <h2 className='title-cards z-30'>
+                    <h2 
+                        className='title-cards z-30'>
                         {service.title}
                     </h2>
                 </div>

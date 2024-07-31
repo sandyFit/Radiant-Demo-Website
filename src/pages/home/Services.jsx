@@ -43,7 +43,7 @@ const Services = () => {
             <div className="flex justify-center mt-[-5rem] 3xl:mt-6 ">
                 <div className="flex flex-col  justify-start items-center gap-8 relative">
                     <h2
-                        className='hidden xl:block text-left xl-lg:text-center title-h2 w-[80%] xl-lg:w-full
+                        className='hidden xl:block text-left xl:text-center title-h2 w-[80%] xl:w-full
                             2xl:w-[60%] pt-2 tracking-wider'
                         data-aos="fade-up"
                     >

@@ -4,7 +4,6 @@ import { HiChevronDown, HiChevronUp } from 'react-icons/hi2';
 
 const QuestionCard = ({ question, answer, isOpen, onToggle }) => {
     
-
     return (
         <article className={`border-b-2 border-indigo-50 flex flex-col w-full  2xl:w-[40vw] 
             overflow-hidden relative cursor-pointer before:absolute before:left-0 before:top-0 before:block 
