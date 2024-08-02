@@ -345,6 +345,7 @@ body {
             base:text-[1.1rem] 
             lg:text-[1.1rem] 
             xl:text-[1.1rem]
+            xl-xl:text-[.9rem]
             2xl:text-[1.26rem]
     }
 
@@ -413,6 +414,7 @@ body {
         md:text-3xl 
         xl-sm:text-[1.7rem]
         xl:text-[2rem] 
+        xl-xl:text-[1.8rem]
         2xl:text-[2.8rem]
                                         
     }

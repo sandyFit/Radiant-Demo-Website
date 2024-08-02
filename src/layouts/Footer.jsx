@@ -47,7 +47,7 @@ const Footer = () => {
                                 after:scale-x-0 after:bg-indigo-500 after:transition-transform after:duration-300 
                                 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
                                 hover:after:scale-x-100 '
-                        >lg:
+                        >
                             Trish Ramos.
                         </a>
                     </p>
