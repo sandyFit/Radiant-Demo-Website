@@ -100,9 +100,9 @@ const Faqs = () => {
                     </h2> */}
                 </div>
 
-                <div className="flex flex-col xl:flex-row w-full justify-between px-6 md:px-8 base:px-12 lg-sm:px-16 
+                <div className="flex flex-col 2xl:flex-row w-full justify-between px-6 md:px-8 base:px-12 lg-sm:px-16 
                     lg-xl:px-20 2xl:px-24 3xl:px-40 pt-6 xl:pt-16 gap-4">
-                    <div className="flex w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl:w-[35vw] xl:h-[35vw] 
+                    <div className="hidden 2xl:flex w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl:w-[35vw] xl:h-[35vw] 
                         rounded-[10px] xl:rounded-xl bg-indigo-600 ">
                         <img ref={imgRef}
                             src="/people/asian-girl.jpg"

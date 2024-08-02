@@ -117,7 +117,7 @@ const About = () => {
                 py-3 lg:py-12 xl:py-0 relative">
                 <article className="hidden xl-lg:block col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
                     base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl-lg:w-[18rem] 
-                    3xl-lg:w-[32rem]
+                    3xl:w-[32rem]
                     rounded-[20px] bg-indigo-500 overflow-hidden">
                     {/* ABOUT IMAGE */}
                     <img ref={imgRef}

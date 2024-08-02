@@ -26,7 +26,7 @@ const App = () => {
             <div className="relative z-10" >
                 <Home />
             </div>
-            <div  className='xl:sticky xl:bottom-0 z-[1]'>
+            <div  className='2xl:sticky xl:bottom-0 z-[1]'>
                 <Footer />
             </div>
 

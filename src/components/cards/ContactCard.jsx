@@ -7,7 +7,8 @@ import { FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 const ContactCard = ({ isMenuOpen }) => {
     return (
         <article id='contact'
-            className='bg-sky-400 w-full md:w-[22rem] base:w-[25rem] lg-sm:w-[30rem] h-[30rem] lg-sm:h-[38.70rem] 
+            className='bg-sky-400 w-full md:w-[22rem] base:w-[25rem] lg-sm:w-[30rem] xl:w-[28rem] 2xl:w-[30rem]
+            h-[30rem] lg-sm:h-[38.70rem] 
                 flex flex-col items-center px-4 space-y-4 relative'
             style={{ zIndex: 5, pointerEvents: isMenuOpen ? 'none' : 'auto' }}
         >
