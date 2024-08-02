@@ -66,8 +66,8 @@ const About = () => {
 
     return (
         <section 
-            className='flex flex-col w-full h-full pt-20 xl:pt-24 3xl-sm:pt-[8rem] bg-slate-300
-                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 3xl:px-40 '>
+            className='flex flex-col w-full h-full pt-20 xl:pt-24 xl-lg:pt-0 3xl-sm:pt-[8rem] bg-slate-300
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24  3xl:px-40 '>
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                 <span 
@@ -113,9 +113,9 @@ const About = () => {
                 </button>
             </div>
 
-            <div className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-content-center xl:place-items-between 
+            <div className="w-full grid grid-cols-1 xl-xl:grid-cols-2 place-content-center xl:place-items-between 
                 py-3 lg:py-12 xl:py-0 relative">
-                <article className="hidden xl-lg:block col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
+                <article className="hidden xl-xl:block col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
                     base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl-lg:w-[18rem] 
                     3xl:w-[32rem]
                     rounded-[20px] bg-indigo-500 overflow-hidden">
@@ -126,7 +126,7 @@ const About = () => {
                         className='w-full h-full object-cover rounded-[20px]' />
                 </article>
 
-                <article className='col-span-1 xl-lg:col-start-2 row-start-2 xl:row-start-1 mt-6 md:mt-10 lg:mt-8
+                <article className='col-span-1 xl-xl:col-start-2 row-start-2 xl:row-start-1 mt-6 md:mt-10 lg:mt-8
                     relative w-full'>
                     {/* ABOUT COPY */}
                     <div className="grid grid-cols-1">

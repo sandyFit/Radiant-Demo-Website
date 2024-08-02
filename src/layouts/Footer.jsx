@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='absolute inset-0 top-[32rem] w-full h-16 bg-indigo-950 flex items-center 
-                    justify-end text-center pr-[1rem] 2xl:pr-[7.8em] gap-[3rem] 2xl:gap-[9rem]'>
+                    justify-end text-center pr-[1rem] xl-lg:pr-7 2xl:pr-[7.8em] gap-[3rem] 2xl:gap-[9rem]'>
                     <p className="text-min-white">
                         ©2024 Website by
                         <a href="https://trishramos.com"
@@ -47,18 +47,26 @@ const Footer = () => {
                                 after:scale-x-0 after:bg-indigo-500 after:transition-transform after:duration-300 
                                 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
                                 hover:after:scale-x-100 '
-                        >
+                        >lg:
                             Trish Ramos.
                         </a>
                     </p>
                     <div className="flex justify-evenly text-min-white list-none w-[21%]">
                         <a href='#'
-                            className='mr-1 font-[400] relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 after:bg-indigo-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100 '>
+                            className='mr-1 font-[400] relative after:absolute after:bottom-0 after:left-0 
+                                after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0
+                                after:bg-indigo-300 after:transition-transform after:duration-300
+                                after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom
+                                hover:after:scale-x-100 '>
                             Terms of Use
                         </a>
                         |
                         <a href='#'
-                            className='ml-1 font-[400] relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 after:bg-indigo-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100 '>
+                            className='ml-1 font-[400] relative after:absolute after:bottom-0 after:left-0 
+                            after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0
+                            after:bg-indigo-300 after:transition-transform after:duration-300
+                            after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom
+                            hover:after:scale-x-100 '>
                             Privacy Policy
                         </a>
                     </div>
