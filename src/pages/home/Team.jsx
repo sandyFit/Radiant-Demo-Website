@@ -54,7 +54,8 @@ const Team = () => {
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
                 px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-24 3xl:px-40">
                
-                <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
+                <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0
+                    relative 
                     gap-6">               
                     <span 
                         className='inline-flex'
@@ -72,7 +73,7 @@ const Team = () => {
                         Meet Our <span className='app-title '>Team</span>
                     </h2>
 
-                    <div className="w-full work flex">
+                    <div className="w-full work flex xl-xl:mt-[-5rem] 3xl:mt-0">
                         <div className="relative w-[50%] 3xl:w-[54%] z-10">
                             <div className="m-auto w-[85%] 3xl:w-[75%]">
                                 {bioData.map((member, index) => (

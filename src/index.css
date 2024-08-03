@@ -312,7 +312,8 @@ body {
     }
 
     .text-mayus-dark {
-        @apply text-[1rem] text-indigo-900 font-[600] uppercase
+        @apply  text-indigo-900 font-[600] uppercase
+            text-[1rem]
     }
 
     .text-mayus-dark {
@@ -423,12 +424,15 @@ body {
         @apply font-[600] tracking-wide
             text-[1.05rem]
             xl:text-[1.26rem]
+            xl-xl:text-[1rem]
+            3xl:text-[1.26rem]
     }
 
     .title-cards {
         @apply font-[700] font-anybody text-indigo-50 uppercase
             text-[1.1rem]
             md:text-[1.4rem]
+            xl-xl:text-[2rem]
             3xl:text-[3rem]
     }
      
@@ -453,6 +457,7 @@ body {
     .big-title {
         @apply  font-[800] text-indigo-900 leading-[150px]
             text-[4rem]
+            xl-xl:text-[5rem]
             2xl:text-[8rem]
     }
 

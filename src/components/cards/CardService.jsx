@@ -11,14 +11,16 @@ const CardService = ({ service, index }) => {
     
     return (
         <section 
-            className={`w-[70%] rounded-[20px] px-10 py-6 sticky top-20 mb-16 
+            className={`w-[80%] 3xl:w-[70%] rounded-[20px] px-10 py-6 sticky top-20 mb-16 
                 ${index % 2 === 0 ? 'bg-indigo-500' : 'bg-sky-400'}`}
         >
             <div className="flex justify-between">
-                <div className="flex items-center gap-10">
-                    <figure className="flex w-16 h-16 rounded-full bg-indigo-50 justify-center items-center">
+                <div className="flex items-center gap-5 3xl:gap-10">
+                    <figure className="flex w-12 h-12 3xl:w-16 3xl:h-16 rounded-full bg-indigo-50 
+                        justify-center items-center">
                         <img 
-                            src={service.iconSrc} alt={`${service.title} icon`} className='w-12 h-12' />
+                            src={service.iconSrc} alt={`${service.title} icon`}
+                            className='w-8 h-8 3xl:w-12 3xl:h-12' />
                     </figure>
                     <h2 
                         className='title-cards z-30'>
@@ -48,7 +50,7 @@ const CardService = ({ service, index }) => {
                                         <h4 className="title-sm">
                                             {category.name}
                                         </h4>
-                                        <p className="text-left text-[.9rem]">
+                                        <p className="text-left xl-xl:text-[.8rem] 3xl:text-[.9rem]">
                                             {category.description}
                                         </p>
                                     </div>
