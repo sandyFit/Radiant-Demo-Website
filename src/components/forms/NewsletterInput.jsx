@@ -26,7 +26,7 @@ const NewsletterInput = () => {
     return (
         <div id='contact' className='flex flex-col items-center w-[15rem] md:w-[20rem] lg-sm:w-[14rem] 
             xl:w-[16rem] gap-6 xl:gap-1 2xl:gap-6'>
-            <form onSubmit={handleSubmit} noValidate className="w-full flex flex-col items-center lg-sm:items-start"> 
+            <form onSubmit={handleSubmit} noValidate className="w-full flex flex-col items-center 2xl:items-start"> 
                 <input
                     type="email"
                     id="email"
