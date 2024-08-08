@@ -308,7 +308,7 @@ body {
             text-[.85rem]
             md:text-[.9rem]
             xl:text-[.8rem]
-            2xl:text-[1rem]
+            2xl-sm:text-[1rem]
     }
 
     .text-mayus-dark {

@@ -16,17 +16,17 @@ const Footer = () => {
                     <div>
                         <ContactCard isMenuOpen={isMenuOpen} />
                     </div>
-                    <div className="flex flex-col w-full pr-16">
-                        <div className="flex xl:flex-col 2xl:flex-row justify-evenly items-center  w-full">
-                            <div className='w-full 2xl:w-1/2 flex flex-col justify-center items-center mt-[5rem] 
-                                xl:mt-12 2xl:mt-[5rem]'>
+                    <div className="flex flex-col w-full pr-16 2xl-sm:pr-12">
+                        <div className="flex xl:flex-col 2xl-sm:flex-row justify-evenly items-center  w-full">
+                            <div className='w-full 2xl-sm:w-1/2 flex flex-col justify-center items-center 
+                                mt-[5rem] xl:mt-12 2xl-sm:mt-[5rem]'>
                                 <h4 className='title-h4 text-center mb-3 xl:mb-0 2xl:mb-3'>
                                     BUSINESS HOURS
                                 </h4>
                                 <WorkingHrsTable />
                             </div>
-                            <div className='w-full 2xl:w-1/2 flex flex-col items-center mt-[5rem] 
-                                xl:mt-10 2xl:mt-[5rem]'>
+                            <div className='w-full 2xl-sm:w-1/2 flex flex-col items-center mt-[5rem] 
+                                xl:mt-10 2xl-sm:mt-[5rem]'>
                                 <h4 className='title-h4 text-center mb-9 xl:mb-3 2xl:mb-6'>
                                     NEWSLETTER SIGN UP
                                 </h4>
@@ -36,7 +36,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='absolute inset-0 top-[32rem] w-full h-16 bg-indigo-950 flex items-center 
-                    justify-end text-center pr-[1rem] xl-lg:pr-7 2xl:pr-[7.8em] gap-[3rem] 2xl:gap-[9rem]'>
+                    justify-end text-center pr-[1rem] xl-lg:pr-7 2xl-sm:pr-16 2xl:pr-[7.8em] gap-[3rem]
+                    2xl-sm:gap-[7rem] 2xl:gap-[9rem]'>
                     <p className="text-min-white">
                         ©2024 Website by
                         <a href="https://trishramos.com"

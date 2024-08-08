@@ -7,7 +7,7 @@ const WorkingHrsTable = () => {
   return (
     <article className='flex flex-col justify-center items-center' style={{zIndex:20}}>      
       <table className='text-min-white flex justify-center border-separate border-spacing-x-4 border-spacing-y-2
-        xl:border-spacing-y-1 2xl:border-spacing-y-2'>
+        xl:border-spacing-y-1 2xl-sm:border-spacing-y-2'>
         <tbody>
           <tr>
             <td className='font-[700]'>MON</td>
@@ -40,9 +40,9 @@ const WorkingHrsTable = () => {
         book online
       </button> */}
 
-      <div className="flex btn-book-online mt-10 xl:mt-5 2xl:mt-10 px-12 md:px-[4.8rem] lg-sm:px-10 xl:px-16 2xl:px-12 
-        py-2 xl:py-1 2xl:py-2 text-[1.1rem] 
-        md:text-[1.3rem] lg-sm:text-[1.2rem] xl:text-[1rem] 2xl:text-[1.4rem]">
+      <div className="flex btn-book-online mt-10 xl:mt-5 2xl-sm:mt-10 px-12 md:px-[4.8rem] lg-sm:px-10 
+        xl:px-16 2xl-sm:px-9 2xl:px-12 py-2 xl:py-1 2xl-sm:py-2 text-[1.1rem] 
+        md:text-[1.3rem] lg-sm:text-[1.2rem] xl:text-[1rem] 2xl-sm:text-[1.4rem]">
         <Button text={'book online'} aria={'Click to book online'}/>
       </div>
     </article>
