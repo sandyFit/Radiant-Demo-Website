@@ -72,7 +72,7 @@ const Team = () => {
                         Meet Our <span className='app-title '>Team</span>
                     </h2>
 
-                    <div className="w-full work flex xl-xl:mt-[-5rem] 3xl:mt-0">
+                    <div className="w-full work flex xl-xl:mt-[-5rem] 2xl:mt-0">
                         <div className="relative w-[50%] 3xl:w-[54%] z-10">
                             <div className="m-auto w-[85%] 3xl:w-[75%]">
                                 {bioData.map((member, index) => (
@@ -94,7 +94,7 @@ const Team = () => {
 
                         <div className="w-[36%] h-auto">
                             <div className="flex flex-col justify-center sticky w-full h-screen top-0">
-                                <div className="w-[40vw] h-[40vw] 2xl:w-[35vw] 2xl:h-[35vw] relative">
+                                <div className="w-[40vw] h-[40vw] 3xl:w-[35vw] 3xl:h-[35vw] relative">
                                     {bioData.map((member, index) => (
                                         <div key={index} className={`work__photo-item work__photo-item-${index}`}>
                                             <img src={member.imageSrc} alt={member.altText} />

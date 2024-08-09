@@ -12,7 +12,7 @@ const Footer = () => {
             {/* Desktop */}
             <article className='hidden xl:flex w-full flex-col justify-between relative'
                 style={{ position: 'sticky', bottom: 0 }}>
-                <div className='flex justify-evenly space-x-6 text-indigo-900 2xl:pl-32'>
+                <div className='flex justify-evenly space-x-6 text-indigo-900 2xl:pl-16 3xl:pl-32'>
                     <div>
                         <ContactCard isMenuOpen={isMenuOpen} />
                     </div>
@@ -36,8 +36,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='absolute inset-0 top-[32rem] w-full h-16 bg-indigo-950 flex items-center 
-                    justify-end text-center pr-[1rem] xl-lg:pr-7 2xl-sm:pr-16 2xl-md:pr-24 2xl-lg:pr-28 
-                    2xl:pr-[7.8em] gap-[3rem] 2xl-sm:gap-[7rem] 2xl-md:gap-[6.5rem] 2xl-lg:gap-[8rem] 3xl:gap-[9rem]'>
+                    justify-end text-center pr-[1rem] xl-lg:pr-7 2xl-sm:pr-16 2xl-md:pr-24 2xl-lg:pr-28 2xl:pr-20
+                    3xl:pr-[7.8em] gap-[3rem] 2xl-sm:gap-[7rem] 2xl-md:gap-[6.5rem] 2xl-lg:gap-[8rem] 2xl:gap-[6.4rem]
+                    3xl:gap-[9rem]'>
                     <p className="text-min-white">
                         ©2024 Website by
                         <a href="https://trishramos.com"

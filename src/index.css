@@ -348,7 +348,8 @@ body {
             xl:text-[1.1rem]
             xl-xl:text-[.9rem]
             2xl-sm:text-[1.1rem]
-            2xl:text-[1.26rem]
+            2xl-lg:text-[1.13rem]
+            3xl:text-[1.26rem]
     }
 
     .text-p2 {
@@ -358,7 +359,7 @@ body {
             base:text-[1rem] 
             lg:text-[1rem] 
             xl:text-[1rem]
-            2xl:text-[1.08rem]
+            3xl:text-[1.08rem]
     }
     
     .title-h1 {
@@ -417,7 +418,8 @@ body {
         xl-sm:text-[1.7rem]
         xl:text-[2rem] 
         xl-xl:text-[1.8rem]
-        2xl:text-[2.8rem]
+        2xl:text-[2.2rem]
+        3xl:text-[2.8rem]
                                         
     }
 
@@ -459,7 +461,8 @@ body {
         @apply  font-[800] text-indigo-900 leading-[150px]
             text-[4rem]
             xl-xl:text-[5rem]
-            2xl:text-[8rem]
+            2xl:text-[6rem]
+            3xl:text-[8rem]
     }
 
     .bigger-title {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ServiceCard = ({ service, index }) => (
-    <div className='w-[80vw] h-[40vw]  3xl:w-[70vw] 3xl:h-[35vw] flex mb-36 sticky-element'>
+    <div className='w-[80vw] h-[40vw]  2xl:w-[70vw] 2xl:h-[35vw] flex mb-36 sticky-element'>
         <div className="flex flex-col gap-6 ">
             <div className="flex justify-center items-center w-full py-3 glass rounded-2xl">
                 <div className='w-full flex justify-between items-center px-6'>

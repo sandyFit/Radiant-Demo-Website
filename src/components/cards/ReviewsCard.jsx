@@ -102,7 +102,7 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                     <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] lg-sm:h-[14rem] lg-xl:h-[12rem]
                         xl-sm:w-[19rem] xl-sm:h-[24rem] xl-md:w-[20rem] xl-md:h-[25.2rem] xl:w-[22.6rem]
                         xl:h-[25.28rem] xl-xl:w-[27.2rem] xl-2xl:w-[31rem] xl-3xl:w-[33rem] 2xl-sm:w-[36rem] 
-                        2xl-lg:w-[38rem] 3xl:w-[44rem] 
+                        2xl-lg:w-[38rem] 2xl:w-[40rem] 3xl:w-[44rem] 
                         xl-2xl:h-[20.8rem] bg-indigo-600 relative hover:bg-indigo-700 rounded-[10px] 
                         2xl:rounded-xl text-indigo-200 px-4 2xl:px-16 shadow-lg ">
                         <span className="hidden xl-md:block text-[10rem] 2xl:text-[12rem] absolute 
@@ -116,7 +116,7 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                         </p>
                     </div>
 
-                    <div className='hidden xl-2xl:flex w-[16rem] 2xl-sm:w-[18.8rem] 2xl:w-[23.4rem] h-16 
+                    <div className='hidden xl-2xl:flex w-[16rem] 2xl-sm:w-[18.8rem] 2xl:w-[20rem] 3xl:w-[23.4rem] h-16 
                         2xl-lg:h-20 glass justify-center items-center rounded-[10px] 3xl:rounded-xl'>
                         <span className='flex text-indigo-500' ref={starsRef}>
                             {[...Array(5)].map((_, index) => (

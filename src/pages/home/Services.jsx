@@ -40,7 +40,7 @@ const Services = () => {
             </div>            
             </div>
 
-            <div className="flex justify-center mt-[-5rem] 3xl:mt-6 ">
+            <div className="flex justify-center mt-[-5rem] 2xl:mt-4 3xl:mt-6 ">
                 <div className="flex flex-col  justify-start items-center gap-8 relative">
                     <h2
                         className='hidden xl:block text-left xl:text-center title-h2 w-[80%] xl:w-full
@@ -65,7 +65,7 @@ const Services = () => {
                         Standards
                     </h2>                    
 
-                    <p className='text-p1 mt-[-.6rem] w-[80%] md:w-[85%] base:w-[82%] lg-xl:w-[80%] 2xl:w-[70%]'>
+                    <p className='text-p1 mt-[-.6rem] w-[80%] md:w-[85%] base:w-[82%] lg-xl:w-[80%] 3xl:w-[70%]'>
                         Providing high-quality dental care in a comfortable and relaxed environment is one of our top priorities.
                         Our expert team prioritizes both aesthetics and well-being, ensuring top-quality services
                         that make you look and feel your best.
