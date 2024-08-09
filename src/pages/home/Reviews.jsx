@@ -14,7 +14,7 @@ const Reviews = () => {
             className='flex flex-col justify-center pt-20 relative bg-slate-300'>
 
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
-                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 3xl:px-40">
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-32 3xl:px-40">
                 
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative ">               
                     <span 
@@ -35,7 +35,7 @@ const Reviews = () => {
                     Matters
                 </h2>
 
-                <p className='text-p1 mt-[-1rem] xl:mt-2 w-[86%] base:w-[80%] 2xl-md:w-[76.8%] 3xl:w-[70%] '>
+                <p className='text-p1 mt-[-1rem] xl:mt-2 w-[86%] base:w-[80%] 2xl-md:w-[76.8%] 2xl-xl:w-[78.5%] 3xl:w-[70%] '>
                     Radiant Dental Studio always appreciates feedback from our valued patients, helping us keep improving. 
                     We're thrilled to have over 100 reviews with an average rating of 4.6 out of 5 stars. <br/>
                     Please read what others are saying about us below. We would love to

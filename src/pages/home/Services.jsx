@@ -30,7 +30,7 @@ const Services = () => {
         <section
             className='w-full pt-20 xl-2xl:pt-32 2xl-sm:pt-40 3xl-sm:pt-[8rem] bg-slate-300'>
             <div className="w-full flex justify-start items-center text-mayus-dark mb-20 2xl:mb-2 
-                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24  3xl:px-40 relative gap-6">
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-32 3xl:px-40 relative gap-6">
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                 <span 
                     className='inline-flex'
