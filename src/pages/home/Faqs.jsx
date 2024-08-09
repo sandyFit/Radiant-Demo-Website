@@ -61,7 +61,7 @@ const Faqs = () => {
 
     return (
         <section 
-            className='relative h-auto pt-28 xl:pt-40 bg-slate-300 pb-24 xl:pb-36'>   
+            className='relative h-auto pt-28 xl:pt-32 bg-slate-300 pb-24 xl:pb-36'>   
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
                 px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 3xl:px-40">              

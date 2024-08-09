@@ -40,7 +40,7 @@ const Hero = () => {
         <section id='index'
             className='w-full min-h-screen bg-slate-300'>
             <div className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-self-center place-items-center
-                px-2 base:px-8 xl:px-10 2xl:px-24 3xl:px-40 ">
+                px-2 base:px-8 xl:px-10 2xl-lg:px-16 3xl:px-40 ">
                 <article className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] 2xl:w-full mt-8 
                     xl-lg:mt-40 gap-6">
                     <h1 className='title-h1 w-full'>

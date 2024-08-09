@@ -64,8 +64,8 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
     return (
         <section className='flex justify-center items-center w-full relative'>
             <div className="flex flex-col xl-sm:flex-row justify-center items-center xl-sm:items-start 
-                2xl:items-center gap-2 md:gap-3 2xl:gap-6">
-                <article className="grid grid-cols-1 place-items-center gap-2 md:gap-3 xl-2xl:gap-4 2xl:gap-6">
+                2xl-lg:items-center gap-2 md:gap-3 2xl-lg:gap-6">
+                <article className="grid grid-cols-1 place-items-center gap-2 md:gap-3 xl-2xl:gap-4 2xl-lg:gap-6">
                     <div className='w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl-sm:w-[20.8rem] 
                         xl-sm:h-[20.8rem] xl-md:w-[22rem] xl-md:h-[22rem] xl-2xl:w-[20.8rem] 
                         xl-2xl:h-[20.8rem] rounded-xl bg-indigo-600 shadow-lg overflow-hidden'>
@@ -78,8 +78,8 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                     </div>
 
                     <div className="flex flex-col w-[85vw] base:w-[80vw] xl-sm:w-[20.8rem] xl-md:w-[22rem] 
-                        xl-2xl:w-[20.8rem] h-10 xl-2xl:h-16 2xl:h-20 
-                        bg-indigo-600 shadow-lg rounded-[10px] 2xl:rounded-xl justify-center items-center">
+                        xl-2xl:w-[20.8rem] h-10 xl-2xl:h-16 2xl-lg:h-20 
+                        bg-indigo-600 shadow-lg rounded-[10px] 2xl-lg:rounded-xl justify-center items-center">
                         <h4 className='text-indigo-200 title-h5 '>
                             {name}
                         </h4>
@@ -98,11 +98,11 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                     </div>
                 </article>
 
-                <article className="grid grid-cols-1 xl-2xl:gap-4 2xl:gap-6">
+                <article className="grid grid-cols-1 xl-2xl:gap-4 2xl-lg:gap-6">
                     <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] lg-sm:h-[14rem] lg-xl:h-[12rem]
                         xl-sm:w-[19rem] xl-sm:h-[24rem] xl-md:w-[20rem] xl-md:h-[25.2rem] xl:w-[22.6rem]
                         xl:h-[25.28rem] xl-xl:w-[27.2rem] xl-2xl:w-[31rem] xl-3xl:w-[33rem] 2xl-sm:w-[36rem] 
-                        2xl:w-[44rem] 
+                        2xl-lg:w-[38rem] 3xl:w-[44rem] 
                         xl-2xl:h-[20.8rem] bg-indigo-600 relative hover:bg-indigo-700 rounded-[10px] 
                         2xl:rounded-xl text-indigo-200 px-4 2xl:px-16 shadow-lg ">
                         <span className="hidden xl-md:block text-[10rem] 2xl:text-[12rem] absolute 
@@ -117,12 +117,12 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                     </div>
 
                     <div className='hidden xl-2xl:flex w-[16rem] 2xl-sm:w-[18.8rem] 2xl:w-[23.4rem] h-16 
-                        2xl:h-20 glass justify-center items-center rounded-[10px] 3xl:rounded-xl'>
+                        2xl-lg:h-20 glass justify-center items-center rounded-[10px] 3xl:rounded-xl'>
                         <span className='flex text-indigo-500' ref={starsRef}>
                             {[...Array(5)].map((_, index) => (
                                 <HiStar key={index}
                                     aria-label="Star rating"
-                                    className="star text-[2.8rem] 2xl:text-[3.6rem]" />
+                                    className="star text-[2.8rem] 2xl-lg:text-[3.2rem] 3xl:text-[3.6rem]" />
                             ))}
                         </span>
                     </div>
