@@ -116,7 +116,8 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                         </p>
                     </div>
 
-                    <div className='hidden xl-2xl:flex w-[16rem] 2xl-sm:w-[18.8rem] 2xl:w-[23.4rem] h-16 2xl:h-20 glass justify-center items-center rounded-xl'>
+                    <div className='hidden xl-2xl:flex w-[16rem] 2xl-sm:w-[18.8rem] 2xl:w-[23.4rem] h-16 
+                        2xl:h-20 glass justify-center items-center rounded-[10px] 3xl:rounded-xl'>
                         <span className='flex text-indigo-500' ref={starsRef}>
                             {[...Array(5)].map((_, index) => (
                                 <HiStar key={index}

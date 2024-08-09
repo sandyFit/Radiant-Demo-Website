@@ -30,7 +30,7 @@ const Services = () => {
         <section
             className='w-full pt-20 3xl-sm:pt-[8rem] bg-slate-300'>
             <div className="w-full flex justify-start items-center text-mayus-dark mb-20 2xl:mb-2 
-                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-24 3xl:px-40 relative gap-6">
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24  3xl:px-40 relative gap-6">
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                 <span 
                     className='inline-flex'
@@ -44,7 +44,7 @@ const Services = () => {
                 <div className="flex flex-col  justify-start items-center gap-8 relative">
                     <h2
                         className='hidden xl:block text-left xl:text-center title-h2 w-[80%] xl:w-full
-                            2xl:w-[60%] pt-2 tracking-wider'
+                            2xl-md:w-[60%] pt-2 tracking-wider'
                         data-aos="fade-up"
                     >
                         World-Class

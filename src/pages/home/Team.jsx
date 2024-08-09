@@ -52,7 +52,7 @@ const Team = () => {
             className="w-full h-auto flex flex-col justify-center pt-20 3xl-sm:pt-[8rem] pb-2 xl:pb-12 
             bg-slate-300 z-10 relative">
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
-                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-24 3xl:px-40">
+                px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 3xl:px-40">
                
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0
                     relative 

@@ -24,7 +24,7 @@ const ReviewsCarousel = ({ reviews }) => {
         <div className='flex justify-center items-center w-full relative'>
             <div className="relative flex justify-center items-center w-full">
                 <div className="absolute xl-sm:right-[4.6rem] xl-md:right-20 xl:right-[5.4rem] 
-                    xl-xl:right-[6.2rem] xl-2xl:right-[6.5rem] xl-3xl:right-[7rem]
+                    xl-xl:right-[6.2rem] xl-2xl:right-[6.5rem] xl-3xl:right-[7rem] 2xl-md:right-[8.6rem]
                     3xl:right-[14.2rem] -bottom-6 lg-sm:-bottom-[2.2rem] lg-xl:-bottom-[3.3rem] xl-sm:bottom-6 
                     xl:bottom-12 
                     space-x-12 md:space-x-10 base:space-x-4 lg-sm:space-x-[4.58rem] lg:space-x-20
