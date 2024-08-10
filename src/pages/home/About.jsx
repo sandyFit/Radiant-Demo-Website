@@ -66,9 +66,9 @@ const About = () => {
 
     return (
         <section 
-            className='flex flex-col w-full h-full pt-20 xl:pt-24 xl-lg:pt-0 xl-3xl:pt-16 2xl-md:pt-28  
-                3xl-sm:pt-[8rem] 
-                bg-slate-300 px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-32 3xl:px-40 '>
+            className='flex flex-col w-full h-full pt-20 xl:pt-24 xl-lg:pt-0 xl-3xl:pt-16
+                2xl-sm:pt-28 2xl-md:pt-32 2xl-xl:pt-[10rem] bg-slate-300 px-6 md:px-8 base:px-12
+                lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-32 3xl:px-40 '>
             
             <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
                 <span 
