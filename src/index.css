@@ -201,7 +201,9 @@ body {
 
 } 
 
-
+/* *{
+    border: 1px solid red;
+} */
 
 
 @layer base {
@@ -382,6 +384,8 @@ body {
             md:text-4xl 
             lg-sm:text-[3.1rem]
             xl:text-[2.8rem]
+            2xl:text-[3.4rem]
+            3xl-sm:text-[4rem]
             3xl:text-6xl 
             leading-[1em] 
             lg-sm:leading-[1.1em]
@@ -450,7 +454,8 @@ body {
         @apply text-indigo-900 font-[500] hover:text-indigo-100
             text-[.9rem] 
             text-[1rem]
-            2xl:text-[1.26rem]
+            2xl:text-[1.1rem]
+            3xl:text-[1.26rem]
     }
 
     .title-contact {

@@ -37,8 +37,8 @@ const Footer = () => {
                 </div>
                 <div className='absolute inset-0 top-[32rem] w-full h-16 bg-indigo-950 flex items-center 
                     justify-end text-center pr-[1rem] xl-lg:pr-7 2xl-sm:pr-16 2xl-md:pr-24 2xl-lg:pr-28 2xl:pr-20
-                    3xl:pr-[7.8em] gap-[3rem] 2xl-sm:gap-[7rem] 2xl-md:gap-[6.5rem] 2xl-lg:gap-[8rem] 2xl:gap-[6.4rem]
-                    2xl-xl:gap-[8.2rem] 3xl:gap-[9rem]'>
+                    3xl-sm:pr-[6.5rem] 3xl-md:pr-[7rem] 3xl:pr-[6.6rem] gap-[3rem] 2xl-sm:gap-[7rem] 2xl-md:gap-[6.5rem] 2xl-lg:gap-[8rem] 
+                    2xl:gap-[6.4rem] 2xl-xl:gap-[8.2rem] 3xl-sm:gap-[8.2rem] 3xl-md:gap-[9.8rem] 3xl:gap-[9.4rem]'>
                     <p className="text-min-white">
                         ©2024 Website by
                         <a href="https://trishramos.com"
