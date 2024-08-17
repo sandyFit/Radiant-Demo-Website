@@ -9,6 +9,7 @@ const Hero = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
+        console.log('clicked')
         navigate('book');
     }
 
@@ -63,7 +64,10 @@ const Hero = () => {
                             h-12 md:h-[3.6rem] base:h-[3.8rem] lg:h-[4rem] px-8 md:px-10 base:px-6 text-[1rem] 
                             md:text-[1.3rem] base:text-[1.38rem] lg:text-[1.4rem] xl:text-[1.2rem] 
                             3xl:text-[1.5rem] z-[40]">
-                            <Button text={'book online'} aria={'Click to book online'} />
+                            <Button text={'book online'}
+                                aria={'Click to book online'}
+                                onClick={handleClick}
+                            />
                         </div>
                         <div className="col-span-2 2xl:col-span-3 hidden lg:grid grid-cols-3 place-items-center w-full 
                             2xl:w-[85%] ml-0 lg:ml-[3vw] mr-0 2xl:mr-6">
