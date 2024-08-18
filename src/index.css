@@ -239,6 +239,11 @@ body {
             border-indigo-400 z-[2]
     }
 
+    .booking-btn {
+        @apply w-1/2 p-6 glass hover:bg-indigo-100 text-indigo-900 rounded-md cursor-pointer mt-6 text-2xl 
+            font-semibold text-left
+    }
+
     /* =========== NAVBAR MENU BTN =========== */
     .line {
         @apply w-[2.2rem] lg:w-[3.5rem] h-[.1rem] bg-indigo-900 transition-all duration-300
@@ -477,6 +482,10 @@ body {
         @apply text-[11rem] font-[800] text-indigo-900 leading-[150px]
     }
 
+    .tiny-title {
+        @apply text-[2rem] font-[600]
+    }
+
     .work__photo-item {
         @apply absolute w-full h-full cursor-pointer rounded-[20px] overflow-hidden
     }
@@ -484,5 +493,13 @@ body {
     .work__photo-item img {
         @apply block w-full h-full object-cover 
     }
+    
+    .avatar-sm {
+        @apply w-24 h-24 bg-fairBlue hover:bg-oceanBlue border-2 border-spanishBlue rounded-full
+            flex flex-col justify-center items-center mx-1 my-1 cursor-pointer
+    }
 
+    .avatar-img-sm {
+        @apply w-24 rounded-full border-2 border-spanishBlue
+    }
 }

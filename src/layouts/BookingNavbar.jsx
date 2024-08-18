@@ -1,33 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../components/ui/Logo';
 
 const BookingNavbar = () => {
     return (
         
-        <nav className='bg-spaceCadet py-12 h-[150px]'>
-            <div className="flex items-center justify-between mx-8 md:mx-24 lg:mx-36 xl:mx-44">
+        <nav className='w-[90.5%] h-[66px] lg:h-[88px] glass absolute top-8 left-[4.6vw] rounded-[10px] 
+            flex items-center border-[3px] border-zinc-50 z-[20]'>
+            <article className="w-full flex items-center justify-between mx-5 lg:mx-12 h-full relative">
                 <Link to="/" className="flex flex-row items-center space-x-2">
-                    <img src="./logo.png" alt="Radiant's logo" className='h-16' />
-                    <div className='flex flex-col'>
-                        <span className="text-4xl font-bold text-azure tracking-wide">Radiant</span>
-                        <span className='text-2xl font-medium text-white'>Dental Studio</span>
-                    </div>
+                    <Logo/>                   
                 </Link>
             
-
                 <div className="flex">
-                    <h2 className='text-center text-white3 text-xl md:text-3xl xl:text-5xl font-bold
-                        w-2/3 lg:w-2/4 xl:w-2/4 2xl:w-full'>
-                        <span >
-                            Where
-                            <span className='text-spanishBlue' style={{ margin: ' 0 1rem' }}>
-                            Healthy Smiles 
+                    <h1 className='tiny-title text-indigo-900 w-full'>
+                        <span>Reveal
+                            <span className='app-title' style={{ margin: '0 1rem' }}>
+                                Your Brightest
                             </span>
                         </span>
-                        Begin
-                    </h2>
+                        Smile
+                    </h1>
                 </div>
-            </div>
+            </article>
         </nav>
     )
 }

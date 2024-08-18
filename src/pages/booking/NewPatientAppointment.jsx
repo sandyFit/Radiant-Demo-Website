@@ -29,19 +29,19 @@ const NewPatientAppoinment = () => {
     }
 
     return (
-        <main className='flex flex-col min-w-screen h-screen '>
+        <main className='flex flex-col min-w-screen h-screen mt-28'>
             <BookingNavbar />
             <section className='flex flex-grow justify-between '>
                 <article className='w-full flex flex-col  max-h-screen '>
                     {/* Adjusted Content Section for Centering */}
                     <div className="flex-1 flex flex-col justify-center relative px-48 py-28">
-                        <button className="absolute top-8 text-lg font-medium text-blue-400"
+                        <button className="w-[6rem] absolute top-8 text-[1rem] app-title"
                             onClick={() => navigate(-1)} 
                         >
-                            <FaArrowLeft/> Back
+                            <FaArrowLeft className='app-title'/> Back
                         </button>
                         <div className="flex justify-between w-full mb-4">
-                            <h2 className='text-spaceCadet text-xl md:text-3xl xl:text-4xl font-bold text-left w-[65%]'>
+                            <h2 className='text-indigo-900 text-xl md:text-3xl xl:text-4xl font-bold text-left w-[65%]'>
                                 Select an Appointment
                             </h2>
 
@@ -89,7 +89,7 @@ const NewPatientAppoinment = () => {
                         
                         {/* <hr className='border-t-2 border-slate-300 w-[100%] my-6' /> */}
                         
-                        {staffData.filter(member => member.title !== 'Dental Assistant')
+                        {staffData.filter(member => member.title !== 'Dental Assistant' && member.title !== 'Clinical Manager')
                             .map(member => {
                                 return (
                                     <SmallAvatars
