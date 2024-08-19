@@ -9,7 +9,7 @@ const Hero = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        console.log('clicked')
+        console.log('clicked');
         navigate('book');
     }
 
@@ -36,13 +36,11 @@ const Hero = () => {
         });
     }, []);
 
-
     return (
-        <section id='index'
-            className='w-full min-h-screen bg-slate-300'>
-            <div className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-self-center place-items-center
+        <section id='index' className='w-full min-h-screen bg-slate-300'>
+            <header className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-self-center place-items-center
                 px-2 base:px-8 xl:px-10 xl-lg:px-16 2xl:px-32 3xl:px-40 xl-lg:pt-10 xl-2xl:pt-0">
-                <article className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] 2xl:w-full mt-8 
+                <section className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] 2xl:w-full mt-8 
                     xl-lg:mt-40 gap-6">
                     <h1 className='title-h1 w-full'>
                         <span>Reveal
@@ -80,7 +78,7 @@ const Hero = () => {
                                 <div className=''>
                                     <span className='flex font-bold'>
                                         {[...Array(5)].map((_, index) => (
-                                            <HiStar key={index} className='text-[1rem]' aria-label="start rating"/>
+                                            <HiStar key={index} className='text-[1rem]' aria-label="star rating"/>
                                         ))}
                                     </span>
                                 </div>
@@ -91,22 +89,22 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                </article>
+                </section>
 
-                <article className='xl-lg:col-start-2 row-start-1 xl-lg:row-start-auto mt-36 xl-lg:mt-44 3xl:mt-40
+                <section className='xl-lg:col-start-2 row-start-1 xl-lg:row-start-auto mt-36 xl-lg:mt-44 3xl:mt-40
                     grid place-self-center ml-0 3xl:ml-[2.5rem]'>
-                    <div className="w-[85vw] h-[85vw]  md:w-[22rem] md:h-[22rem] base:w-[25rem] base:h-[25rem] 
+                    <figure className="w-[85vw] h-[85vw]  md:w-[22rem] md:h-[22rem] base:w-[25rem] base:h-[25rem] 
                         lg-sm:w-[30rem] lg-sm:h-[30rem] lg-md:w-[32rem] lg-md:h-[32rem] lg:w-[78vw] lg:h-[78vw] 
                         xl:w-[78vw] xl:h-[78vw] xl-lg:w-[38vw] xl-lg:h-[42vw]  2xl:w-[38vw] 2xl:h-[38vw] 
                         rounded-3xl  bg-indigo-500">
                         <img ref={imgRef}
-                        src="/people/black-girl.jpg"
-                        alt="An African-American girl smiling brightly after a dental check-up."
-                        className='w-full h-full object-cover rounded-3xl'
-                    />
-                    </div>
-                </article>
-            </div>
+                            src="/people/black-girl.jpg"
+                            alt="An African-American girl smiling brightly after a dental check-up."
+                            className='w-full h-full object-cover rounded-3xl'
+                        />
+                    </figure>
+                </section>
+            </header>
         </section>
     )
 }

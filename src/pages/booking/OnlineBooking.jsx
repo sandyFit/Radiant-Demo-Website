@@ -11,8 +11,8 @@ const OnlineBooking = () => {
         <main className='flex flex-col mt-24'>
             <BookingNavbar />
             <section className='flex flex-col '>
-                {/* Left Article: Scrollable Content */}
-                <article className='w-full'>
+                
+                <section className='w-full'>
                     <div className="w-full flex flex-col relative px-36 mt-12 pb-[8rem]">
                         <h2 className='text-indigo-900 text-xl md:text-3xl xl:text-4xl font-bold text-center
                             w-full mt-12'>
@@ -33,11 +33,11 @@ const OnlineBooking = () => {
                         </div>
                     </div>
                     
-                </article>
+                </section>
 
-                <article>
+                <section>
                     <img src="/map-bn.jpg" alt="" />
-                </article>
+                </section>
 
                 <Footer/>
                 

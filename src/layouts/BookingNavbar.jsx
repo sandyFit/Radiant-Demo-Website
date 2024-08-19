@@ -7,7 +7,7 @@ const BookingNavbar = () => {
         
         <nav className='w-[90.5%] h-[66px] lg:h-[88px] glass absolute top-8 left-[4.6vw] rounded-[10px] 
             flex items-center border-[3px] border-zinc-50 z-[20]'>
-            <article className="w-full flex items-center justify-between mx-5 lg:mx-12 h-full relative">
+            <section className="w-full flex items-center justify-between mx-5 lg:mx-12 h-full relative">
                 <Link to="/" className="flex flex-row items-center space-x-2">
                     <Logo/>                   
                 </Link>
@@ -22,7 +22,7 @@ const BookingNavbar = () => {
                         Smile
                     </h1>
                 </div>
-            </article>
+            </section>
         </nav>
     )
 }

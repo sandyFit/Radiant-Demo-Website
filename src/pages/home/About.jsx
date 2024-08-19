@@ -70,15 +70,13 @@ const About = () => {
                 2xl-sm:pt-28 2xl-md:pt-32 2xl-xl:pt-[10rem] bg-slate-300 px-6 md:px-8 base:px-12
                 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-32 3xl:px-40 '>
             
-            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
-                <span 
-                    className='inline-flex'
-                >
+            <header className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6">               
+                <span className='inline-flex'>
                     <TextShimmerEffect text={`(01) About Us`}/>
                 </span>                         
-            </div>
+            </header>
             
-            <div className="relative">
+            <section className="relative">
                 {/* FLOATING MENU BUTTON */}
                 <button onClick={handleClick}
                     aria-expanded={visible}
@@ -112,11 +110,11 @@ const About = () => {
                         <HiArrowUp style={{ fontSize: '2.2rem' }} aria-hidden="true" />
                     </div>
                 </button>
-            </div>
+            </section>
 
-            <div className="w-full grid grid-cols-1 xl-xl:grid-cols-2 place-content-center xl:place-items-between 
+            <section className="w-full grid grid-cols-1 xl-xl:grid-cols-2 place-content-center xl:place-items-between 
                 py-3 lg:py-12 xl:py-0 xl-xl:py-6 relative">
-                <article className="hidden xl-xl:block col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
+                <figure className="hidden xl-xl:block col-span-1 xl:col-start-1 row-start-1 w-[17rem] md:w-[22rem] 
                     base:w-[25rem] lg-sm:w-[30rem] lg-md:w-[32rem] lg:w-[35rem] lg-xl:w-[38rem] xl-lg:w-[18rem] 
                     xl-xl:w-[23rem] 2xl-sm:w-[28rem] 2xl:w-[30rem] 3xl:w-[32rem]
                     rounded-[20px] bg-indigo-500 overflow-hidden">
@@ -125,9 +123,9 @@ const About = () => {
                         src="/images/dental-studio.jpg"
                         alt="Dr. Roberts providing dental care to a patient in the office."
                         className='w-full h-full object-cover rounded-[20px]' />
-                </article>
+                </figure>
 
-                <article className='col-span-1 xl-xl:col-start-2 row-start-2 xl:row-start-1 mt-6 md:mt-10 lg:mt-8
+                <div className='col-span-1 xl-xl:col-start-2 row-start-2 xl:row-start-1 mt-6 md:mt-10 lg:mt-8
                     relative w-full'>
                     {/* ABOUT COPY */}
                     <div className="grid grid-cols-1">
@@ -145,7 +143,6 @@ const About = () => {
                             </span>
                         </h2>
                         
-
                         <p className='text-p1 mt-6 lg:mt-8 col-span-1'>
                             We are a passionate team of dental clinicians committed to providing care for patients of all ages —
                             from the young to the young at heart.
@@ -160,9 +157,8 @@ const About = () => {
                             Trust us for comprehensive dental care with a commitment to excellence.
                         </p>
                     </div>
-                </article>
-            </div>
-            
+                </div>
+            </section>
         </section>
     );
 };

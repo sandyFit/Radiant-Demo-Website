@@ -13,7 +13,7 @@ const Reviews = () => {
         <section
             className='flex flex-col justify-center pt-20 relative bg-slate-300'>
 
-            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
+            <header className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative 
                 px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-32 3xl:px-40">
                 
                 <div className="w-full flex justify-start items-center text-mayus-dark mb-0 relative ">               
@@ -23,9 +23,9 @@ const Reviews = () => {
                         <TextShimmerEffect text={`(04) Reviews`}/>
                     </span>                         
                 </div>               
-            </div>
+            </header>
 
-            <div className="flex flex-col items-center gap-8 relative">
+            <section className="flex flex-col items-center gap-8 relative">
                 <h2 className='text-left xl-lg:text-center title-h2 w-[85%] base:w-[80%] 
                     pt-2 lg:pt-4 ' >
                     Your  
@@ -52,17 +52,17 @@ const Reviews = () => {
                         
                     </span><br/>
                 </p>
-            </div>
+            </section>
 
             {/* Cards Render Dynamically acording to Responsive Size */}
-            <div className="flex justify-center items-center" >
+            <section className="flex justify-center items-center" >
                 <ReviewsCarousel
                 reviews={reviews}
                 autoSlide={true}
                 autoSlideInterval={6000}
                 />
 
-            </div>
+            </section>
 
             {/* <p className='font-cursive text-azure text-[4.5rem] absolute right-48 -bottom-32 transform
                 -rotate-12 z-10'>

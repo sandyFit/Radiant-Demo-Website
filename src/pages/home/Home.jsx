@@ -11,32 +11,35 @@ import Test from './Test';
 
 const Home = () => {
     return (
-        <div className='w-full'>
-            <main id='index'>
+        <main className='w-full'>
+            <section id='index'>
                 <Hero />
-            </main>
-           
-            <main id='about'>
-                 <About />
-            </main>
+            </section>
+
+            <section id='about'>
+                <About />
+            </section>
             
-            <main id='services'>
+            <section id='services'>
                 <Services/>
-            </main>
-            <main id='staff'>
+            </section>
+            
+            <section id='staff'>
                 <Team/>
-            </main>
-            <main id='reviews'>
+            </section>
+            
+            <section id='reviews'>
                 <Reviews/>
-            </main>
-            <main id='faq'>
+            </section>
+            
+            <section id='faq'>
                 <Faqs/>
-            </main>
-            <main id='contact'>
+            </section>
+            
+            <section id='contact'>
                 <ContactTransition/>
-            </main>
-                            
-        </div>
+            </section>
+        </main>
     )
 }
 

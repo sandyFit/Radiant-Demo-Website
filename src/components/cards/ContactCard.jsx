@@ -6,10 +6,11 @@ import { FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 
 const ContactCard = ({ isMenuOpen }) => {
     return (
-        <article id='contact'
+        <article
+            id='contact'
             className='bg-sky-400 w-full md:w-[22rem] base:w-[25rem] lg-sm:w-[30rem] xl:w-[28rem] 2xl:w-[30rem]
             h-[30rem] lg-sm:h-[38.70rem] 
-                flex flex-col items-center px-4 space-y-4 relative'
+            flex flex-col items-center px-4 space-y-4 relative'
             style={{ zIndex: 5, pointerEvents: isMenuOpen ? 'none' : 'auto' }}
         >
             <h4 className='title-h4 text-center mt-12 lg-sm:mt-20'>CONTACT US</h4>
@@ -18,12 +19,14 @@ const ContactCard = ({ isMenuOpen }) => {
                 Call us today or book online
             </h5>
 
-            <div className="flex flex-col justify-start text-indigo-900">
+            <address className="flex flex-col justify-start text-indigo-900">
                 <div className='flex gap-2 text-[1.1rem] lg-sm:text-[1.5rem] mx-4 mt-6'>
                     <ImLocation2 aria-label="Office location" />
                     <p className='w-48 ml-2 text-links'>
                         Radiant Dental Studio
+                        <br />
                         123 Main Street
+                        <br />
                         Anytown, NJ 07001
                     </p>
                 </div>
@@ -37,16 +40,16 @@ const ContactCard = ({ isMenuOpen }) => {
                     <BsEnvelopeAtFill aria-label="Send email"/>
                     <a href='mailto:info@radiantdental.com'
                         className='ml-2 text-links relative after:absolute after:bottom-0 
-                            after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 
-                            after:bg-indigo-900 after:transition-transform after:duration-300 
-                            after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
-                            hover:after:scale-x-100 '
+                        after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 
+                        after:bg-indigo-900 after:transition-transform after:duration-300 
+                        after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
+                        hover:after:scale-x-100 '
                         style={{ zIndex: 20, pointerEvents: 'auto' }}
                     >
                         info@radiantdental.com
                     </a>
                 </div>
-            </div>
+            </address>
 
             <h5 className='title-contact text-center  lg-sm:pt-3'>
                 Follow us everywhere

@@ -63,7 +63,7 @@ const Faqs = () => {
         <section 
             className='relative h-auto pt-28 xl:pt-32 bg-slate-300 pb-24 xl:pb-36'>   
             
-            <div className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
+            <header className="w-full flex justify-start items-center text-mayus-dark mb-4 lg:mb-0 relative gap-6
                 px-6 md:px-8 base:px-12 lg-sm:px-16 lg-xl:px-20 xl:px-24 2xl:px-32 3xl:px-40">              
                 <div className="w-full flex justify-start items-center text-mayus-dark relative gap-6">               
                     <span 
@@ -71,11 +71,11 @@ const Faqs = () => {
                         <TextShimmerEffect text={`(05) Faqs`}/>
                     </span>                         
                 </div>               
-            </div>
+            </header>
             
             <div className="w-full flex flex-col justify-center items-center relative">
 
-                <div className="w-full relative hue-effect flex flex-col justify-center items-center">
+                <section className="w-full relative hue-effect flex flex-col justify-center items-center">
                     <h2 className='hidden xl:block text-center title-h2 lg:w-[80%] pt-2 lg:pt-4 ' >
                         Got Questions? 
                         <span className='app-title ml-0 xl:ml-4' >
@@ -98,11 +98,11 @@ const Faqs = () => {
                         className='text-8xl font-[600] text-center mb-3 absolute top-0 left-[26rem] whitespace-nowrap'>
                         Got Questions?
                     </h2> */}
-                </div>
+                </section>
 
-                <div className="flex flex-col 2xl-sm:flex-row w-full justify-between px-6 md:px-8 base:px-12 
+                <section className="flex flex-col 2xl-sm:flex-row w-full justify-between px-6 md:px-8 base:px-12 
                     lg-sm:px-16 lg-xl:px-20 2xl-sm:px-24 2xl:px-32 3xl:px-40 pt-6 xl:pt-16 gap-4">
-                    <div className="hidden 2xl-sm:flex w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] 
+                    <figure className="hidden 2xl-sm:flex w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] 
                         xl:w-[35vw] xl:h-[35vw] 
                         rounded-[10px] xl:rounded-xl bg-indigo-600 ">
                         <img ref={imgRef}
@@ -110,7 +110,7 @@ const Faqs = () => {
                             alt="A happy Asian girl displaying her beautiful smile following a dental procedure."
                             className='w-full h-full object-cover bg-center rounded-[10px] xl:rounded-xl'
                         />
-                    </div>
+                    </figure>
 
                     <div className="flex flex-col justify-start items-start ">
                         {questions.map((question, index) => (
@@ -123,7 +123,7 @@ const Faqs = () => {
                         />
                         ))}
                     </div>
-                </div>
+                </section>
             </div>
           
         </section>

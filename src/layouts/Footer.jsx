@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <section id='footer' className='w-full h-auto xl:h-[36rem] bg-indigo-900 overflow-hidden '>
             {/* Desktop */}
-            <article className='hidden xl:flex w-full flex-col justify-between relative'
+            <section className='hidden xl:flex w-full flex-col justify-between relative'
                 style={{ position: 'sticky', bottom: 0 }}>
                 <div className='flex justify-evenly space-x-6 text-indigo-900 2xl:pl-16 3xl:pl-32'>
                     <div>
@@ -73,12 +73,12 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-            </article>
+            </section>
 
             {/* Mobile */}
-            <article className="flex xl:hidden w-full overflow-hidden flex-col justify-center items-center relative">
+            <section className="flex xl:hidden w-full overflow-hidden flex-col justify-center items-center relative">
                 <MobileFooter />
-            </article>
+            </section>
         </section>
     );
 }
