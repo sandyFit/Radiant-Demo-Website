@@ -5,8 +5,6 @@ import AOS from 'aos';
 import CardServiceMobile from './CardServiceMobile';
 
 
-
-
 const ServicesDashboard = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 950);
 
@@ -29,7 +27,7 @@ const ServicesDashboard = () => {
     }
 
     return (
-        <div className='flex flex-col justify-center items-center w-full relative'>
+        <article className='flex flex-col justify-center items-center w-full relative'>
             {isMobile ? (
                 servicesCardData.map((service, index) => (
                     <CardServiceMobile key={index} service={service} index={index} />
@@ -39,7 +37,7 @@ const ServicesDashboard = () => {
                     <CardService key={index} service={service} index={index} />
                 ))
             )}
-        </div>
+        </article>
     );
 };
 

@@ -24,7 +24,7 @@ const NewsletterInput = () => {
     };
 
     return (
-        <div id='contact' className='flex flex-col items-center w-[15rem] md:w-[20rem] lg-sm:w-[14rem] 
+        <section id='contact' className='flex flex-col items-center w-[15rem] md:w-[20rem] lg-sm:w-[14rem] 
             xl:w-[16rem] gap-6 xl:gap-1 2xl-sm:gap-6'>
             <form onSubmit={handleSubmit} noValidate className="w-full flex flex-col items-center 2xl-sm:items-start"> 
                 <input
@@ -50,7 +50,7 @@ const NewsletterInput = () => {
                 Stay updated with our Dental Studio Newsletter! Get the latest on services, treatments,
                 and practice news. Your privacy is important to us; your data is safe. Join us today! 
             </p>
-        </div>
+        </section>
     );
 };
 

@@ -40,12 +40,12 @@ const GlassMenu = ({ isMenuOpen, onClose }) => {
                             </ScrollLink>
                         </li>
                     ))}
-                <div className="flex flex-col justify-end items-start mt-10 ">
+                <section className="flex flex-col justify-end items-start mt-10 ">
                     <p className='text-min-dark '>+1 666 333 69 69</p>
                     <p className='text-min-dark '>info@radiantdental.com</p>
                     
                     <NoBGBtn text={'Book Online'} />
-                </div>
+                </section>
             </ul>
         </article>
     );

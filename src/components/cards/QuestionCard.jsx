@@ -12,8 +12,7 @@ const QuestionCard = ({ question, answer, isOpen, onToggle }) => {
             title-questions
             ${isOpen ? 'active' : ''}`}>
 
-            <div className="flex justify-between items-center px-4 py-5 z-[1]"
-                onClick={onToggle}>
+            <div className="flex justify-between items-center px-4 py-5 z-[1]" onClick={onToggle}>
                 <h4 className="text-current">
                     {question}
                 </h4>
@@ -37,4 +36,3 @@ const QuestionCard = ({ question, answer, isOpen, onToggle }) => {
 }
 
 export default QuestionCard;
-

@@ -2,21 +2,20 @@ import React from 'react'
 
 const CardServiceMobile = ({ service, index }) => {
    return (
-        <section 
+        <article 
            className={`grid grid-cols-1 w-[86%] h-[98%] md:w-[85%] base:w-[82%] base:h-[90%] lg-xl:w-[80%] mb-8 pb-10
-                rounded-lg sticky top-12 ${index % 2 === 0 ? 'bg-indigo-600' : 'bg-sky-600'}`}
-
-        >
-           <div className="flex pt-12 pl-8">      
+                rounded-lg sticky top-12 ${index % 2 === 0 ? 'bg-indigo-600' : 'bg-sky-600'}`} >
+           
+           <header className="flex pt-12 pl-8">      
                <span className='title-cards mr-2'>{`0${index + 1}.`}</span>
                 <h2 className='title-cards z-30'>
                     {service.title}
                 </h2>
                 
-            </div>
+            </header>
             
-            <div className="grid grid-cols-1 gap-3 p-2 md:p-5">
-                <article className={` text-indigo-200 font-[400] rounded-[10px] px-6
+            <section className="grid grid-cols-1 gap-3 p-2 md:p-5">
+                <section className={` text-indigo-200 font-[400] rounded-[10px] px-6
                     `}>
                     <div className="flex flex-col ">
                         <p className="title-sm mb-3 font-[600]">
@@ -37,10 +36,10 @@ const CardServiceMobile = ({ service, index }) => {
                             ))}
                         </ul>
                     </div>
-                </article>
-            </div>
+                </section>
+            </section>
             
-        </section>
+        </article>
     );
 }
 

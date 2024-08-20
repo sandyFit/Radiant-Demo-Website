@@ -65,8 +65,8 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
         <section className='flex justify-center items-center w-full relative'>
             <div className="flex flex-col xl-sm:flex-row justify-center items-center xl-sm:items-start 
                 2xl-lg:items-center gap-2 md:gap-3 2xl-lg:gap-6">
-                <article className="grid grid-cols-1 place-items-center gap-2 md:gap-3 xl-2xl:gap-4 2xl-lg:gap-6">
-                    <div className='w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl-sm:w-[20.8rem] 
+                <div className="grid grid-cols-1 place-items-center gap-2 md:gap-3 xl-2xl:gap-4 2xl-lg:gap-6">
+                    <figure className='w-[85vw] h-[85vw] base:w-[80vw] base:h-[80vw] xl-sm:w-[20.8rem] 
                         xl-sm:h-[20.8rem] xl-md:w-[22rem] xl-md:h-[22rem] xl-2xl:w-[20.8rem] 
                         xl-2xl:h-[20.8rem] rounded-xl bg-indigo-600 shadow-lg overflow-hidden'>
                         <img
@@ -75,7 +75,7 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                             alt={`Our patient ${name}`}
                             className='w-full h-full object-cover rounded-[10px] xl:rounded-xl'
                         />
-                    </div>
+                    </figure>
 
                     <div className="flex flex-col w-[85vw] base:w-[80vw] xl-sm:w-[20.8rem] xl-md:w-[22rem] 
                         xl-2xl:w-[20.8rem] h-10 xl-2xl:h-16 2xl-lg:h-20 
@@ -96,9 +96,9 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                             ))}
                         </span>
                     </div>
-                </article>
+                </div>
 
-                <article className="grid grid-cols-1 xl-2xl:gap-4 2xl-lg:gap-6">
+                <div className="grid grid-cols-1 xl-2xl:gap-4 2xl-lg:gap-6">
                     <div className="w-[85vw] h-[15.4rem] base:w-[80vw] base:h-[18rem] lg-sm:h-[14rem] lg-xl:h-[12rem]
                         xl-sm:w-[19rem] xl-sm:h-[24rem] xl-md:w-[20rem] xl-md:h-[25.2rem] xl:w-[22.6rem]
                         xl:h-[25.28rem] xl-xl:w-[27.2rem] xl-2xl:w-[31rem] xl-3xl:w-[33rem] 2xl-sm:w-[36rem] 
@@ -127,7 +127,7 @@ const ReviewsCard = ({ name, srcImg, review, triggerOnScroll = true }) => {
                             ))}
                         </span>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
     );

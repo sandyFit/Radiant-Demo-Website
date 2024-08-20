@@ -1,20 +1,14 @@
-import React, {useEffect} from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-
+import React from 'react';
 
 const CardService = ({ service, index }) => {
 
     
-
-    
     return (
-        <section 
+        <article 
             className={`w-[80%] 3xl:w-[70%] rounded-[20px] px-10 py-6 sticky top-20 mb-16 
                 ${index % 2 === 0 ? 'bg-indigo-500' : 'bg-sky-400'}`}
         >
-            <div className="flex justify-between">
+            <header className="flex justify-between">
                 <div className="flex items-center gap-5 3xl:gap-10">
                     <figure className="flex w-12 h-12 3xl:w-16 3xl:h-16 rounded-full bg-indigo-50 
                         justify-center items-center">
@@ -28,16 +22,16 @@ const CardService = ({ service, index }) => {
                     </h2>
                 </div>
                 <span className='title-cards '>{`0${index + 1}.`}</span>
-            </div>
+            </header>
             
-            <div className="grid grid-cols-[repeat(12, minmax(5rem, 1fr))] grid-rows-[repeat(10, minmax(5rem, 1fr))]
+            <section className="grid grid-cols-[repeat(12, minmax(5rem, 1fr))] grid-rows-[repeat(10, minmax(5rem, 1fr))]
                 gap-2 mt-8">
                 <figure className='col-span-4 col-start-1 col-end-5 row-span-5 h-[28rem] relative  
                 bg-indigo-300 rounded-[20px] overflow-hidden  '>
                     <img src={service.imgSrc} alt={service.alt} className="w-full h-full object-cover" />
                 </figure>
 
-                <article className={`col-span-6 col-start-6 h-[28rem] text-indigo-200 font-[400] rounded-[20px] p-10
+                <section className={`col-span-6 col-start-6 h-[28rem] text-indigo-200 font-[400] rounded-[20px] p-10
                     ${index % 2 === 0 ? 'bg-indigo-700' : 'bg-sky-600'}`}>
                     <div className={`flex flex-col ${index === 0 ? 'gap-3' : 'gap-5'}`}>
                         <p className="title-sm">
@@ -58,10 +52,10 @@ const CardService = ({ service, index }) => {
                             ))}
                         </ul>
                     </div>
-                </article>
-            </div>
+                </section>
+            </section>
             
-        </section>
+        </article>
     );
 };
 

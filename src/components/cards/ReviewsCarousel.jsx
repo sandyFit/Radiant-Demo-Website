@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import ReviewsCard from './ReviewsCard';
 
+
 const ReviewsCarousel = ({ reviews }) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -21,7 +22,7 @@ const ReviewsCarousel = ({ reviews }) => {
     };
 
     return (
-        <div className='flex justify-center items-center w-full relative'>
+        <article className='flex justify-center items-center w-full relative'>
             <div className="relative flex justify-center items-center w-full">
                 <div className="absolute xl-sm:right-[4.6rem] xl-md:right-20 xl:right-[5.4rem] 
                     xl-xl:right-[6.2rem] xl-2xl:right-[6.5rem] xl-3xl:right-[7rem] 2xl-md:right-[8.6rem]
@@ -60,7 +61,7 @@ const ReviewsCarousel = ({ reviews }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     );
 };
 

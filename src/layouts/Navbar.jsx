@@ -16,13 +16,15 @@ const Navbar = () => {
 
     return (
         <nav className='w-[90.5%] h-[66px] lg:h-[88px] glass absolute top-8 left-[4.6vw] rounded-[10px] 
-            flex items-center border-[3px] border-zinc-50 z-[20]'>
+            flex items-center border-[3px] border-zinc-50 z-[20]'
+            aria-label='main-navigation'>
             <section className="flex items-center justify-between mx-5 lg:mx-12 w-full h-full relative">
                 <Logo />
                 
                 <svg height="70" width="10" xmlns="http://www.w3.org/2000/svg"
                     className='hidden lg:block absolute left-[15.8rem] top-1/2 
-                    transform -translate-y-1/2'>
+                    transform -translate-y-1/2'
+                    aria-hidden="true">
                     <line x1="5" y1="0" x2="5" y2="70" stroke="#fafafa" strokeWidth="2"/>
                 </svg>
 
@@ -54,12 +56,16 @@ const Navbar = () => {
 
                
                 <svg height="70" width="10" xmlns="http://www.w3.org/2000/svg" className='hidden lg:block absolute right-44 
-                    top-1/2 transform -translate-y-1/2'>
+                    top-1/2 transform -translate-y-1/2'
+                    aria-hidden="true">
                     <line x1="5" y1="0" x2="5" y2="70" stroke="#fafafa" strokeWidth="2"/>
                 </svg>
 
-                <div className="absolute top-[6.4rem] -right-6 lg:-right-12 ">                   
-                    <GlassMenuRight isMenuOpen={visible} onClose={handleMenuClose}/>                   
+                <div className="absolute top-[6.4rem] -right-6 lg:-right-12"
+                    id="menu"
+                    role="menu" // Defines the role of the menu container
+                >
+                    <GlassMenuRight isMenuOpen={visible} onClose={handleMenuClose} />
                 </div>
 
             </section>
