@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Logo = () => {
     return (
-        <div className='flex space-x-2'>
+        <article className='flex space-x-2'>
              <Link to="/" className="flex flex-row items-center space-x-2">
                 <div className='flex flex-col'>
                     <span className="text-[1.13rem] md:text-xl lg:text-2xl xl:text-[1.5rem] 2xl:text-[2rem]
@@ -21,7 +21,7 @@ const Logo = () => {
                     </div>
                 </div>
             </Link>
-        </div>
+        </article>
     )
 }
 

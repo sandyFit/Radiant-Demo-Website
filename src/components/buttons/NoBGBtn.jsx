@@ -40,4 +40,4 @@ const NoBGBtn = ({text, aria}) => {
     )
 }
 
-export default NoBGBtn
+export default NoBGBtn;

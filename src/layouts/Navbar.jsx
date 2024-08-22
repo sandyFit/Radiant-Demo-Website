@@ -63,7 +63,7 @@ const Navbar = () => {
 
                 <div className="absolute top-[6.4rem] -right-6 lg:-right-12"
                     id="menu"
-                    role="menu" // Defines the role of the menu container
+                    role="menu" 
                 >
                     <GlassMenuRight isMenuOpen={visible} onClose={handleMenuClose} />
                 </div>

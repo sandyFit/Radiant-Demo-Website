@@ -17,10 +17,12 @@ const GlassMenu = ({ isMenuOpen, onClose }) => {
         <article className={`w-[16rem] h-[28rem] rounded-[10px] glass shadow-2xl
             ${isMenuOpen ? 'menu-open' : 'menu-closed'}`}
             style={{ zIndex: isMenuOpen ? 100 : 0 }}
+            aria-hidden={!isMenuOpen}
         >
             <ul
                 className={`flex flex-col pl-10 pr-8 py-8 items-start gap-3.5 rounded-2xl transition-all 
                     duration-2000`}
+                aria-label="Site Navigation" 
             >
                 {['index', 'about', 'services', 'staff', 'reviews', 'faq', 'contact']
                     .map((item, index) => (
@@ -31,6 +33,7 @@ const GlassMenu = ({ isMenuOpen, onClose }) => {
                             after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
                             hover:after:scale-x-100 hover:after:text-indigo-600'>
                             <ScrollLink to={item}
+                                aria-label={`Scroll to ${item}`}
                                 smooth={true}
                                 duration={500}
                                 offset={120}

@@ -9,7 +9,7 @@ const TeamMobile = ({ bioData, renderDescription }) => {
                     Meet Our <span className='app-title '>Team</span>
                 </h2>
 
-                <div className="w-full flex items-center"> 
+                <section className="w-full flex items-center"> 
                     <div className="grid grid-cols-1 xl-sm:grid-cols-2 w-full gap-8 xl-sm:gap-12 2xl:gap-8">                       
                         {bioData.map((member, index) => (
                             <article key={index}>
@@ -28,7 +28,7 @@ const TeamMobile = ({ bioData, renderDescription }) => {
                         ))}
                         
                     </div>
-                </div>
+                </section>
             </div>
         </section>
     );

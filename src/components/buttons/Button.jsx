@@ -8,12 +8,12 @@ const Button = ({ text, aria, onClick }) => {
             onClick={onClick}
         >
             <span className="relative inline-flex overflow-hidden">
-                <div className="translate-y-0 transition duration-500 group-hover:-translate-y-[85%] ">
+                <span className="translate-y-0 transition duration-500 group-hover:-translate-y-[85%] ">
                     {text}
-                </div>
-                <div className="absolute translate-y-[85%] transition duration-500 group-hover:translate-y-0 ">
+                </span>
+                <span className="absolute translate-y-[85%] transition duration-500 group-hover:translate-y-0 ">
                     {text}
-                </div>
+                </span>
             </span>
         </button>
     )

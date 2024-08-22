@@ -2,7 +2,7 @@ import React from 'react'
 
 const SmallAvatars = ({imgSrc, title, name}) => {
     return (
-        <article>
+        <div>
             <div className="flex justify-start items-center w-full gap-4">
                 <div className='avatar-sm'>
                     <img src={imgSrc} alt={name} className='avatar-img-sm'/>
@@ -16,7 +16,7 @@ const SmallAvatars = ({imgSrc, title, name}) => {
             <hr className='border-t-2 border-slate-300 w-[100%] my-6'/>
 
                         
-        </article>
+        </div>
     )
 }
 
