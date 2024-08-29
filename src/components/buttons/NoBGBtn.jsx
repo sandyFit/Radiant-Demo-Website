@@ -1,8 +1,10 @@
 import React from 'react';
 
-const NoBGBtn = ({text, aria}) => {
+const NoBGBtn = ({text, aria, onClick}) => {
     return (
-        <button aria-label={aria} 
+        <button
+            aria-label={aria} 
+            onClick={onClick} 
             className="group relative inline-flex items-center text-links hover:text-indigo-600">
             <span>
                 {text}

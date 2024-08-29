@@ -9,6 +9,7 @@ import NewPatientAppointment from "./pages/booking/NewPatientAppointment";
 import ExistingPatientAppointment from "./pages/booking/ExistingPatientAppointment";
 import EmergencyAppointment from "./pages/booking/EmergencyAppointment";
 import BookAppointment from "./pages/booking/BookAppointment";
+import NotFoundPage from "./pages/404/NotFoundPage";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -22,7 +23,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 				<Route path='/new-patient-appointment' element={<NewPatientAppointment/>} />
 				<Route path='/existing-patient-appointment' element={<ExistingPatientAppointment/>} />
 				<Route path='/emergency-appointment' element={<EmergencyAppointment/>} />
-				<Route path='/book-appointment' element={<BookAppointment/>} />
+                <Route path='/book-appointment' element={<BookAppointment />} />
+                
+                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
 
         </Router>

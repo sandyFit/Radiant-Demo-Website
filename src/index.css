@@ -482,6 +482,12 @@ body {
         @apply text-[11rem] font-[800] text-indigo-900 leading-[150px]
     }
 
+    .title-xl {
+        @apply font-[800]
+            text-[12rem]
+            leading-[180px]
+    }
+
     .tiny-title {
         @apply text-[2rem] font-[600]
     }
