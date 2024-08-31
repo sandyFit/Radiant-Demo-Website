@@ -41,7 +41,6 @@ const About = () => {
 
     const imgRef = useAnimateImage();
 
-    
 
     return (
         <section 

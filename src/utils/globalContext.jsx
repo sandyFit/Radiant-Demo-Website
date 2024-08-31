@@ -1,17 +1,18 @@
-import { createContext, useEffect, useState, useRef } from 'react';
+import { createContext, useEffect, useReducer, useRef } from 'react';
+import { reducer } from '../utils/reducer';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+
 
 // Global Context
 export const GlobalContext = createContext(undefined);
 
 // Context Provider Component
 export const ContextProvider = ({ children }) => {
-    const [image, setImage] = useState(null);
-
+    const [state, dispatch] = useReducer(reducer, { image: null, text: null });
 
     return (
-        <GlobalContext.Provider value={{ image, setImage }}>
+        <GlobalContext.Provider value={{ state, dispatch }}>
             {children}
         </GlobalContext.Provider>
     );

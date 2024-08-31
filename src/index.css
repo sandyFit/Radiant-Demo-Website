@@ -484,19 +484,25 @@ body {
 
     .title-xl {
         @apply font-[800]
-            text-[4rem]
+            text-[4.8rem]
             md:text-[5rem]
+            base:text-[6rem]
             lg-sm:text-[6.5rem]
-            xl-xl:text-[8rem]
+            xl-sm:text-[7.5rem]
+            xl-xl:text-[8.6rem]        
             2xl-md:text-[9rem]
             2xl:text-[10rem]
             3xl-sm:text-[11rem]
             3xl:text-[12rem]
-            xl-sm:leading-[120px]
-            xl-xl:leading-[140px]
-            2xl-md:leading-[150px]
-            3xl-sm:leading-[160px]
-            3xl:leading-[180px]
+            leading-[65px]
+            base:leading-[78px]
+            xl-sm:leading-[95px]
+            xl-xl:leading-[110px]
+            2xl-md:leading-[115px]
+            2xl:leading-[130px]
+            2xl-xl:leading-[130px]
+            3xl-sm:leading-[140px]
+            3xl:leading-[150px]
     }
 
     .tiny-title {
