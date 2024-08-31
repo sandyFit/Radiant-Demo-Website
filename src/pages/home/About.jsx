@@ -1,10 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { HiArrowUp } from 'react-icons/hi2';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TextShimmerEffect from '../../components/featured/TextShimmerEffect';
 import GlassMenu from '../../components/cards/GlassMenu';
+import { useAnimateImage } from '../../utils/globalContext';
 
 const About = () => {
     const [showFloatingBtn, setShowFloatingBtn] = useState(false);
@@ -39,30 +38,10 @@ const About = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    gsap.registerPlugin(ScrollTrigger);
 
-    const imgRef = useRef(null);
+    const imgRef = useAnimateImage();
 
-    useEffect(() => {
-        const img = imgRef.current;
-
-        gsap.fromTo(img, {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-            opacity: 0,
-        }, {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            opacity: 1,
-            duration: 3,
-            delay: .5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: img,
-                start: "top 80%",
-                end: "bottom 80%",
-                once: true,
-            },
-        });
-    }, []);
+    
 
     return (
         <section 

@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import QuestionCard from '../../components/cards/QuestionCard';
 import questions from '../../data/questions';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TextShimmerEffect from '../../components/featured/TextShimmerEffect';
+import { useAnimateImage } from '../../utils/globalContext';
 
 const Faqs = () => {
     const [openQuestionIndex, setOpenQuestionIndex] = useState(null);
@@ -12,47 +11,8 @@ const Faqs = () => {
         setOpenQuestionIndex(openQuestionIndex === index ? null : index);
     }
 
-    gsap.registerPlugin(ScrollTrigger);
 
-    const highHueRef = useRef(null);
-
-    useEffect(() => {
-        const animation = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.hue-effect',
-                start: 'center center',
-                toggleActions: 'play none none none',
-            }
-        });
-
-        animation.fromTo(highHueRef.current, 
-            { x: '-100%', opacity: 0, color: '#2d3e5e' },
-            { x: '0%', opacity: 1, duration: 1, ease: 'power2.out' }
-        );
-    }, []);
-
-    const imgRef = useRef(null);
-
-    useEffect(() => {
-        const img = imgRef.current;
-
-        gsap.fromTo(img, {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-            opacity: 0,
-        }, {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            opacity: 1,
-            duration: 3,
-            delay: .6,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: img,
-                start: "top 80%",
-                end: "bottom 80%",
-                once: true,
-            },
-        });
-    }, []);
+    const imgRef = useAnimateImage();
 
     return (
         <section className='relative h-auto pt-28 xl:pt-32 bg-slate-300 pb-24 xl:pb-36'>
