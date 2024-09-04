@@ -14,11 +14,14 @@ const Navbar = () => {
         setVisible(false);
     }
 
+    
+
     return (
         <nav className='w-[90.5%] h-[66px] lg:h-[88px] glass absolute top-8 left-[4.6vw] rounded-[10px] 
             flex items-center border-[3px] border-zinc-50 z-[20]'
             aria-label='main-navigation'>
-            <section className="flex items-center justify-between mx-5 lg:mx-12 w-full h-full relative">
+            <section className="flex items-center justify-between mx-5 lg:mx-12 w-full h-full relative
+                text-indigo-900 ">
                 <Logo />
                 
                 <svg height="70" width="10" xmlns="http://www.w3.org/2000/svg"

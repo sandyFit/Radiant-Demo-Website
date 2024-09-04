@@ -1,139 +1,153 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { HiStar } from 'react-icons/hi';
+import { useAnimateImage } from '../../utils/globalContext';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Lenis from 'lenis';
-import bioData from '../../data/bioData';
-import { renderDescription } from '../../utils/functions';
 
-const Test = () => {
-    const lenisRef = useRef(null);
+import Button from '../../components/buttons/Button';
+import Intro from './Intro';
+
+const Hero = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        console.log('clicked');
+        navigate('book');
+    }
+
+    const imgRef = useAnimateImage();
 
     useEffect(() => {
-        //LENIS SMOOTH SCROLL
-        const lenis = new Lenis({
-            duration: 1.2
-        })
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
+        const master = gsap.timeline();
+        const heroTitles = [...document.querySelectorAll('.hero__title span span')];
+        const heroCaption = document.querySelector('.hero__text span');
+        const heroBtn = document.querySelector('.hero__btn');
+
+        const setInitialState = () => {
+            // gsap.set(headerItems, {
+            //     y: 24,
+            //     autoAlpha: 0
+            // });
+
+            gsap.set(heroBtn, {
+                y: 64,
+                autoAlpha: 0
+            });
+
+            gsap.set([heroTitles, heroCaption], {
+                yPercent: 100
+            });
+                }
+
+        const uiAnimation = () => {
+            const tl = gsap.timeline({
+                delay: .5,
+                defaults: {
+                    ease: 'power3.out',
+                    duration: 1.7,
+                    yPercent: 0,
+                    y: 0
+                }
+            });
+            tl.to(heroCaption, {
+                duration: 1.2,
+                ease: 'power2.inOut'
+            })
+                .to(heroTitles, {
+                    stagger: .2
+                }, '-=0.9')
+                .to(heroBtn, {
+                autoAlpha: 1
+                }, 0.5)
+                // .to(headerItems, {
+                // autoAlpha: 1
+            
+
+
+            return tl;
         }
 
-        requestAnimationFrame(raf);
+        master
+            .add(setInitialState())
+            .add(uiAnimation())
 
-        // Integration lenis on GSAP ScrollTrigger
-        lenis.on('scroll', ScrollTrigger.update);
+    })
 
-        gsap.ticker.add((time) => {
-            lenis.raf(time * 1000)
-        })
-    }, []);
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    useEffect(() => {
-
-        const workItems = document.querySelectorAll('.work__photo-item');
-
-        workItems.forEach((item, index) => {
-            item.style.zIndex = workItems.length - index;
-        });
-
-        gsap.set('.work__photo-item', {
-            clipPath: 'inset(0% 0% 0% 0%)'
-        });
-
-        const animation = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.work',
-                start: 'top top',
-                end: 'bottom bottom',
-                scrub: 1
-            }
-        });
-
-        animation.to('.work__photo-item:not(:last-child)', {
-            clipPath: 'inset(0% 0% 100% 0%)',
-            stagger: 0.5,
-            ease: 'none'
-        });
-    }, []);
-
- 
-
-    const lineRef = useRef(null);
-
-    useEffect(() => {
-        gsap.fromTo(
-            lineRef.current,
-            { width: '0%' },
-            {
-                width: '20%', // Change this value to your desired width
-                duration: 1.5,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: lineRef.current,
-                    start: 'top 80%',
-                    toggleActions: 'play none none none',
-                },
-            }
-        );
-
-        return () => {
-            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-        };
-    }, []);
 
     return (
-        <section className="w-full h-auto flex flex-col justify-center pb-2 xl:pb-12 z-10 relative bg-slate-300">
-           <div className="w-full flex justify-end items-center text-med-dark mb-9 relative gap-6">
-                <span
-                    className="absolute left-[58rem] top-1/2 transform -translate-y-1/2 h-[0.1rem] bg-indigo-800"
-                    ref={lineRef}
-                    style={{ width: '0%' }} // Initial width set to 0%
-                ></span>
-                <span className="mr-32 relative">03 — Team</span>
-            </div>
+        <section id='index' className='w-full min-h-screen bg-slate-300'>
+            <Intro/>
+            <header className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-self-center place-items-center
+                px-2 base:px-8 xl:px-10 xl-lg:px-16 2xl:px-32 3xl:px-40 xl-lg:pt-10 xl-2xl:pt-0">
+                <section className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] 2xl:w-full mt-8 
+                    xl-lg:mt-40 gap-6">
+                    <h1 className='title-h1 w-full hero__title'>
+                        <span>Reveal
+                            <span className='app-title' style={{ margin: '0 1rem' }}>
+                                Your Brightest
+                            </span>
+                        </span>
+                        Smile
+                    </h1>
 
-            <h2 data-aos='fade-up'
-                className='big-title text-center'>
-                Meet Our 
-                <span className='app-title ml-8'>Team</span>
-            </h2>
-            <div className="work flex">
-                <div className="relative w-[56%] z-10">
-                    <div className="m-auto w-[84%]">
-                        {bioData.map((member, index) => (
-                            <div key={index} className={`bio-${index} w-full h-[100vh] flex flex-col justify-center`}>
-                                <div className="ml-16 relative w-full z-20">
-                                    <h3 className="text-left text-indigo-900 text-2xl md:text-4xl xl:text-5xl font-bold 
-                                    w-2/3 md:w-2/4 lg:w-[80%] pt-2 tracking-wider">
-                                        {member.firstName}
-                                        <span className="app-title ml-4">{member.lastName}</span>
-                                    </h3>
-                                    <p className="text-lg md:text-xl 2xl:text-xl text-indigo-900 mt-8 w-3/4 font-[500] 
-                                        2xl:w-[80%]">
-                                        {renderDescription(member.description)}
-                                    </p>
-                                </div>
+                    <p className='text-p1 w-[96%] md:w-full 2xl:w-[90%] hero__text'>
+                        <span>
+                            Let us take care of your teeth. Our dedicated team of professionals is committed to
+                            providing you with first-class dental care.
+                        </span>
+                    </p>
+
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-6 place-items-center 
+                        2xl:place-items-end hero__btn">
+                        <div className="col-span-3 w-full flex justify-center items-center btn-book-online 
+                            h-12 md:h-[3.6rem] base:h-[3.8rem] lg:h-[4rem] px-8 md:px-10 base:px-6 text-[1rem] 
+                            md:text-[1.3rem] base:text-[1.38rem] lg:text-[1.4rem] xl:text-[1.2rem] 
+                            3xl:text-[1.5rem] z-[40]">
+                            <Button text={'book online'}
+                                aria={'Click to book online'}
+                                onClick={handleClick}
+                            />
+                        </div>
+                        <div className="col-span-2 2xl:col-span-3 hidden lg:grid grid-cols-3 place-items-center w-full 
+                            2xl:w-[85%] ml-0 lg:ml-[3vw] mr-0 2xl:mr-6">
+                            <div className="hidden lg:grid col-span-1 mr-0 lg:mr-[-1vw] xl:mr-[.2vw] 2xl:mr-[-1vw]">
+                                <img src="/icons/google.png" alt="Google logo"
+                                    className='w-[2.6rem] lg:w-[3.8rem] 2xl:w-[4rem]' />
                             </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="w-[40%] h-auto">
-                    <div className="flex flex-col justify-center sticky w-full h-screen top-0">
-                        <div className="w-[35vw] h-[35vw] relative">
-                            {bioData.map((member, index) => (
-                                <div key={index} className={`work__photo-item work__photo-item-${index}`}>
-                                    <img src={member.imageSrc} alt={member.altText} />
+                            <div className="col-span-1 grid grid-cols-1 place-content-center text-azure">
+                                <p className='text-[1.2rem] font-semibold leading-[28px]'>100 +</p>
+                                <div className=''>
+                                    <span className='flex font-bold'>
+                                        {[...Array(5)].map((_, index) => (
+                                            <HiStar key={index} className='text-[1rem]' aria-label="star rating"/>
+                                        ))}
+                                    </span>
                                 </div>
-                            ))}
+                                <p className='hidden lg:inline-flex text-[.9rem] xl:text-[.8rem] 2xl:text-[.9rem] 
+                                    font-[500] text-indigo-900 whitespace-nowrap'>
+                                    Verified Reviews
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    );
-};
+                </section>
 
-export default Test;
+                <section className='xl-lg:col-start-2 row-start-1 xl-lg:row-start-auto mt-36 xl-lg:mt-44 3xl:mt-40
+                    grid place-self-center ml-0 3xl:ml-[2.5rem]'>
+                    <figure className="w-[85vw] h-[85vw]  md:w-[22rem] md:h-[22rem] base:w-[25rem] base:h-[25rem] 
+                        lg-sm:w-[30rem] lg-sm:h-[30rem] lg-md:w-[32rem] lg-md:h-[32rem] lg:w-[78vw] lg:h-[78vw] 
+                        xl:w-[78vw] xl:h-[78vw] xl-lg:w-[38vw] xl-lg:h-[42vw]  2xl:w-[38vw] 2xl:h-[38vw] 
+                        rounded-3xl  bg-indigo-500">
+                        <img ref={imgRef}
+                            src="/people/black-girl.jpg"
+                            alt="An African-American girl smiling brightly after a dental check-up."
+                            className='w-full h-full object-cover rounded-3xl'
+                        />
+                    </figure>
+                </section>
+            </header>
+        </section>
+    )
+}
+
+export default Hero;

@@ -19,12 +19,15 @@ const App = () => {
         });
         
     }, []);
+
     
 
     return (
         <div className='bg-slate-300'>
             <ContextProvider>
-                <Navbar className='z-20'/>
+                <div >
+                    <Navbar />
+                </div>                               
                 <div className="relative z-10" >
                     <Outlet />
                 </div>

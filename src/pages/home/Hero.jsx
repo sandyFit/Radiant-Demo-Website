@@ -1,28 +1,103 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { HiStar } from 'react-icons/hi';
-import { useAnimateImage } from '../../utils/globalContext';
-
+import gsap from 'gsap';
 import Button from '../../components/buttons/Button';
 
-const Hero = () => {
+
+const Hero = ({ onIntroComplete }) => {
     const navigate = useNavigate();
+    const imgRef = useRef(null); 
 
     const handleClick = () => {
         console.log('clicked');
         navigate('book');
-    }
+    };
 
-    const imgRef = useAnimateImage();
+    useEffect(() => {
+        const master = gsap.timeline();
+        const heroTitles = [...document.querySelectorAll('.hero__titles')]; // Corrected selector
+        const heroCaption = document.querySelector('.hero__caption'); // Corrected selector
+        const heroBtn = document.querySelector('.hero__btn');
 
+        const setInitialState = () => {
+            gsap.set(heroBtn, {
+                y: 100,
+                autoAlpha: 0
+            });
+
+            gsap.set([heroTitles, heroCaption], { // Spread operator to include both titles and caption
+                yPercent: 100,
+                autoAlpha: 0
+            });
+        };
+
+        const uiAnimation = () => {
+            const tl = gsap.timeline({
+                defaults: {
+                    delay: 2,
+                    duration: .8,
+                    ease: 'power3.out'
+                }
+            });
+
+            tl.to(heroTitles, { // First animate titles
+                yPercent: 0,
+                autoAlpha: 1,
+                stagger: 0.1 // Optional: add stagger to make the animation smoother
+            }, 0) // Start immediately
+
+            .to(heroCaption, { // Then animate the caption
+                yPercent: 0,
+                autoAlpha: 1
+            }, .3) // Start slightly before the titles animation ends
+
+            .to(heroBtn, {
+                y: 10,
+                autoAlpha: 1
+            }, .2);
+
+            return tl;
+        };
+
+        const animateImage = () => {
+            const image = imgRef.current;
+            if (image) {
+                gsap.fromTo(image, {
+                    clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+                    opacity: 0,
+                }, {
+                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                    delay: 1.5,
+                    opacity: 1,
+                    duration: 3,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: image,
+                        start: "top 80%",
+                        end: "bottom 80%",
+                        once: true, 
+                    },
+                });
+            }
+        };
+
+        master
+            .add(setInitialState())
+            .add(uiAnimation(), '<')
+            .add(animateImage(), '<') 
+            .add(() => onIntroComplete && onIntroComplete());
+
+    }, []);
 
     return (
         <section id='index' className='w-full min-h-screen bg-slate-300'>
+            {/* <Intro/> */}
             <header className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-self-center place-items-center
                 px-2 base:px-8 xl:px-10 xl-lg:px-16 2xl:px-32 3xl:px-40 xl-lg:pt-10 xl-2xl:pt-0">
                 <section className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] 2xl:w-full mt-8 
                     xl-lg:mt-40 gap-6">
-                    <h1 className='title-h1 w-full'>
+                    <h1 className='title-h1 w-full hero__titles'>
                         <span>Reveal
                             <span className='app-title' style={{ margin: '0 1rem' }}>
                                 Your Brightest
@@ -31,13 +106,15 @@ const Hero = () => {
                         Smile
                     </h1>
 
-                    <p className='text-p1 w-[96%] md:w-full 2xl:w-[90%]'>
-                        Let us take care of your teeth. Our dedicated team of professionals is committed to
-                        providing you with first-class dental care.
+                    <p className='text-p1 w-[96%] md:w-full 2xl:w-[90%] pb-[-2rem] hero__caption'>
+                        
+                            Let us take care of your teeth. Our dedicated team of professionals is committed to
+                            providing you with first-class dental care.
+                        
                     </p>
 
                     <div className="w-full grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-6 place-items-center 
-                        2xl:place-items-end ">
+                        2xl:place-items-end hero__btn">
                         <div className="col-span-3 w-full flex justify-center items-center btn-book-online 
                             h-12 md:h-[3.6rem] base:h-[3.8rem] lg:h-[4rem] px-8 md:px-10 base:px-6 text-[1rem] 
                             md:text-[1.3rem] base:text-[1.38rem] lg:text-[1.4rem] xl:text-[1.2rem] 
@@ -48,7 +125,7 @@ const Hero = () => {
                             />
                         </div>
                         <div className="col-span-2 2xl:col-span-3 hidden lg:grid grid-cols-3 place-items-center w-full 
-                            2xl:w-[85%] ml-0 lg:ml-[3vw] mr-0 2xl:mr-6">
+                            2xl:w-[85%] ml-0 lg:ml-[3vw] mr-0 2xl:mr-6 ">
                             <div className="hidden lg:grid col-span-1 mr-0 lg:mr-[-1vw] xl:mr-[.2vw] 2xl:mr-[-1vw]">
                                 <img src="/icons/google.png" alt="Google logo"
                                     className='w-[2.6rem] lg:w-[3.8rem] 2xl:w-[4rem]' />

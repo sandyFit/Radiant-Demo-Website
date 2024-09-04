@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from './Hero';
 import About from './About';
 import Services from './Services';
@@ -6,14 +6,20 @@ import Team from './Team';
 import Reviews from './Reviews';
 import Faqs from './Faqs';
 import ContactTransition from './ContactTransition';
-import Test from './Test';
-
+import Intro from './Intro';
 
 const Home = () => {
+    const [introComplete, setIntroComplete] = useState(false);
+
     return (
         <main className='w-full'>
-            <section id='index'>
-                <Hero />
+            <section className='z-50'>
+                <Intro onComplete={() => setIntroComplete(true)} />
+            </section>
+            
+            {/* Add a class to control visibility */}
+            <section id='index' className={introComplete ? 'opacity: 1' : 'opacity: 0'}>
+                <Hero onIntroComplete={() => {}} />
             </section>
 
             <section id='about'>
