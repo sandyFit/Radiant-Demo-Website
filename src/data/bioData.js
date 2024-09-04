@@ -1,7 +1,7 @@
 const bioData = [
     {
-        firstName: 'Nice to',
-        lastName: 'Meet You!',
+        firstName: 'Who We',
+        lastName: 'Are',
         description: `For over 20 years, we've had the privilege of serving a diverse range of patients at different stages of life. We take pride in genuinely caring for each of them as individuals.  \n\nOur goal is to stablish lifelong connections with our patients. This is reflected in our warm and friendly team dedicated to provide the best experience. 
                       \nAs new dental techniques and products continue to emerge, our commitment remains steadfast in ensuring that we can offer the best available options. 
                       We look forward to the opportunity to serve you. \nDr. Roberts`,

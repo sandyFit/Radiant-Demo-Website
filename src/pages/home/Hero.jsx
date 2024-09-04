@@ -4,7 +4,6 @@ import { HiStar } from 'react-icons/hi';
 import gsap from 'gsap';
 import Button from '../../components/buttons/Button';
 
-
 const Hero = ({ onIntroComplete }) => {
     const navigate = useNavigate();
     const imgRef = useRef(null); 
@@ -35,7 +34,7 @@ const Hero = ({ onIntroComplete }) => {
         const uiAnimation = () => {
             const tl = gsap.timeline({
                 defaults: {
-                    delay: 2,
+                    delay: 1.8,
                     duration: .8,
                     ease: 'power3.out'
                 }
@@ -68,7 +67,7 @@ const Hero = ({ onIntroComplete }) => {
                     opacity: 0,
                 }, {
                     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                    delay: 1.5,
+                    delay: 2,
                     opacity: 1,
                     duration: 3,
                     ease: "power2.out",
@@ -91,8 +90,8 @@ const Hero = ({ onIntroComplete }) => {
     }, []);
 
     return (
-        <section id='index' className='w-full min-h-screen bg-slate-300'>
-            {/* <Intro/> */}
+        <section id='index' className='w-full min-h-screen bg-slate-300'>          
+              
             <header className="w-full grid grid-cols-1 xl-lg:grid-cols-2 place-self-center place-items-center
                 px-2 base:px-8 xl:px-10 xl-lg:px-16 2xl:px-32 3xl:px-40 xl-lg:pt-10 xl-2xl:pt-0">
                 <section className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] 2xl:w-full mt-8 

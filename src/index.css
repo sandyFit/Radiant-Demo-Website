@@ -371,7 +371,7 @@ body {
     }
     
     .title-h1 {
-        @apply text-indigo-900 font-[900]
+        @apply text-indigo-900 font-[900] font-anybody
             text-[2.2rem] 
             md:text-[2.8rem] 
             base:text-[3.3rem] 
@@ -380,25 +380,25 @@ body {
             xl:text-[3rem] 
             2xl:text-[3.8rem]
             2xl-xl:text-[4.2rem]
-            3xl:text-[4.8rem]  
+            3xl:text-[3.5rem]  
             leading-[.9em]
     }
     .title-h2 {
-        @apply font-sans text-indigo-900 font-bold
+        @apply  text-indigo-900 font-bold font-anybody
             text-[1.7rem] 
             md:text-4xl 
             lg-sm:text-[3.1rem]
             xl:text-[2.8rem]
             2xl:text-[3.4rem]
             3xl-sm:text-[4rem]
-            3xl:text-6xl 
+            3xl:text-[3rem] 
             leading-[1em] 
             lg-sm:leading-[1.1em]
             
             
     }
     .title-h3 {
-        @apply font-sans text-indigo-900 font-bold
+        @apply  text-indigo-900 font-bold font-anybody
             text-[1.3rem]            
             md:text-[1.5rem] 
             base:text-[1.8rem]
@@ -424,19 +424,19 @@ body {
     }
 
     .title-medium {
-        @apply font-bold tracking-wider 
+        @apply font-bold tracking-wider font-anybody
         text-2xl 
         md:text-3xl 
         xl-sm:text-[1.7rem]
         xl:text-[2rem] 
         xl-xl:text-[1.8rem]
         2xl:text-[2.2rem]
-        3xl:text-[2.8rem]
+        3xl:text-[2.5rem]
                                         
     }
 
     .title-sm {
-        @apply font-[600] tracking-wide
+        @apply font-[600] tracking-wide font-anybody
             text-[1.05rem]
             xl:text-[1.26rem]
             xl-xl:text-[1rem]
@@ -456,7 +456,7 @@ body {
     }
 
     .title-questions {
-        @apply text-indigo-900 font-[500] hover:text-indigo-100
+        @apply text-indigo-900 font-[500] hover:text-indigo-100 
             text-[.9rem] 
             text-[1rem]
             2xl:text-[1.1rem]
@@ -471,11 +471,11 @@ body {
     }
 
     .big-title {
-        @apply  font-[800] text-indigo-900 leading-[150px]
+        @apply  font-[800] text-indigo-900 leading-[150px] font-anybody
             text-[4rem]
             xl-xl:text-[5rem]
             2xl:text-[6rem]
-            3xl:text-[8rem]
+            3xl:text-[6rem]
     }
 
     .bigger-title {

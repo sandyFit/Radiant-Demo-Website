@@ -13,9 +13,10 @@ const Home = () => {
 
     return (
         <main className='w-full'>
-            <section className='z-50'>
+            <section className='z-[1000]'>
                 <Intro onComplete={() => setIntroComplete(true)} />
             </section>
+            
             
             {/* Add a class to control visibility */}
             <section id='index' className={introComplete ? 'opacity: 1' : 'opacity: 0'}>

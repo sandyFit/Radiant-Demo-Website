@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Logo from '../components/ui/Logo';
 import GlassMenuRight from '../components/cards/GlassMenuRight';
+import gsap from 'gsap';
+import { defaults } from 'autoprefixer';
 
-const Navbar = () => {
+const Navbar = ({ onIntroComplete }) => {
 
     const [visible, setVisible] = useState(false);
 
@@ -14,15 +16,63 @@ const Navbar = () => {
         setVisible(false);
     }
 
-    
+    useEffect(() => {
+        const master = gsap.timeline();
+        const navWrapper = document.querySelector('.nav__wrapper');
+        const navLogo = document.querySelector('.nav__logo');
+        const navBtn = document.querySelector('.nav__btn');
+
+        const setInitialState = () => {
+            gsap.set(navWrapper, {
+                // yPercent: -100,
+                autoAlpha: 0
+            });
+
+            // gsap.set(navLogo, {
+            //     yPercent: -100,
+            //     autoAlpha: 0
+            // });
+
+            // gsap.set(navBtn, {
+            //     yPercent: -100,
+            //     autoAlpha: 0
+            // });
+        }
+
+        const uiAnimation = () => {
+            const tl = gsap.timeline({
+                defaults: {
+                    delay: 2,
+                    duration: .8,
+                    ease: 'power3.out'
+                }
+            });
+
+            tl.to(navWrapper, {
+                // yPercent: 0,
+                autoAlpha: 1
+            })
+            //     .to([navLogo, navBtn], {
+            //         yPercent: 0,
+            //         autoAlpha: 1
+            // })
+
+            return tl;
+        }
+
+        master
+            .add(setInitialState())
+            .add(uiAnimation(), '<')
+
+    }, [])
 
     return (
         <nav className='w-[90.5%] h-[66px] lg:h-[88px] glass absolute top-8 left-[4.6vw] rounded-[10px] 
-            flex items-center border-[3px] border-zinc-50 z-[20]'
+            flex items-center border-[3px] border-zinc-50 z-[20] nav__wrapper'
             aria-label='main-navigation'>
             <section className="flex items-center justify-between mx-5 lg:mx-12 w-full h-full relative
-                text-indigo-900 ">
-                <Logo />
+                text-indigo-900 nav__logo">
+                <span><Logo /></span>
                 
                 <svg height="70" width="10" xmlns="http://www.w3.org/2000/svg"
                     className='hidden lg:block absolute left-[15.8rem] top-1/2 
@@ -33,7 +83,7 @@ const Navbar = () => {
 
                 <button
                     onClick={toggleMenu}
-                    className="flex z-[1000]"
+                    className="flex z-[1000] nav__btn"
                     aria-expanded={visible}
                     aria-controls="menu"
                     aria-label={visible ? "Close menu" : "Open menu"}
