@@ -45,8 +45,8 @@ const ContactTransition = () => {
 
             <MotionText
                 icon={'∎'}
-                part1={"Feel Free to"}
-                part2={'Reach Out'}
+                part1={"Feel Free to Reach Out"}
+
             />
 
             

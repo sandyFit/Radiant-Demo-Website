@@ -30,7 +30,7 @@ const NewsletterInput = () => {
                 <input
                     type="email"
                     id="email"
-                    className="bg-indigo-100 border-4 border-indigo-400 
+                    className="bg-slate-300 border-4 border-indigo-400 
                             text-indigo-400 text-sm xl:text-lg rounded-lg focus:outline-none
                             focus:ring-2 focus:ring-indigo-300 focus:border-indigo-600
                             block w-full p-2 md:p-2.5 xl:p-1 2xl-sm:p-2.5"

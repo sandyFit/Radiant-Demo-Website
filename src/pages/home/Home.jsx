@@ -7,6 +7,7 @@ import Reviews from './Reviews';
 import Faqs from './Faqs';
 import ContactTransition from './ContactTransition';
 import Intro from './Intro';
+import Loader from './Loader';
 
 const Home = () => {
     const [introComplete, setIntroComplete] = useState(false);
@@ -16,8 +17,7 @@ const Home = () => {
             <section className='z-[1000]'>
                 <Intro onComplete={() => setIntroComplete(true)} />
             </section>
-            
-            
+                       
             {/* Add a class to control visibility */}
             <section id='index' className={introComplete ? 'opacity: 1' : 'opacity: 0'}>
                 <Hero onIntroComplete={() => {}} />

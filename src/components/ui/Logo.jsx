@@ -11,10 +11,10 @@ const Logo = () => {
                         base:tracking-[.4em] ">
                         Radiant
                     </span>
-                    {/* <hr className='border-1 border-azure w-[95%]' /> */}
+
                     <div className="w-full flex justify-center items-center">
-                        <hr className='hidden xl:block border-[1px] xl:border-[1.5px]  w-[24.9%] 
-                            xl:w-[13.84%] 2xl:w-[28%]'/>
+                        <hr className='hidden xl:block border-[1px] xl:border-[1.5px] border-indigo-900 w-[24.9%] 
+                            xl:w-[13.84%] 2xl:w-[28%] '/>
                         <span className='w-full text-[0.71rem] md:text-[0.8rem] base:text-[.92rem] lg:text-[1.1rem] 
                             xl:text-[.80rem] 2xl:text-[1rem] text-right 
                             pr-4 font-[600] uppercase tracking-[.12rem] '>Dental Studio</span>

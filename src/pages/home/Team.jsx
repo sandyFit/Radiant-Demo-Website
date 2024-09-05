@@ -69,7 +69,7 @@ const Team = () => {
             ) : (
                 <section>
                     <h2 data-aos='fade-up' className='big-title text-center'>
-                        Meet Our <span className='app-title '>Team</span>
+                        Meet Our Team
                     </h2>
 
                     <div className="w-full work flex xl-xl:mt-[-5rem] 2xl:mt-0 2xl:pl-6">
@@ -80,8 +80,8 @@ const Team = () => {
                                         justify-center`}>
                                         <div className="ml-16 relative w-full z-20">
                                             <h3 className="text-left text-indigo-900 title-medium lg:w-[80%] 3xl:pt-2">
-                                                {member.firstName}
-                                                <span className="app-title ml-2 2xl:ml-4">{member.lastName}</span>
+                                                {member.name}
+                                                
                                             </h3>
                                             <p className="text-p1 mt-8 w-3/4 2xl:w-[80%]">
                                                 {renderDescription(member.description)}

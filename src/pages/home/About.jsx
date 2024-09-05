@@ -108,17 +108,7 @@ const About = () => {
                     {/* ABOUT COPY */}
                     <div className="grid grid-cols-1">
                         <h2 className='text-left title-h2 col-span-1 whitespace-nowrap'>
-                            Expert
-                            <span className='app-title ml-2 text-left title-h2 col-span-1 whitespace-nowra'>
-                               Care,<br />
-                            </span>
-                            
-                            <span className='text-indigo-900 mr-2 whitespace-nowrap'>
-                                Exceptional
-                            </span>
-                            <span className='app-title whitespace-nowrap' >
-                                Results
-                            </span>
+                            Expert Care,<br /> Exceptional Results                           
                         </h2>
                         
                         <p className='text-p1 mt-6 lg:mt-8 col-span-1'>

@@ -28,10 +28,7 @@ const Faqs = () => {
             <section className="w-full flex flex-col justify-center items-center relative">
                 <section className="w-full relative hue-effect flex flex-col justify-center items-center">
                     <h2 className='hidden xl:block text-center title-h2 lg:w-[80%] pt-2 lg:pt-4'>
-                        Got Questions?
-                        <span className='app-title ml-0 xl:ml-4'>
-                            We have Answers!
-                        </span>
+                        Got Questions? We have Answers!
                     </h2>
 
                     <h2 className='block xl:hidden text-left title-h2 w-[85%] base:w-[80%] pt-2 lg:pt-4'>

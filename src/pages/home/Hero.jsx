@@ -34,7 +34,7 @@ const Hero = ({ onIntroComplete }) => {
         const uiAnimation = () => {
             const tl = gsap.timeline({
                 defaults: {
-                    delay: 1.8,
+                    delay: 2,
                     duration: .8,
                     ease: 'power3.out'
                 }
@@ -67,7 +67,7 @@ const Hero = ({ onIntroComplete }) => {
                     opacity: 0,
                 }, {
                     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                    delay: 2,
+                    delay: 1.8,
                     opacity: 1,
                     duration: 3,
                     ease: "power2.out",
@@ -97,12 +97,7 @@ const Hero = ({ onIntroComplete }) => {
                 <section className="col-span-1 col-start-1 grid w-[90%] lg-xl:w-[86%] 2xl:w-full mt-8 
                     xl-lg:mt-40 gap-6">
                     <h1 className='title-h1 w-full hero__titles'>
-                        <span>Reveal
-                            <span className='app-title' style={{ margin: '0 1rem' }}>
-                                Your Brightest
-                            </span>
-                        </span>
-                        Smile
+                        <span>Reveal Your Brightest Smile </span>                                                  
                     </h1>
 
                     <p className='text-p1 w-[96%] md:w-full 2xl:w-[90%] pb-[-2rem] hero__caption'>
