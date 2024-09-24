@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.7.6",
     "date-fns": "^3.6.0",
+    "radiant-site": "file:",
     "react": "^18.2.0",
     "react-calendar": "^5.0.0",
     "react-day-picker": "^9.0.8",

@@ -385,7 +385,7 @@ body {
     }
     .title-h2 {
         @apply  text-indigo-900 font-bold font-anybody
-            text-[1.7rem] 
+            text-[1.5rem] 
             md:text-4xl 
             lg-sm:text-[3.1rem]
             xl:text-[2.8rem]
@@ -452,7 +452,13 @@ body {
     }
      
     .title-links {
-        @apply  text-[1.2rem] md:text-[2rem] lg:text-[2rem] leading-[16px] md:leading-[18px] lg:leading-[20px] font-anybody font-[700] uppercase
+        @apply  font-anybody font-[700] uppercase
+            text-[1.8rem] 
+            md:text-[2rem] 
+            lg:text-[2rem] 
+            leading-[16px] 
+            md:leading-[18px] 
+            lg:leading-[20px] 
     }
 
     .title-questions {
