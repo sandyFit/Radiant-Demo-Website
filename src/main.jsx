@@ -10,24 +10,28 @@ import ExistingPatientAppointment from "./pages/booking/ExistingPatientAppointme
 import EmergencyAppointment from "./pages/booking/EmergencyAppointment";
 import BookAppointment from "./pages/booking/BookAppointment";
 import NotFoundPage from "./pages/404/NotFoundPage";
+import Loader from "./components/ui/Loader";
+import { Provider } from "react-redux";
+import store from './redux/store.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
+    <Provider store={store}>
         <Router>
-            <Routes>
-                <Route path="/" element={<App />}>
-					<Route index element={<Home />} />					
-				</Route>
+            <Loader/>
+                <Routes>
+                    <Route path="/" element={<App />}>
+                        <Route index element={<Home />} />					
+                    </Route>
 
-				<Route path='/book' element={<OnlineBooking/>} />
-				<Route path='/new-patient-appointment' element={<NewPatientAppointment/>} />
-				<Route path='/existing-patient-appointment' element={<ExistingPatientAppointment/>} />
-				<Route path='/emergency-appointment' element={<EmergencyAppointment/>} />
-                <Route path='/book-appointment' element={<BookAppointment />} />
-                
-                 <Route path="*" element={<NotFoundPage />} />
-            </Routes>
+                    <Route path='/book' element={<OnlineBooking/>} />
+                    <Route path='/new-patient-appointment' element={<NewPatientAppointment/>} />
+                    <Route path='/existing-patient-appointment' element={<ExistingPatientAppointment/>} />
+                    <Route path='/emergency-appointment' element={<EmergencyAppointment/>} />
+                    <Route path='/book-appointment' element={<BookAppointment />} />
+                    
+                    <Route path="*" element={<NotFoundPage />} />
+                </Routes>
 
         </Router>
-    </React.StrictMode>
+    </Provider>
 )

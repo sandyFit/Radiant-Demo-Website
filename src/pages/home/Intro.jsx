@@ -2,13 +2,26 @@ import React, { useEffect } from 'react';
 import '../../assets/intro.css';
 import Logo from '../../components/ui/Logo';
 import gsap from 'gsap';
+import { useDispatch, useSelector } from 'react-redux';
+import { showLoading, hideLoading } from '../../redux/alertSlice';
+import Loader from '../../components/ui/Loader';
 
 const Intro = ({ onComplete }) => {
 
+    const dispatch = useDispatch();
+    const loading = useSelector((state) => state.alerts.loading); // Get the loading state
+
     useEffect(() => {
+        // Dispatch showLoading when the intro starts
+        dispatch(showLoading());
+
         const master = gsap.timeline({
-            onComplete: onComplete, // Callback when intro finishes
+            onComplete: () => {
+                dispatch(hideLoading()); // Hide the loader when the animation completes
+                onComplete && onComplete(); // Call the provided onComplete callback
+            }
         });
+
         const preloaderBackground = document.querySelector('.preloader__background');
         const preloaderText = document.querySelector('.preloader__text span');
 
@@ -32,7 +45,9 @@ const Intro = ({ onComplete }) => {
     }, []);
 
     return (
-        <section>           
+        <section>     
+            {/* Loader will be shown here if loading is true */}
+            {loading && <Loader/>}
             <div className="preloader z-[500]">
                 <div className="preloader__text">
                     <span><Logo/></span>

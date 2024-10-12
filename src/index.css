@@ -393,10 +393,9 @@ body {
             3xl-sm:text-[4rem]
             3xl:text-[3rem] 
             leading-[1em] 
-            lg-sm:leading-[1.1em]
-            
-            
+            lg-sm:leading-[1.1em]                      
     }
+    
     .title-h3 {
         @apply  text-indigo-900 font-bold font-anybody
             text-[1.3rem]            
