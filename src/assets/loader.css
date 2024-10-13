@@ -1,4 +1,16 @@
-/* HTML:  */
+.parent-loader {
+  position: fixed; /* Makes the loader appear on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
 .loader {
   width: fit-content;
   font-weight: bold;
@@ -6,6 +18,7 @@
   font-size: 30px;
   background: radial-gradient(circle closest-side,#000 94%,#0000) right/calc(200% - 1em) 100%;
   animation: l24 1s infinite alternate linear;
+  z-index: 1000;
 }
 .loader::before {
   content: "Loading...";

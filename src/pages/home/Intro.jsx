@@ -46,7 +46,7 @@ const Intro = ({ onComplete }) => {
 
     return (
         <section>     
-            {/* Loader will be shown here if loading is true */}
+            <div className="z-[1000]"></div>
             {loading && <Loader/>}
             <div className="preloader z-[500]">
                 <div className="preloader__text">
