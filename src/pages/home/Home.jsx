@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Hero from './Hero';
-import About from './About';
-import Services from './Services';
-import Team from './Team';
-import Reviews from './Reviews';
-import Faqs from './Faqs';
-import ContactTransition from './ContactTransition';
+// import About from './About';
+// import Services from './Services';
+// import Team from './Team';
+// import Reviews from './Reviews';
+// import Faqs from './Faqs';
+// import ContactTransition from './ContactTransition';
 import Intro from './Intro';
-import Loader from './Loader';
+// import Loader from './Loader';
 
 const Home = () => {
     const [introComplete, setIntroComplete] = useState(false);
@@ -23,7 +23,7 @@ const Home = () => {
                 <Hero onIntroComplete={() => {}} />
             </section>
 
-            <section id='about'>
+            {/* <section id='about'>
                 <About />
             </section>
             
@@ -45,7 +45,7 @@ const Home = () => {
             
             <section id='contact'>
                 <ContactTransition/>
-            </section>
+            </section> */}
         </main>
     )
 }

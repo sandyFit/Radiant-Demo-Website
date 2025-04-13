@@ -6,6 +6,14 @@ export default {
   ],
   mode: 'jit',
   theme: {
+    screens: {
+      'xs': '22.5rem',    // 360px
+      'sm': '40rem',      // 640px
+      'md': '48rem',      // 768px
+      'lg': '64rem',      // 1024px
+      'xl': '80rem',      // 1280px
+      '2xl': '96rem',     // 1536px
+    },
     extend: {
       colors: {
         black: '#000000',
@@ -31,32 +39,6 @@ export default {
         sand: '#A89269',
         moon: '#2D3F59'
   
-      },
-
-      screens: {
-        'sm': '320px',
-        'md': '420px',
-        'base': '500px',
-        'lg-sm': '600px',
-        'lg-md': '650px',
-        'lg': '700px',
-        'lg-xl': '750px',        
-        'xl-sm': '800px',        
-        'xl-md': '850px',        
-        'xl': '900px',        
-        'xl-lg': '950px',
-        'xl-xl': '1000px',
-        'xl-2xl': '1050px',
-        'xl-3xl': '1100px',
-        '2xl-sm': '1150px',
-        '2xl-md': '1200px',
-        '2xl-lg': '1250px',
-        '2xl': '1300px',
-        '2xl-xl': '1350px',
-        '3xl-sm': '1400px',
-        '3xl-md': '1450px',
-        '3xl': '1500px',
-        
       },
   
       fontFamily: {
